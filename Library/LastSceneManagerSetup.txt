@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MiniGames/FangAnaerobica/Scenes/FangAnaerobica.unity
+- path: Assets/MiniGames/FangAerobica/Scenes/FangAerobica.unity
   isLoaded: 1
   isActive: 1

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 218ee76bfb6fdac43bb3df7b80658c08
+timeCreated: 1529406209
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Paladins Super-Italic
+  fontNames:
+  - Paladins Super-Italic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

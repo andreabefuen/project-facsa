@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: eb7d2fc0a711e4047a6b5c77a43cf1c8
+timeCreated: 1529406209
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Paladins Outline
+  fontNames:
+  - Paladins Outline
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

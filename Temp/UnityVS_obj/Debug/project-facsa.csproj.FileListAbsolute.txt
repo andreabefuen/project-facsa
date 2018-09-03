@@ -1,2 +1,0 @@
-C:\Users\al341989\Documents\al341989\project-facsa\Temp\UnityVS_obj\Debug\project-facsa.csprojResolveAssemblyReference.cache
-C:\Users\al341989\Documents\al341989\project-facsa\Temp\UnityVS_obj\Debug\project-facsa.csproj.CoreCompileInputs.cache

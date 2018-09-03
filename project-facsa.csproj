@@ -237,6 +237,14 @@
     <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\MovingPlayer.cs" />
     <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\Shoot.cs" />
     <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\SpawnEnemiesBoss.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Ball.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\BrickScript.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\ManagerFA.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\MovingPlayerFA.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\NewLine.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Oxygen.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Spawner.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Spawner2.cs" />
     <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\BallInGameScript.cs" />
     <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\BallScript.cs" />
     <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\BounceObject.cs" />
@@ -249,6 +257,8 @@
     <Compile Include="Assets\Scripts\RestartScript.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\MiniGames\FangAerobica\Fonts\Space.txt" />
+    <None Include="Assets\MiniGames\FangAerobica\Fonts\paladins.txt" />
     <None Include="Assets\MiniGames\FangAnaerobica\Fonts\Changelog.txt" />
     <None Include="Assets\MiniGames\FangAnaerobica\Fonts\License.txt" />
   </ItemGroup>
