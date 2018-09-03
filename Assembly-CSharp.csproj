@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\RestartScript.cs" />
+    <Compile Include="Assets\Scripts\Shop.cs" />
     <None Include="Assets\MiniGames\FangAnaerobica\Fonts\Changelog.txt" />
     <None Include="Assets\MiniGames\FangAnaerobica\Fonts\License.txt" />
     <None Include="Assets\MiniGames\FangAerobica\Fonts\Space.txt" />
