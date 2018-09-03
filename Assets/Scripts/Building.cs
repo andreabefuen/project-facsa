@@ -45,8 +45,8 @@ public class Building : MonoBehaviour {
 
     private void OnMouseExit()
     {
-        rend.material.color = Color.blue;
-        //rend.material.color = startColor;
+        //rend.material.color = Color.blue;
+        rend.material.color = startColor;
     }
 
 
