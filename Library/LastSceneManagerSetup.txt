@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Scene01.unity
+- path: Assets/MiniGames/Desinfeccio/Scenes/Infinite.unity
   isLoaded: 1
   isActive: 1
