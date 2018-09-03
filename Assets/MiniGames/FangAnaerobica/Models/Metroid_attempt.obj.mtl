@@ -1,0 +1,27 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.1.187496374)
+
+newmtl Flesh
+Kd 0.36199 0.128176 0.111086
+Ks 1 1 1
+Ke 0 0 0
+d 1
+Ns 49
+illum 2
+
+newmtl Mandables
+Kd 0.769238 0.756039 0.431998
+Ks 1 1 1
+Ke 0 0 0
+d 1
+Ns 9
+illum 2
+
+newmtl Organs
+Kd 0.914031 0.323644 0.280491
+Ks 1 1 1
+Ke 0 0 0
+d 1
+Ns 36
+illum 2
+
