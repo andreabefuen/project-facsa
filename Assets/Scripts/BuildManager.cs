@@ -31,9 +31,10 @@ public class BuildManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+        
         structureToBuild = standardEdificationPrefab;
-	}
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {

@@ -61,8 +61,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\BossController.cs" />
+    <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\Enemy2Spawn.cs" />
+    <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\EnemyController.cs" />
+    <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\EnemyController2.cs" />
+    <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\EnemyShoot.cs" />
+    <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\EnemySpawn.cs" />
+    <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\HealtScript.cs" />
+    <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\LifesScript.cs" />
+    <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\Manager.cs" />
+    <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\MovingPlayer.cs" />
+    <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\Shoot.cs" />
+    <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\SpawnEnemiesBoss.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Ball.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\BrickScript.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\ManagerFA.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\MovingPlayerFA.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\NewLine.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Oxygen.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Spawner.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Spawner2.cs" />
+    <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\BallInGameScript.cs" />
+    <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\BallScript.cs" />
+    <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\BounceObject.cs" />
+    <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\ManagerScript.cs" />
+    <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\OutOfBounds.cs" />
+    <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\PaddleController.cs" />
+    <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\PullSpring.cs" />
     <Compile Include="Assets\Scripts\Building.cs" />
     <Compile Include="Assets\Scripts\BuildManager.cs" />
+    <Compile Include="Assets\Scripts\RestartScript.cs" />
+    <None Include="Assets\MiniGames\FangAnaerobica\Fonts\Changelog.txt" />
+    <None Include="Assets\MiniGames\FangAnaerobica\Fonts\License.txt" />
+    <None Include="Assets\MiniGames\FangAerobica\Fonts\Space.txt" />
+    <None Include="Assets\MiniGames\FangAerobica\Fonts\paladins.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/al341488/Desktop/project-facsa/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

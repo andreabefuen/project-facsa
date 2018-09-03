@@ -32,7 +32,9 @@ public class Building : MonoBehaviour {
 
 
         GameObject structureToBuild = BuildManager.instance.GetStructureToBuild();
+        
         edification = (GameObject)Instantiate(structureToBuild, transform.position, transform.rotation);
+        edification.transform.Rotate(-90, 0, 0);
 
     }
 
