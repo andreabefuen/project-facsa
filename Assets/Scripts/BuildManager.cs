@@ -21,6 +21,7 @@ public class BuildManager : MonoBehaviour {
     }
 
     public GameObject standardEdificationPrefab;
+    public GameObject structureFacsa;
 
     private GameObject structureToBuild; 
 
@@ -30,11 +31,18 @@ public class BuildManager : MonoBehaviour {
     }
 
 	// Use this for initialization
-	void Start () {
+	/*void Start () {
         
         structureToBuild = standardEdificationPrefab;
         
+    }*/
+
+
+    public void SetStructureToBuild(GameObject select)
+    {
+        structureToBuild = select;
     }
+    
 	
 	// Update is called once per frame
 	void Update () {

@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/MiniGames/Desbaste/Scenes/Desbaste.unity
+=======
+- path: Assets/Scenes/Scene01.unity
+>>>>>>> eaa67174cfe10388f33fb0d84243f9e8b507fdb1
   isLoaded: 1
   isActive: 1
