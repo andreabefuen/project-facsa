@@ -271,6 +271,17 @@
     <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\PaddleController_FAN.cs" />
     <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\PullSpring_FAN.cs" />
     <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\RestartScript_FAN.cs" />
+    <Compile Include="Assets\MiniGames\Plaga\Scripts\BulletBehavior_PLA.cs" />
+    <Compile Include="Assets\MiniGames\Plaga\Scripts\CameraShake_PLA.cs" />
+    <Compile Include="Assets\MiniGames\Plaga\Scripts\EnemyDestructionDelegate_PLA.cs" />
+    <Compile Include="Assets\MiniGames\Plaga\Scripts\GameManagerBehavior_PLA.cs" />
+    <Compile Include="Assets\MiniGames\Plaga\Scripts\HealthBar_PLA.cs" />
+    <Compile Include="Assets\MiniGames\Plaga\Scripts\MoveEnemy_PLA.cs" />
+    <Compile Include="Assets\MiniGames\Plaga\Scripts\PlaceTower_PLA.cs" />
+    <Compile Include="Assets\MiniGames\Plaga\Scripts\RestartScript_PLA.cs" />
+    <Compile Include="Assets\MiniGames\Plaga\Scripts\ShootEnemies_PLA.cs" />
+    <Compile Include="Assets\MiniGames\Plaga\Scripts\SpawnEnemy_PLA.cs" />
+    <Compile Include="Assets\MiniGames\Plaga\Scripts\TowerData_PLA.cs" />
     <Compile Include="Assets\Scripts\Building.cs" />
     <Compile Include="Assets\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
@@ -285,6 +296,7 @@
     <None Include="Assets\MiniGames\FangAerobica\Fonts\paladins.txt" />
     <None Include="Assets\MiniGames\FangAnaerobica\Fonts\Changelog.txt" />
     <None Include="Assets\MiniGames\FangAnaerobica\Fonts\License.txt" />
+    <None Include="Assets\MiniGames\Plaga\Fonts\License Purchasing.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
