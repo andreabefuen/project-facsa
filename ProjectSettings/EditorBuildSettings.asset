@@ -12,8 +12,17 @@ EditorBuildSettings:
     path: Assets/MiniGames/Desinfeccio/Scenes/Desinfeccio.unity
     guid: ad5b19f0c4ae69546a3a391d66dc129f
   - enabled: 1
+    path: Assets/MiniGames/FangAerobica/Scenes/FangAerobica.unity
+    guid: 10e2183b7d5b3674ba55b65179d8d0e6
+  - enabled: 1
     path: Assets/MiniGames/FangAnaerobica/Scenes/FangAnaerobica.unity
     guid: ece4d4803f334a042a3bceb0199faae5
   - enabled: 1
-    path: Assets/MiniGames/FangAerobica/Scenes/FangAerobica.unity
-    guid: 10e2183b7d5b3674ba55b65179d8d0e6
+    path: Assets/MiniGames/Desbaste/Scenes/Desbaste.unity
+    guid: 2ff0d41f42ad889429338abe6cd48fa8
+  - enabled: 1
+    path: Assets/MiniGames/Desordenado/Scenes/Desordenado.unity
+    guid: d1a42cc4710cbd649be158020eea158b
+  - enabled: 1
+    path: Assets/MiniGames/Aireacio/Scenes/Aireacio.unity
+    guid: b12ced2af7b607a44964cf967aab5b37

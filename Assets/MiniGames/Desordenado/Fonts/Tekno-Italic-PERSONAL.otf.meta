@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: c925695b64ab44e4e8c470f1b31d5909
+timeCreated: 1531137126
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Tekno
+  fontNames:
+  - Tekno
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

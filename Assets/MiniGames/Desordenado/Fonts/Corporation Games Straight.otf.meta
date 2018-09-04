@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 75a23eccf845ec84d89802d06adc1001
+timeCreated: 1531137192
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Corporation Games Straight
+  fontNames:
+  - Corporation Games Straight
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
