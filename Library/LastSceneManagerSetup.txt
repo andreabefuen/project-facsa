@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MiniGames/Aireacio/Scenes/Aireacio.unity
+- path: Assets/MiniGames/Desbaste/Scenes/Desbaste.unity
   isLoaded: 1
   isActive: 1

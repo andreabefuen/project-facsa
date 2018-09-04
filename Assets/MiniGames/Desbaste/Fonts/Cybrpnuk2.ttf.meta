@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 6e67adda3beb8af4fbf2fdae263f6a36
+timeCreated: 1529406719
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Cyberpnuk2
+  fontNames:
+  - Cyberpnuk2
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
