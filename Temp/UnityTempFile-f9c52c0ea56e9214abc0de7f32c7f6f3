@@ -2,8 +2,9 @@
 -target:library
 -nowarn:0169
 -langversion:4
--out:Temp/Assembly-CSharp.dll
+-out:Temp/Assembly-CSharp-Editor.dll
 -unsafe
+-r:Library/ScriptAssemblies/Assembly-CSharp.dll
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll"
@@ -50,15 +51,35 @@
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll"
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll"
+-r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
+-r:C:/Users/al341989/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@1.0.7/Editor/UnityEditor.Advertisements.dll
 -r:C:/Users/al341989/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll
+-r:C:/Users/al341989/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/Editor/UnityEditor.Analytics.dll
 -r:C:/Users/al341989/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll
+-r:C:/Users/al341989/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/Editor/UnityEditor.Purchasing.dll
 -r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll"
 -r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll"
 -define:UNITY_5_3_OR_NEWER
@@ -156,98 +177,10 @@
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
-Assets/MiniGames/Aireacio/Scripts/BoardManager_AI.cs
-Assets/MiniGames/Aireacio/Scripts/Manager_AI.cs
-Assets/MiniGames/Aireacio/Scripts/RestartScript_AI.cs
-Assets/MiniGames/Aireacio/Scripts/Tile_AI.cs
-Assets/MiniGames/Desbaste/Scripts/Drag_DB.cs
-Assets/MiniGames/Desbaste/Scripts/Draggable_DB.cs
-Assets/MiniGames/Desbaste/Scripts/DropZone_DB.cs
-Assets/MiniGames/Desbaste/Scripts/Escenario_DB.cs
-Assets/MiniGames/Desbaste/Scripts/Manager_DB.cs
-Assets/MiniGames/Desbaste/Scripts/RestartScript_DB.cs
-Assets/MiniGames/Desbaste/Scripts/SpawnScript_DB.cs
-Assets/MiniGames/Desbaste/Scripts/TrashMovement_DB.cs
-Assets/MiniGames/Desinfeccio/Scripts/BossController_DES.cs
-Assets/MiniGames/Desinfeccio/Scripts/Enemy2Spawn_DES.cs
-Assets/MiniGames/Desinfeccio/Scripts/EnemyController_DES.cs
-Assets/MiniGames/Desinfeccio/Scripts/EnemyController2_DES.cs
-Assets/MiniGames/Desinfeccio/Scripts/EnemyShoot_DES.cs
-Assets/MiniGames/Desinfeccio/Scripts/EnemySpawn_DES.cs
-Assets/MiniGames/Desinfeccio/Scripts/HealtScript_DES.cs
-Assets/MiniGames/Desinfeccio/Scripts/LifesScript_DES.cs
-Assets/MiniGames/Desinfeccio/Scripts/Manager_DES.cs
-Assets/MiniGames/Desinfeccio/Scripts/MovingPlayer_DES.cs
-Assets/MiniGames/Desinfeccio/Scripts/RestartScript_DES.cs
-Assets/MiniGames/Desinfeccio/Scripts/Shoot_DES.cs
-Assets/MiniGames/Desinfeccio/Scripts/SpawnEnemiesBoss_DES.cs
-Assets/MiniGames/Desordenado/Scripts/Draggable_DD.cs
-Assets/MiniGames/Desordenado/Scripts/DropZone_DD.cs
-Assets/MiniGames/Desordenado/Scripts/ProvetaScript_DD.cs
-Assets/MiniGames/Desordenado/Scripts/RestartScript_DD.cs
-"Assets/MiniGames/Endless Runner/Scripts/Effects_ER.cs"
-"Assets/MiniGames/Endless Runner/Scripts/MoveCamera_ER.cs"
-"Assets/MiniGames/Endless Runner/Scripts/ObstacleScript_ER.cs"
-"Assets/MiniGames/Endless Runner/Scripts/PlatformsManager_ER.cs"
-"Assets/MiniGames/Endless Runner/Scripts/PlayerMove_ER.cs"
-"Assets/MiniGames/Endless Runner/Scripts/RestartScript_ER.cs"
-"Assets/MiniGames/Endless Runner/Scripts/SpawnScript_ER.cs"
-Assets/MiniGames/FangAerobica/Scripts/Ball_FA.cs
-Assets/MiniGames/FangAerobica/Scripts/BrickScript_FA.cs
-Assets/MiniGames/FangAerobica/Scripts/Manager_FA.cs
-Assets/MiniGames/FangAerobica/Scripts/MovingPlayer_FA.cs
-Assets/MiniGames/FangAerobica/Scripts/NewLine_FA.cs
-Assets/MiniGames/FangAerobica/Scripts/Oxygen_FA.cs
-Assets/MiniGames/FangAerobica/Scripts/RestartScript_FA.cs
-Assets/MiniGames/FangAerobica/Scripts/Spawner_FA.cs
-Assets/MiniGames/FangAerobica/Scripts/Spawner2_FA.cs
-Assets/MiniGames/FangAnaerobica/Scripts/BallInGameScript_FAN.cs
-Assets/MiniGames/FangAnaerobica/Scripts/BallScript_FAN.cs
-Assets/MiniGames/FangAnaerobica/Scripts/BounceObject_FAN.cs
-Assets/MiniGames/FangAnaerobica/Scripts/ManagerScript_FAN.cs
-Assets/MiniGames/FangAnaerobica/Scripts/OutOfBounds_FAN.cs
-Assets/MiniGames/FangAnaerobica/Scripts/PaddleController_FAN.cs
-Assets/MiniGames/FangAnaerobica/Scripts/PullSpring_FAN.cs
-Assets/MiniGames/FangAnaerobica/Scripts/RestartScript_FAN.cs
-Assets/MiniGames/Filtracio/Scripts/ManagerScript_FIL.cs
-Assets/MiniGames/Filtracio/Scripts/RestartScript_FIL.cs
-Assets/MiniGames/Filtracio/Scripts/SelectScript_FIL.cs
-Assets/MiniGames/Filtracio/Scripts/SelectScript2_FIL.cs
-"Assets/MiniGames/Ordre de la depuracio/Scripts/Draggable_OD.cs"
-"Assets/MiniGames/Ordre de la depuracio/Scripts/DropZone_OD.cs"
-"Assets/MiniGames/Ordre de la depuracio/Scripts/ManagerScript_OD.cs"
-"Assets/MiniGames/Ordre de la depuracio/Scripts/RestartScript_OD.cs"
-"Assets/MiniGames/Ordre de la depuracio/Scripts/SpawnCards_OD.cs"
-Assets/MiniGames/Plaga/Scripts/BulletBehavior_PLA.cs
-Assets/MiniGames/Plaga/Scripts/CameraShake_PLA.cs
-Assets/MiniGames/Plaga/Scripts/EnemyDestructionDelegate_PLA.cs
-Assets/MiniGames/Plaga/Scripts/GameManagerBehavior_PLA.cs
-Assets/MiniGames/Plaga/Scripts/HealthBar_PLA.cs
-Assets/MiniGames/Plaga/Scripts/MoveEnemy_PLA.cs
-Assets/MiniGames/Plaga/Scripts/PlaceTower_PLA.cs
-Assets/MiniGames/Plaga/Scripts/RestartScript_PLA.cs
-Assets/MiniGames/Plaga/Scripts/ShootEnemies_PLA.cs
-Assets/MiniGames/Plaga/Scripts/SpawnEnemy_PLA.cs
-Assets/MiniGames/Plaga/Scripts/TowerData_PLA.cs
-"Assets/MiniGames/Simon Dice/Plugins/LeanTween/LeanAudio.cs"
-"Assets/MiniGames/Simon Dice/Plugins/LeanTween/LeanTest.cs"
-"Assets/MiniGames/Simon Dice/Plugins/LeanTween/LeanTween.cs"
-"Assets/MiniGames/Simon Dice/Plugins/LeanTween/LTDescr.cs"
-"Assets/MiniGames/Simon Dice/Plugins/LeanTween/LTDescrOptional.cs"
-"Assets/MiniGames/Simon Dice/Plugins/LeanTween/LTSeq.cs"
-"Assets/MiniGames/Simon Dice/Scripts/ButtonSetting_SD.cs"
-"Assets/MiniGames/Simon Dice/Scripts/GameManager_SD.cs"
-"Assets/MiniGames/Simon Dice/Scripts/RestartScript_SD.cs"
-"Assets/MiniGames/Tractament FQ/Scripts/ManagerScript_TFQ.cs"
-"Assets/MiniGames/Tractament FQ/Scripts/RestartScript_TFQ.cs"
-"Assets/MiniGames/Tractament FQ/Scripts/SelectScript_TFQ.cs"
-Assets/Scripts/Building.cs
-Assets/Scripts/BuildManager.cs
-Assets/Scripts/CameraController.cs
-Assets/Scripts/Shop.cs
--r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
--r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
--r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.dll"
--r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.Lang.dll"
--r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\Boo.Lang.dll"
--sdk:unity
+"Assets/MiniGames/Simon Dice/LeanTween/Editor/LeanTweenDocumentationEditor.cs"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.Linq.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.Lang.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\Boo.Lang.dll"
+-sdk:2.0

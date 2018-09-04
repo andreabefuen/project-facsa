@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MiniGames/Tractament FQ/Scene/Tractament Fisic quimic.unity
+- path: Assets/MiniGames/PuzzleGame/Scenes/PuzzleGame.unity
   isLoaded: 1
   isActive: 1

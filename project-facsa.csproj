@@ -295,6 +295,10 @@
     <Compile Include="Assets\MiniGames\Plaga\Scripts\ShootEnemies_PLA.cs" />
     <Compile Include="Assets\MiniGames\Plaga\Scripts\SpawnEnemy_PLA.cs" />
     <Compile Include="Assets\MiniGames\Plaga\Scripts\TowerData_PLA.cs" />
+    <Compile Include="Assets\MiniGames\PuzzleGame\Scripts\Constants_PG.cs" />
+    <Compile Include="Assets\MiniGames\PuzzleGame\Scripts\Game_PG.cs" />
+    <Compile Include="Assets\MiniGames\PuzzleGame\Scripts\Piece_PG.cs" />
+    <Compile Include="Assets\MiniGames\PuzzleGame\Scripts\PiecesScript_PG.cs" />
     <Compile Include="Assets\MiniGames\Simon Dice\Plugins\LeanTween\LeanAudio.cs" />
     <Compile Include="Assets\MiniGames\Simon Dice\Plugins\LeanTween\LeanTest.cs" />
     <Compile Include="Assets\MiniGames\Simon Dice\Plugins\LeanTween\LeanTween.cs" />

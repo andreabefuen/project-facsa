@@ -54,7 +54,6 @@
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
--r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
@@ -73,6 +72,7 @@
 -define:UNITY_2017
 -define:PLATFORM_ARCH_64
 -define:UNITY_64
+-define:UNITY_ANALYTICS
 -define:ENABLE_AUDIO
 -define:ENABLE_CACHING
 -define:ENABLE_CLOTH
@@ -229,6 +229,10 @@ Assets/MiniGames/Plaga/Scripts/RestartScript_PLA.cs
 Assets/MiniGames/Plaga/Scripts/ShootEnemies_PLA.cs
 Assets/MiniGames/Plaga/Scripts/SpawnEnemy_PLA.cs
 Assets/MiniGames/Plaga/Scripts/TowerData_PLA.cs
+Assets/MiniGames/PuzzleGame/PiecesScript.cs
+Assets/MiniGames/PuzzleGame/Scripts/Constants.cs
+Assets/MiniGames/PuzzleGame/Scripts/Game.cs
+Assets/MiniGames/PuzzleGame/Scripts/Piece.cs
 "Assets/MiniGames/Simon Dice/Plugins/LeanTween/LeanAudio.cs"
 "Assets/MiniGames/Simon Dice/Plugins/LeanTween/LeanTest.cs"
 "Assets/MiniGames/Simon Dice/Plugins/LeanTween/LeanTween.cs"
@@ -238,9 +242,9 @@ Assets/MiniGames/Plaga/Scripts/TowerData_PLA.cs
 "Assets/MiniGames/Simon Dice/Scripts/ButtonSetting_SD.cs"
 "Assets/MiniGames/Simon Dice/Scripts/GameManager_SD.cs"
 "Assets/MiniGames/Simon Dice/Scripts/RestartScript_SD.cs"
-"Assets/MiniGames/Tractament FQ/Scripts/ManagerScript.cs"
-"Assets/MiniGames/Tractament FQ/Scripts/RestartScript.cs"
-"Assets/MiniGames/Tractament FQ/Scripts/SelectScript.cs"
+"Assets/MiniGames/Tractament FQ/Scripts/ManagerScript_TFQ.cs"
+"Assets/MiniGames/Tractament FQ/Scripts/RestartScript_TFQ.cs"
+"Assets/MiniGames/Tractament FQ/Scripts/SelectScript_TFQ.cs"
 Assets/Scripts/Building.cs
 Assets/Scripts/BuildManager.cs
 Assets/Scripts/CameraController.cs
