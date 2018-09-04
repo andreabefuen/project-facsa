@@ -26,3 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MiniGames/Aireacio/Scenes/Aireacio.unity
     guid: b12ced2af7b607a44964cf967aab5b37
+  - enabled: 1
+    path: Assets/MiniGames/Ordre de la depuracio/Scene/Ordre depuracio.unity
+    guid: cea0349c0851b2749b7781fa6c64a281
+  - enabled: 1
+    path: Assets/MiniGames/Plaga/Scenes/Plaga.unity
+    guid: 9389db7bfb69199428606613f814d955
