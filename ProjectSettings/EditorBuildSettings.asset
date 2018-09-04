@@ -32,3 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MiniGames/Plaga/Scenes/Plaga.unity
     guid: 9389db7bfb69199428606613f814d955
+  - enabled: 1
+    path: Assets/MiniGames/Endless Runner/Scenes/Endless Runner.unity
+    guid: 3d5fc1b387e9cb64ea69a892276972b7

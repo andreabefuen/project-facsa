@@ -251,6 +251,13 @@
     <Compile Include="Assets\MiniGames\Desordenado\Scripts\DropZone_DD.cs" />
     <Compile Include="Assets\MiniGames\Desordenado\Scripts\ProvetaScript_DD.cs" />
     <Compile Include="Assets\MiniGames\Desordenado\Scripts\RestartScript_DD.cs" />
+    <Compile Include="Assets\MiniGames\Endless Runner\Scripts\Effects_ER.cs" />
+    <Compile Include="Assets\MiniGames\Endless Runner\Scripts\MoveCamera_ER.cs" />
+    <Compile Include="Assets\MiniGames\Endless Runner\Scripts\ObstacleScript_ER.cs" />
+    <Compile Include="Assets\MiniGames\Endless Runner\Scripts\PlatformsManager_ER.cs" />
+    <Compile Include="Assets\MiniGames\Endless Runner\Scripts\PlayerMove_ER.cs" />
+    <Compile Include="Assets\MiniGames\Endless Runner\Scripts\RestartScript_ER.cs" />
+    <Compile Include="Assets\MiniGames\Endless Runner\Scripts\SpawnScript_ER.cs" />
     <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Ball_FA.cs" />
     <Compile Include="Assets\MiniGames\FangAerobica\Scripts\BrickScript_FA.cs" />
     <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Manager_FA.cs" />

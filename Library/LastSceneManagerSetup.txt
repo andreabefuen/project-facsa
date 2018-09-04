@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MiniGames/Plaga/Scenes/Plaga.unity
+- path: Assets/MiniGames/Endless Runner/Scenes/Endless Runner.unity
   isLoaded: 1
   isActive: 1
