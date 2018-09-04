@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MiniGames/Filtracio/Scene/Filtracio1.unity
+- path: Assets/MiniGames/Simon Dice/Scenes/Simon Dice.unity
   isLoaded: 1
   isActive: 1
