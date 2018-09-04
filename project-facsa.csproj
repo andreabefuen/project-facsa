@@ -225,6 +225,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MiniGames\Aireacio\Scripts\BoardManager_AI.cs" />
+    <Compile Include="Assets\MiniGames\Aireacio\Scripts\Manager_AI.cs" />
+    <Compile Include="Assets\MiniGames\Aireacio\Scripts\RestartScript_AI.cs" />
+    <Compile Include="Assets\MiniGames\Aireacio\Scripts\Tile_AI.cs" />
     <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\BossController_DES.cs" />
     <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\Enemy2Spawn_DES.cs" />
     <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\EnemyController_DES.cs" />
@@ -261,6 +265,9 @@
     <Compile Include="Assets\Scripts\Shop.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\MiniGames\Aireacio\Fonts\READ ME.txt" />
+    <None Include="Assets\MiniGames\Aireacio\Fonts\license.txt" />
+    <None Include="Assets\MiniGames\Aireacio\Sprites\100 Alchemy item icons-free\item_name.txt" />
     <None Include="Assets\MiniGames\FangAerobica\Fonts\Space.txt" />
     <None Include="Assets\MiniGames\FangAerobica\Fonts\paladins.txt" />
     <None Include="Assets\MiniGames\FangAnaerobica\Fonts\Changelog.txt" />

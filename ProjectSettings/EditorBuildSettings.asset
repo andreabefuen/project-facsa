@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MiniGames/FangAerobica/Scenes/FangAerobica.unity
     guid: 10e2183b7d5b3674ba55b65179d8d0e6
+  - enabled: 1
+    path: Assets/MiniGames/Aireacio/Scenes/Aireacio.unity
+    guid: b12ced2af7b607a44964cf967aab5b37
