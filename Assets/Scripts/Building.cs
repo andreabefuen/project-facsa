@@ -50,8 +50,11 @@ public class Building : MonoBehaviour {
 
 
         GameObject structureToBuild = BuildManager.instance.GetStructureToBuild();
-        
-        edification = (GameObject)Instantiate(structureToBuild, transform.position, transform.rotation);
+
+        //edification = (GameObject)Instantiate(structureToBuild, transform.position, transform.rotation);
+
+        edification = (GameObject)Instantiate(structureToBuild, transform.position, structureToBuild.transform.rotation);
+        this.gameObject.GetComponent<MeshRenderer>().enabled = false;
         //edification.transform.Rotate(-90, 0, 0);
 
     }

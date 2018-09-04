@@ -61,6 +61,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MiniGames\Aireacio\Scripts\BoardManager_AI.cs" />
+    <Compile Include="Assets\MiniGames\Aireacio\Scripts\Manager_AI.cs" />
+    <Compile Include="Assets\MiniGames\Aireacio\Scripts\RestartScript_AI.cs" />
+    <Compile Include="Assets\MiniGames\Aireacio\Scripts\Tile_AI.cs" />
+    <Compile Include="Assets\MiniGames\Desbaste\Scripts\Drag_DB.cs" />
+    <Compile Include="Assets\MiniGames\Desbaste\Scripts\Draggable_DB.cs" />
+    <Compile Include="Assets\MiniGames\Desbaste\Scripts\DropZone_DB.cs" />
+    <Compile Include="Assets\MiniGames\Desbaste\Scripts\Escenario_DB.cs" />
+    <Compile Include="Assets\MiniGames\Desbaste\Scripts\Manager_DB.cs" />
+    <Compile Include="Assets\MiniGames\Desbaste\Scripts\RestartScript_DB.cs" />
+    <Compile Include="Assets\MiniGames\Desbaste\Scripts\SpawnScript_DB.cs" />
+    <Compile Include="Assets\MiniGames\Desbaste\Scripts\TrashMovement_DB.cs" />
     <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\BossController_DES.cs" />
     <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\Enemy2Spawn_DES.cs" />
     <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\EnemyController_DES.cs" />
@@ -74,6 +86,10 @@
     <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\RestartScript_DES.cs" />
     <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\Shoot_DES.cs" />
     <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\SpawnEnemiesBoss_DES.cs" />
+    <Compile Include="Assets\MiniGames\Desordenado\Scripts\Draggable_DD.cs" />
+    <Compile Include="Assets\MiniGames\Desordenado\Scripts\DropZone_DD.cs" />
+    <Compile Include="Assets\MiniGames\Desordenado\Scripts\ProvetaScript_DD.cs" />
+    <Compile Include="Assets\MiniGames\Desordenado\Scripts\RestartScript_DD.cs" />
     <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Ball_FA.cs" />
     <Compile Include="Assets\MiniGames\FangAerobica\Scripts\BrickScript_FA.cs" />
     <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Manager_FA.cs" />
@@ -97,6 +113,8 @@
     <Compile Include="Assets\Scripts\Shop.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\MiniGames\Desbaste\Fonts\Read me.txt" />
+    <None Include="Assets\MiniGames\Aireacio\Sprites\100 Alchemy item icons-free\item_name.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\MiniGames\FangAnaerobica\Fonts\Changelog.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -110,9 +128,11 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\MiniGames\Aireacio\Fonts\READ ME.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\MiniGames\Aireacio\Fonts\license.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />

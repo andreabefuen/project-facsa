@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/MiniGames/Plaga/Scenes/Plaga.unity
+=======
+- path: Assets/Scenes/Scene01.unity
+>>>>>>> 42376ecaf5d253f1470939e1c7730a97be5aa4f0
   isLoaded: 1
   isActive: 1
