@@ -44,3 +44,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MiniGames/Simon Dice/Scenes/Simon Dice.unity
     guid: 6842179fde2a6904bb4add20f15f2209
+  - enabled: 1
+    path: Assets/MiniGames/Tractament FQ/Scene/Tractament Fisic quimic.unity
+    guid: 5a2ef7c66890b6b45b5607f14a2c9982

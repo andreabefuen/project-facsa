@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MiniGames/Simon Dice/Scenes/Simon Dice.unity
+- path: Assets/MiniGames/Tractament FQ/Scene/Tractament Fisic quimic.unity
   isLoaded: 1
   isActive: 1

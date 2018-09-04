@@ -42,7 +42,7 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 1067
-  m_MinSize: {x: 681, y: 492}
+  m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
   controlID: 9
@@ -89,8 +89,8 @@ MonoBehaviour:
     y: 0
     width: 401
     height: 657
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -143,7 +143,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1117
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -206,7 +206,7 @@ MonoBehaviour:
     y: 0
     width: 1600
     height: 1067
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
   controlID: 10
@@ -230,8 +230,8 @@ MonoBehaviour:
     y: 0
     width: 1600
     height: 657
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
   controlID: 11
 --- !u!114 &11
@@ -252,8 +252,8 @@ MonoBehaviour:
     y: 0
     width: 1199
     height: 657
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -325,19 +325,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/MiniGames
+    - Assets/MiniGames/Tractament FQ/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/MiniGames
+  - Assets/MiniGames/Tractament FQ/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\al341989\Documents\al341989\project-facsa
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 143}
-    m_SelectedIDs: fc330000
-    m_LastClickedID: 13308
-    m_ExpandedIDs: 00000000be320000fc3300007834000066350000aa35000046360000023700009e370000ac370000b03800003e390000a6390000063a0000fc3a0000f23c0000a03d00009a3e0000c240000032410000464200000c47000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 1212}
+    m_SelectedIDs: 782a0000
+    m_LastClickedID: 10872
+    m_ExpandedIDs: 00000000a6280000dc290000582a0000362b0000722b0000022c00004e2d00005c2d0000502e0000de2e0000402f0000642f00009c2f00008c3000006c3200001833000012340000ca3500003a3600003c370000f8390000fa39000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -365,7 +365,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000be320000fc3300007834000066350000aa350000463600009e370000b0380000a6390000063a0000fc3a0000f23c0000c240000032410000464200000c470000
+    m_ExpandedIDs: 00000000a6280000dc290000582a0000362b0000722b0000022c00004e2d00005c2d0000502e0000de2e0000402f00009c2f00008c3000006c3200001833000012340000ca3500003a3600003c370000f8390000fa390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -446,7 +446,7 @@ MonoBehaviour:
     y: 92
     width: 318
     height: 1046
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 358.76147}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160
@@ -481,28 +481,28 @@ MonoBehaviour:
     height: 636
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 86280000
     m_LastClickedID: 0
-    m_ExpandedIDs: 32b9ffffcec2ffff00000000
+    m_ExpandedIDs: 62d3ffff98faffff00000000123a00003c3a00005a3a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Element1
+      m_OriginalName: Element1
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -44070
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
-  - Simon Dice
+  - Tractament Fisic quimic
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -533,14 +533,14 @@ MonoBehaviour:
     width: 1195
     height: 636
   m_SceneLighting: 1
-  lastFramingTime: 0
+  lastFramingTime: 759.6262333566553
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 247.5, y: 536.375, z: 0}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 247.5, y: 536.375, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -563,13 +563,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.14945571, y: 0.06135766, z: -0.009292753, w: -0.9868193}
+    m_Target: {x: -0.0018089601, y: 0.024595033, z: -0.000044277294, w: -0.99969816}
     speed: 2
-    m_Value: {x: -0.14945571, y: 0.06135766, z: -0.0092927525, w: -0.9868193}
+    m_Value: {x: -0.001808956, y: 0.024594977, z: -0.000044277193, w: -0.9996959}
   m_Size:
-    m_Target: 1518.6079
+    m_Target: 233.34525
     speed: 2
-    m_Value: 1518.6079
+    m_Value: 233.34525
   m_Ortho:
     m_Target: 0
     speed: 2

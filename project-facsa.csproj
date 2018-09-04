@@ -304,6 +304,9 @@
     <Compile Include="Assets\MiniGames\Simon Dice\Scripts\ButtonSetting_SD.cs" />
     <Compile Include="Assets\MiniGames\Simon Dice\Scripts\GameManager_SD.cs" />
     <Compile Include="Assets\MiniGames\Simon Dice\Scripts\RestartScript_SD.cs" />
+    <Compile Include="Assets\MiniGames\Tractament FQ\Scripts\ManagerScript_TFQ.cs" />
+    <Compile Include="Assets\MiniGames\Tractament FQ\Scripts\RestartScript_TFQ.cs" />
+    <Compile Include="Assets\MiniGames\Tractament FQ\Scripts\SelectScript_TFQ.cs" />
     <Compile Include="Assets\Scripts\Building.cs" />
     <Compile Include="Assets\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
