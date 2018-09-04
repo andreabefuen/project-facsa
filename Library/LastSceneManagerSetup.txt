@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MiniGames/Endless Runner/Scenes/Endless Runner.unity
+- path: Assets/MiniGames/Filtracio/Scene/Filtracio1.unity
   isLoaded: 1
   isActive: 1
