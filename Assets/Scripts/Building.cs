@@ -10,10 +10,16 @@ public class Building : MonoBehaviour {
 
     public BuildManager build;
 
+    private MenuConstruir menu;
+
     private GameObject edification;
 
     private Renderer rend;
     private Color startColor;
+
+
+    PlayerStats player;
+   
 
 
     BuildManager buildManager;
@@ -25,7 +31,11 @@ public class Building : MonoBehaviour {
 
 
         buildManager = BuildManager.instance;
-	}
+
+        menu = GameObject.Find("Construir").GetComponent<MenuConstruir>();
+
+        player = GameObject.Find("GameMaster").GetComponent<PlayerStats>();
+    }
 
     private void OnMouseDown()
     {
@@ -43,19 +53,45 @@ public class Building : MonoBehaviour {
         if(edification != null)
         {
             Debug.Log("Can't build there!"); //Display on screen
+
+            //Comprobamos si hemos pulsado el botón de demoler
+
+            if (menu!=null &&   menu.GetDemolitionActivate())
+            {
+                Debug.Log("DEMOLER"); //Devoler cierta cantidad de dinero
+                Destroy(edification);
+                this.gameObject.GetComponent<MeshRenderer>().enabled = true;
+                menu.SetDemolitionActivate(false);
+                Debug.Log("Desactivado la demolición");
+                return;
+                
+            }
             return;
         }
 
         //Build an edification
 
+        if(player.cantStructureFacsa > 0)
+        {
+            GameObject structureToBuild = BuildManager.instance.GetStructureToBuild();
 
-        GameObject structureToBuild = BuildManager.instance.GetStructureToBuild();
+            //edification = (GameObject)Instantiate(structureToBuild, transform.position, transform.rotation);
 
-        //edification = (GameObject)Instantiate(structureToBuild, transform.position, transform.rotation);
+            edification = (GameObject)Instantiate(structureToBuild, transform.position, structureToBuild.transform.rotation);
+            this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+            //edification.transform.Rotate(-90, 0, 0);
+            player.cantStructureFacsa--;
 
-        edification = (GameObject)Instantiate(structureToBuild, transform.position, structureToBuild.transform.rotation);
-        this.gameObject.GetComponent<MeshRenderer>().enabled = false;
-        //edification.transform.Rotate(-90, 0, 0);
+        }
+
+        else
+        {
+            Debug.Log("Compra edificios");
+            
+        }
+
+
+
 
     }
 
@@ -80,7 +116,6 @@ public class Building : MonoBehaviour {
         //rend.material.color = Color.blue;
         rend.material.color = startColor;
     }
-
 
     // Update is called once per frame
     void Update () {

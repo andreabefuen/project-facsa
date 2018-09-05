@@ -13,12 +13,12 @@ public class CameraController : MonoBehaviour {
     private bool cameraMovementActivate = true;
 
 
-    private MenuConstruir menu;
+    public MenuConstruir menu;
 
 
 	// Use this for initialization
 	void Start () {
-		
+        
 	}
 	
 	// Update is called once per frame

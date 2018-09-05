@@ -13,24 +13,23 @@ public class MenuConstruir : MonoBehaviour {
         buildManager = BuildManager.instance;
     }
 
-    public void PurchaseStandardStructure()
-    {
-        Debug.Log("Standard Structure Purchased");
-        buildManager.SetStructureToBuild(buildManager.standardEdificationPrefab);
-
-    }
-
-    public void PurchaseAnotherStructure()
-    {
-        Debug.Log("Another structure purchased");
-        buildManager.SetStructureToBuild(buildManager.structureFacsa);
-    }
 
     private bool cameraActivate = true;
+    private bool demolitionActivate = false;
 
     public bool GetCameraActivate()
     {
         return cameraActivate;
+    }
+
+    public bool GetDemolitionActivate()
+    {
+        return demolitionActivate;
+    }
+
+    public void SetDemolitionActivate(bool activation)
+    {
+        demolitionActivate = activation;
     }
 
     public void MoveCamera()
@@ -40,6 +39,6 @@ public class MenuConstruir : MonoBehaviour {
 
     public void Demolition()
     {
-
+        demolitionActivate = !demolitionActivate;
     }
 }
