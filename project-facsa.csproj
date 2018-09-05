@@ -312,13 +312,14 @@
     <Compile Include="Assets\MiniGames\Aireacio\Scripts\BoardManager_AI.cs" />
     <Compile Include="Assets\MiniGames\Aireacio\Scripts\Manager_AI.cs" />
     <Compile Include="Assets\MiniGames\Aireacio\Scripts\RestartScript_AI.cs" />
+    <Compile Include="Assets\MiniGames\Aireacio\Scripts\SelectScene_AI.cs" />
     <Compile Include="Assets\MiniGames\Aireacio\Scripts\Tile_AI.cs" />
     <Compile Include="Assets\MiniGames\Desbaste\Scripts\Drag_DB.cs" />
     <Compile Include="Assets\MiniGames\Desbaste\Scripts\Draggable_DB.cs" />
     <Compile Include="Assets\MiniGames\Desbaste\Scripts\DropZone_DB.cs" />
     <Compile Include="Assets\MiniGames\Desbaste\Scripts\Escenario_DB.cs" />
     <Compile Include="Assets\MiniGames\Desbaste\Scripts\Manager_DB.cs" />
-    <Compile Include="Assets\MiniGames\Desbaste\Scripts\RestartScript_DB.cs" />
+    <Compile Include="Assets\MiniGames\Desbaste\Scripts\SelectSceneScript_DB.cs" />
     <Compile Include="Assets\MiniGames\Desbaste\Scripts\SpawnScript_DB.cs" />
     <Compile Include="Assets\MiniGames\Desbaste\Scripts\TrashMovement_DB.cs" />
     <Compile Include="Assets\MiniGames\Desinfeccio\Scripts\BossController_DES.cs" />
@@ -402,6 +403,7 @@
     <Compile Include="Assets\Scripts\Building.cs" />
     <Compile Include="Assets\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\MenuConstruir.cs" />
     <Compile Include="Assets\Scripts\Shop.cs" />
   </ItemGroup>
   <ItemGroup>

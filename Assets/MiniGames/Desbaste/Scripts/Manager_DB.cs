@@ -7,11 +7,16 @@ public class Manager_DB : MonoBehaviour {
     public static float timer;
     public static int score;
     public AudioClip GameOverClip;
+    public GameObject Instructions;
+    public GameObject GameOverText;
+    public GameObject TimeObject;
+    public GameObject ScoreObject;
+
+    public GameObject[] Spawns;
     AudioSource music;
     bool GameOverBool;
     Text TimeText;
     Text ScoreText;
-    GameObject GameOverText;
     Escenario_DB cinta1;
     Escenario_DB cinta2;
     Escenario_DB cinta3;
@@ -19,21 +24,19 @@ public class Manager_DB : MonoBehaviour {
     SpawnScript_DB spawn2;
     SpawnScript_DB spawn3;
     float timeInGame;
+    bool InGame;
 
     private void Start()
     {
+        InGame = false;
         music = gameObject.GetComponent<AudioSource>();
         cinta1 = GameObject.Find("Cinta1").GetComponent<Escenario_DB>();
         cinta2 = GameObject.Find("Cinta2").GetComponent<Escenario_DB>();
         cinta3 = GameObject.Find("Cinta3").GetComponent<Escenario_DB>();
-        spawn1 = GameObject.Find("Spawn1").GetComponent<SpawnScript_DB>();
-        spawn2 = GameObject.Find("Spawn2").GetComponent<SpawnScript_DB>();
-        spawn3 = GameObject.Find("Spawn3").GetComponent<SpawnScript_DB>();
+        
 
-        GameOverText = GameObject.Find("GameOverText");
-        GameOverText.SetActive(false);
-        TimeText = GameObject.Find("TimeText").GetComponent<Text>();
-        ScoreText = GameObject.Find("ScoreText").GetComponent<Text>();
+        TimeText = TimeObject.GetComponent<Text>();
+        ScoreText = ScoreObject.GetComponent<Text>();
         score = 0;
         timer = 60.0f;
         GameOverBool = false;
@@ -42,7 +45,7 @@ public class Manager_DB : MonoBehaviour {
 
     void Update()
     {
-        if (!GameOverBool)
+        if (!GameOverBool && InGame)
         {
             timer -= Time.deltaTime;
             int seconds = (int)timer % 60;
@@ -102,6 +105,18 @@ public class Manager_DB : MonoBehaviour {
         }
 
 
+    }
+    public void StartGame()
+    {
+        Instructions.SetActive(false);
+        for (int i = 0; i < Spawns.Length; i++)
+        {
+            Spawns[i].SetActive(true);
+        }
+        spawn1 = Spawns[0].GetComponent<SpawnScript_DB>();
+        spawn2 = Spawns[1].GetComponent<SpawnScript_DB>();
+        spawn3 = Spawns[2].GetComponent<SpawnScript_DB>();
+        InGame = true;
     }
 
 }
