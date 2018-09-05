@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/MiniGames/Aireacio/Scenes/Aireacio.unity
+=======
+- path: Assets/Scenes/Scene01.unity
+>>>>>>> 5c1dd51c1121b9734c125235ee0b4ece0b5697a7
   isLoaded: 1
   isActive: 1
