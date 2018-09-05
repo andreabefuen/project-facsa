@@ -13,6 +13,9 @@ public class CameraController : MonoBehaviour {
     private bool cameraMovementActivate = true;
 
 
+    private MenuConstruir menu;
+
+
 	// Use this for initialization
 	void Start () {
 		
@@ -28,6 +31,9 @@ public class CameraController : MonoBehaviour {
 
         //Cambiar la tecla de movimiento por un botón
         //Botón de bloqueo/desbloqueo de movimiento
+
+
+        /*
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Debug.Log("Movimiento activado");
@@ -38,8 +44,12 @@ public class CameraController : MonoBehaviour {
         {
             return;
         }
+        */
 
-
+        if (!menu.GetCameraActivate())
+        {
+            return;
+        }
 
         if (Input.GetKey("w") || Input.mousePosition.y >= Screen.height - panBorderThickness)
         {
