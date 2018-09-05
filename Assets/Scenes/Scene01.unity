@@ -232,10 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff00fd8510d23849a54a4e6be987712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
   startMoney: 10000
-  cantStandardStructure: 0
-  cantStructureFacsa: 0
 --- !u!4 &44324743 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4268566239838698, guid: a00a7b36b7b4275468b0474228bc08b5,
@@ -4072,7 +4069,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1100.2076, y: -96.05}
+  m_AnchoredPosition: {x: 1298.379, y: -96.05}
   m_SizeDelta: {x: 279.3, y: 195.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &915921283
@@ -4134,7 +4131,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1801574695}
-        m_MethodName: PurchaseAnotherStructure
+        m_MethodName: SelectEdification
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4545,7 +4542,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 820.9076, y: -96.05}
+  m_AnchoredPosition: {x: 1019.079, y: -96.05}
   m_SizeDelta: {x: 279.3, y: 195.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1037286341
@@ -4607,7 +4604,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1801574695}
-        m_MethodName: PurchaseStandardStructure
+        m_MethodName: SelectStandardStructure
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7525,9 +7522,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eb397c2a3c05ab4fbfb9803f8518eb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  structureFacsa:
+  edificationStructure:
     prefab: {fileID: 1435906603058686, guid: 463b1c03710462a429a62ac578e52578, type: 2}
-    cost: 100
+    cost: 0
   standardStructure:
     prefab: {fileID: 1956304850184938, guid: 90a1043ad5d486a498780c9a5762c93a, type: 2}
     cost: 200

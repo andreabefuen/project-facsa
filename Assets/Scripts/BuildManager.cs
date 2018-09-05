@@ -23,12 +23,11 @@ public class BuildManager : MonoBehaviour {
     public GameObject standardEdificationPrefab;
     public GameObject structureFacsa;
 
-    private GameObject structureToBuild; 
+    private StructureBlueprint structureToBuild;
+    private Building selectedNode;
 
-    public GameObject GetStructureToBuild()
-    {
-        return structureToBuild;
-    }
+    public bool CanBuild { get {  return structureToBuild != null;  } }
+    public bool HasMoney { get { return PlayerStats.Money >= structureToBuild.cost; } }
 
 	// Use this for initialization
 	/*void Start () {
@@ -37,15 +36,40 @@ public class BuildManager : MonoBehaviour {
         
     }*/
 
+     
 
-    public void SetStructureToBuild(GameObject select)
+    public void BuildStructureOn(Building node) //Construir en un nodo particular
     {
-        structureToBuild = select;
+
+
+        if(PlayerStats.Money < structureToBuild.cost)
+        {
+            Debug.Log("Nos enough money");
+            return;
+        }
+
+        PlayerStats.Money -= structureToBuild.cost;
+       GameObject structure = (GameObject) Instantiate(structureToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
+       node.edification = structure;
+
+        Debug.Log(PlayerStats.Money);
+
+
     }
-    
-	
-	// Update is called once per frame
-	void Update () {
+    public StructureBlueprint GetStructureToBuild()
+    {
+        return structureToBuild;
+    }
+
+    public void SelectStructureToBuild( StructureBlueprint structure)
+    {
+        structureToBuild = structure;
+        //Deselecionamos la zona
+    }
+
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 }

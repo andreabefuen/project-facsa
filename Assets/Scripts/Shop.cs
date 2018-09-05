@@ -8,7 +8,7 @@ public class Shop : MonoBehaviour {
 
     PlayerStats player;
 
-    public StructureBlueprint structureFacsa;
+    public StructureBlueprint edificationStructure;
     
     public StructureBlueprint standardStructure;
    
@@ -24,41 +24,23 @@ public class Shop : MonoBehaviour {
        
     }
 
-    public void PurchaseStandardStructure()
+    public void SelectStandardStructure()
     {
-        if (CanBuy(structureFacsa))
-        {
-            Debug.Log("Standard Structure Purchased");
-            buildManager.SetStructureToBuild(structureFacsa.prefab);
-            player.reduceMoney(structureFacsa.cost);
-            player.cantStructureFacsa++;
-        }
-        else
-        {
-            Debug.Log("You cant buy!");
-            Debug.Log(player.GetMoney());
-            buildManager.SetStructureToBuild(null);
-        }
+        
+        
+       Debug.Log("Standard Structure Purchased");
+       buildManager.SelectStructureToBuild(standardStructure);
+       
        
 
     }
 
-    public void PurchaseAnotherStructure()
+    public void SelectEdification()
     {
         Debug.Log("Another structure purchased");
-        buildManager.SetStructureToBuild(standardStructure.prefab);
+        buildManager.SelectStructureToBuild(edificationStructure);
     }
 
-	
-	
-    public bool CanBuy(StructureBlueprint structure)
-    {
-        if(player.GetMoney() >= structure.cost)
-        {
-            return true;
-        }
-        return false;
-    }
 
 	// Update is called once per frame
 	void Update () {

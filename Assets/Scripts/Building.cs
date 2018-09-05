@@ -3,29 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Building : MonoBehaviour {
+public class Building : MonoBehaviour
+{
 
+    //Colores para cada nodo del suelo, indicando si se puede construir o noç
     public Color hoverColor;
+    public Color notEnoughMoneyColor;
+
+    public Vector3 positionOffset;
 
 
     public BuildManager build;
 
     private MenuConstruir menu;
 
-    private GameObject edification;
+
+    [Header("Optional")]
+    public GameObject edification;
 
     private Renderer rend;
     private Color startColor;
 
 
-    PlayerStats player;
-   
 
 
     BuildManager buildManager;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         rend = GetComponent<Renderer>();
         startColor = rend.material.color;
 
@@ -34,7 +40,11 @@ public class Building : MonoBehaviour {
 
         menu = GameObject.Find("Construir").GetComponent<MenuConstruir>();
 
-        player = GameObject.Find("GameMaster").GetComponent<PlayerStats>();
+    }
+
+    public Vector3 GetBuildPosition()
+    {
+        return positionOffset + transform.position;
     }
 
     private void OnMouseDown()
@@ -44,19 +54,19 @@ public class Building : MonoBehaviour {
             return;
         }
 
-
-        if (buildManager.GetStructureToBuild() == null)
+        
+        if (!buildManager.CanBuild)
         {
             return;
         }
 
-        if(edification != null)
+        if (edification != null)
         {
             Debug.Log("Can't build there!"); //Display on screen
 
             //Comprobamos si hemos pulsado el botón de demoler
 
-            if (menu!=null &&   menu.GetDemolitionActivate())
+            if (menu != null && menu.GetDemolitionActivate())
             {
                 Debug.Log("DEMOLER"); //Devoler cierta cantidad de dinero
                 Destroy(edification);
@@ -64,31 +74,15 @@ public class Building : MonoBehaviour {
                 menu.SetDemolitionActivate(false);
                 Debug.Log("Desactivado la demolición");
                 return;
-                
+
             }
             return;
         }
 
-        //Build an edification
+        buildManager.BuildStructureOn(this);
 
-        if(player.cantStructureFacsa > 0)
-        {
-            GameObject structureToBuild = BuildManager.instance.GetStructureToBuild();
 
-            //edification = (GameObject)Instantiate(structureToBuild, transform.position, transform.rotation);
-
-            edification = (GameObject)Instantiate(structureToBuild, transform.position, structureToBuild.transform.rotation);
-            this.gameObject.GetComponent<MeshRenderer>().enabled = false;
-            //edification.transform.Rotate(-90, 0, 0);
-            player.cantStructureFacsa--;
-
-        }
-
-        else
-        {
-            Debug.Log("Compra edificios");
-            
-        }
+       
 
 
 
@@ -103,12 +97,21 @@ public class Building : MonoBehaviour {
             return;
         }
 
-        if (buildManager.GetStructureToBuild() == null)
+        if (!buildManager.CanBuild)
         {
             return;
         }
 
-        rend.material.color = hoverColor;
+        if (buildManager.HasMoney)
+        {
+            rend.material.color = hoverColor;
+        }
+        else
+        {
+            rend.material.color = notEnoughMoneyColor;
+        }
+
+        
     }
 
     private void OnMouseExit()
@@ -118,7 +121,9 @@ public class Building : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
-		
-	}
+    void Update()
+    {
+
+    }
 }
+
