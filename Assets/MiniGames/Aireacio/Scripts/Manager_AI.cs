@@ -17,11 +17,14 @@ public class Manager_AI : MonoBehaviour {
     Slider TimeSlider;
     Text ScoreText;
     GameObject GameOverText;
-
+    public GameObject Instructions;
+    public GameObject Board;
+    bool InGame;
     float timeInGame;
 
     private void Start()
     {
+        InGame = false;
         Physics2D.queriesStartInColliders = false;
         GameOverText = GameObject.Find("GameOverText");
         GameOverText.SetActive(false);
@@ -30,7 +33,6 @@ public class Manager_AI : MonoBehaviour {
         ScoreText = GameObject.Find("ScoreText").GetComponent<Text>();
         Turbina = GameObject.Find("Turbina");
         timer = 100;
-
         score = 0;
         numTurbin = 1;
         GameOverBool = false;
@@ -39,7 +41,7 @@ public class Manager_AI : MonoBehaviour {
 
     void Update()
     {
-        if (!GameOverBool)
+        if (!GameOverBool && InGame)
         {
             timer -= Time.deltaTime * (float)(numTurbin*0.75);
             if (timer > 100) timer = 100;
@@ -62,6 +64,12 @@ public class Manager_AI : MonoBehaviour {
 
             }
         }
+    }
+    public void StartGame()
+    {
+        Instructions.SetActive(false);
+        Board.SetActive(true);
+        InGame = true;
     }
     void GameOver()
     {
