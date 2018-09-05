@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 97
+  controlID: 63
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -89,8 +89,8 @@ MonoBehaviour:
     y: 0
     width: 408
     height: 573
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 98
+  controlID: 64
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 99
+  controlID: 65
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -252,8 +252,8 @@ MonoBehaviour:
     y: 0
     width: 952
     height: 573
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
@@ -323,20 +323,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\al341488\Desktop\project-facsa
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1040}
-    m_SelectedIDs: 320a0000
-    m_LastClickedID: 2610
-    m_ExpandedIDs: 000000002c0a0000820b00002c0c00004e0d0000900d00003c0e0000d80f0000e60f0000f61000001e12000050120000aa120000da130000fa150000e6160000f2170000ba1a0000e81b0000184200001a42000000ca9a3b
+    scrollPos: {x: 0, y: 1072}
+    m_SelectedIDs: 92150000
+    m_LastClickedID: 5522
+    m_ExpandedIDs: 000000002e0a0000840b00002e0c0000500d0000920d00003e0e0000da0f0000e80f0000f81000002012000052120000ac120000dc130000fc150000e8160000f4170000bc1a0000ee1b0000484200004a42000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -364,7 +364,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002c0a0000820b00002c0c00004e0d0000900d00003c0e0000d80f0000e60f0000f61000001e12000050120000aa120000da130000fa150000e6160000f2170000ba1a0000e81b0000184200001a420000
+    m_ExpandedIDs: 000000002e0a0000840b00002e0c0000500d0000920d00003e0e0000da0f0000e80f0000f81000002012000052120000ac120000dc130000fc150000e8160000f4170000bc1a0000ee1b0000484200004a420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -480,23 +480,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ac19fcff
-    m_LastClickedID: -255572
-    m_ExpandedIDs: 142bfafff69dffffe6fbffff000000008c1f0000b21f00005020000088200000
+    m_SelectedIDs: 961e0000
+    m_LastClickedID: 7830
+    m_ExpandedIDs: e6fbffff00000000f21f000070200000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: NotEnoughMoneyText
+      m_OriginalName: NotEnoughMoneyText
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 8408
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.13310196, y: 0.06743663, z: -0.009078245, w: -0.9887678}
     speed: 2
-    m_Value: {x: -0.13310143, y: 0.06743636, z: -0.009078209, w: -0.9887639}
+    m_Value: {x: -0.13310196, y: 0.06743662, z: -0.009078245, w: -0.98876774}
   m_Size:
     m_Target: 335.97223
     speed: 2
