@@ -12,6 +12,8 @@ public class Shop : MonoBehaviour {
     
     public StructureBlueprint standardStructure;
 
+    public StructureBlueprint factoryStructure;
+
 
     private List<StructureBlueprint> lista = new List<StructureBlueprint>();
 
@@ -26,6 +28,7 @@ public class Shop : MonoBehaviour {
         //AÑADIR CADA TIPO DE EDIFICIO A LA LISTA
         lista.Add(edificationStructure);
         lista.Add(standardStructure);
+        lista.Add(factoryStructure);
         //Debug.Log(lista.Count);
     }
 
@@ -44,6 +47,12 @@ public class Shop : MonoBehaviour {
     {
         Debug.Log("Another structure purchased");
         buildManager.SelectStructureToBuild(edificationStructure);
+    }
+
+    public void SelectFactory()
+    {
+        Debug.Log("Factory structure purchased");
+        buildManager.SelectStructureToBuild(factoryStructure);
     }
 
     //Lista que guarda todo los tipos de estructuras que hay

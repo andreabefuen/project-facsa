@@ -7,15 +7,20 @@ public class MenuConstruir : MonoBehaviour {
 
     BuildManager buildManager;
 
+    public GameObject shop;
+
+
+    private bool cameraActivate = true;
+    private bool demolitionActivate = false;
+    private bool shopActivate = false;
+
+
     // Use this for initialization
     void Start()
     {
         buildManager = BuildManager.instance;
     }
 
-
-    private bool cameraActivate = true;
-    private bool demolitionActivate = false;
 
     public bool GetCameraActivate()
     {
@@ -40,5 +45,12 @@ public class MenuConstruir : MonoBehaviour {
     public void Demolition()
     {
         demolitionActivate = !demolitionActivate;
+    }
+
+    public void BuyHUD()
+    {
+        shop.SetActive(!shopActivate);
+        shopActivate = !shopActivate;
+        
     }
 }

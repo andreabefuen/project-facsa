@@ -78,7 +78,7 @@ public class Building : MonoBehaviour
             }
             return;
         }
-
+        this.gameObject.GetComponent<MeshRenderer>().enabled = false;
         buildManager.BuildStructureOn(this);
 
 
