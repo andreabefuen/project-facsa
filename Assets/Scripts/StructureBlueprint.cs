@@ -10,4 +10,13 @@ public class StructureBlueprint {
     public GameObject prefab;
 
     public int cost;
+
+
+    //Variables de cada edificio
+
+    public int cantidadDineroPorDia;
+
+    public int tiempoEstropearseDias;
+
+    public int cantidadEdificios;
 }

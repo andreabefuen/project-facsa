@@ -11,9 +11,9 @@ public class Shop : MonoBehaviour {
     public StructureBlueprint edificationStructure;
     
     public StructureBlueprint standardStructure;
-   
 
-    
+
+    private List<StructureBlueprint> lista = new List<StructureBlueprint>();
 
     // Use this for initialization
     void Start()
@@ -21,7 +21,12 @@ public class Shop : MonoBehaviour {
         buildManager = BuildManager.instance;
 
         player = GameObject.Find("GameMaster").GetComponent<PlayerStats>();
-       
+
+
+        //AÑADIR CADA TIPO DE EDIFICIO A LA LISTA
+        lista.Add(edificationStructure);
+        lista.Add(standardStructure);
+        //Debug.Log(lista.Count);
     }
 
     public void SelectStandardStructure()
@@ -41,6 +46,12 @@ public class Shop : MonoBehaviour {
         buildManager.SelectStructureToBuild(edificationStructure);
     }
 
+    //Lista que guarda todo los tipos de estructuras que hay
+    public List<StructureBlueprint> TypesStructure()
+    {
+        
+        return lista;
+    }
 
 	// Update is called once per frame
 	void Update () {

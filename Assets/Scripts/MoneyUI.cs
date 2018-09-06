@@ -10,6 +10,7 @@ public class MoneyUI : MonoBehaviour {
     //public TextMeshPro moneyText;
     private TextMeshProUGUI moneyText;
 
+
 	// Use this for initialization
 	void Awake () {
         moneyText = GetComponent<TextMeshProUGUI>();

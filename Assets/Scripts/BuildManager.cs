@@ -36,7 +36,16 @@ public class BuildManager : MonoBehaviour {
         
     }*/
 
-     
+   //  public void HanPasadoDias()
+   // {
+   //     if(Timing.diasFicticios >= structureToBuild.tiempoEstropearseDias)
+   //     {
+   //         Debug.Log("Se estropea");
+   //     }
+   // }
+
+    
+ 
 
     public void BuildStructureOn(Building node) //Construir en un nodo particular
     {
@@ -49,10 +58,13 @@ public class BuildManager : MonoBehaviour {
         }
 
         PlayerStats.Money -= structureToBuild.cost;
-       GameObject structure = (GameObject) Instantiate(structureToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
+        structureToBuild.cantidadEdificios++; // Incrementamos el número de edificaciones de ese tipo
+       GameObject structure = (GameObject) Instantiate(structureToBuild.prefab, node.GetBuildPosition(), structureToBuild.prefab.transform.rotation);
        node.edification = structure;
 
+
         Debug.Log(PlayerStats.Money);
+        Debug.Log(structureToBuild.cantidadEdificios);
 
 
     }

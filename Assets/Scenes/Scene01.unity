@@ -252,8 +252,7 @@ MonoBehaviour:
   minutosFicticios: 0
   horas: 0
   horasFicticios: 0
-  dias: 0
-  diasFicticios: 0
+  shopGameObject: {fileID: 1801574690}
 --- !u!4 &44324743 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4268566239838698, guid: a00a7b36b7b4275468b0474228bc08b5,
@@ -2387,7 +2386,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -125}
+  m_AnchoredPosition: {x: 100, y: -75}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &413119563
@@ -2409,7 +2408,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: '- '
+  m_text: date
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3634d6323e465f84f9cefc3f944f13b0, type: 2}
   m_sharedMaterial: {fileID: 21310341886562096, guid: 3634d6323e465f84f9cefc3f944f13b0,
@@ -2424,9 +2423,9 @@ MonoBehaviour:
   m_enableVertexGradient: 1
   m_fontColorGradient:
     topLeft: {r: 0.0754717, g: 0.021003917, b: 0.021003917, a: 1}
-    topRight: {r: 0.21698111, g: 0.058339257, b: 0.058339257, a: 1}
-    bottomLeft: {r: 1, g: 0.034868218, b: 0, a: 1}
-    bottomRight: {r: 1, g: 0.12517296, b: 0.05098039, a: 1}
+    topRight: {r: 0, g: 0.27296638, b: 1, a: 1}
+    bottomLeft: {r: 0.3495016, g: 0.37628, b: 0.6226415, a: 1}
+    bottomRight: {r: 0.05098039, g: 0.27827674, b: 1, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -2478,9 +2477,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -302.77396, w: 0}
   m_textInfo:
     textComponent: {fileID: 413119563}
-    characterCount: 2
+    characterCount: 4
     spriteCount: 0
-    spaceCount: 1
+    spaceCount: 0
     wordCount: 1
     linkCount: 0
     lineCount: 1
@@ -8246,9 +8245,15 @@ MonoBehaviour:
   edificationStructure:
     prefab: {fileID: 1435906603058686, guid: 463b1c03710462a429a62ac578e52578, type: 2}
     cost: 250
+    cantidadDineroPorDia: 10
+    tiempoEstropearseDias: 5
+    cantidadEdificios: 0
   standardStructure:
     prefab: {fileID: 1956304850184938, guid: 90a1043ad5d486a498780c9a5762c93a, type: 2}
     cost: 300
+    cantidadDineroPorDia: 20
+    tiempoEstropearseDias: 6
+    cantidadEdificios: 0
 --- !u!1001 &1802195122
 Prefab:
   m_ObjectHideFlags: 0
@@ -8706,7 +8711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1935596413
 RectTransform:
   m_ObjectHideFlags: 0
