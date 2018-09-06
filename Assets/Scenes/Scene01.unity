@@ -2908,6 +2908,11 @@ Prefab:
       propertyPath: m_Name
       value: Node (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114893061970329084, guid: a00a7b36b7b4275468b0474228bc08b5,
+        type: 2}
+      propertyPath: agua
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a00a7b36b7b4275468b0474228bc08b5, type: 2}
   m_IsPrefabAsset: 0

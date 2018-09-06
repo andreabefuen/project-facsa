@@ -25,6 +25,9 @@ public class Building : MonoBehaviour
     private Color startColor;
 
 
+    //STATS DE CADA NODO 
+    public bool water;
+
 
 
     BuildManager buildManager;
