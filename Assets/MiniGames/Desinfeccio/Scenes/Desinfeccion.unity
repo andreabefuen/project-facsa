@@ -332,7 +332,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Contaminaci\xF3"
+  m_Text: "Contaminaci\xF3n"
 --- !u!222 &179902738
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1160,7 +1160,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Vida enemic
+  m_Text: Vida jefe
 --- !u!222 &690956022
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1491,7 +1491,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Puntuaci\xF3\n120000"
+  m_Text: "Puntuaci\xF3n\n120000"
 --- !u!222 &1032538541
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2682,7 +2682,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Vides
+  m_Text: 'Vidas
 
     3'
 --- !u!222 &1460393225

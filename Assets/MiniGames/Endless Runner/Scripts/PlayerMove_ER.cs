@@ -27,62 +27,66 @@ public class PlayerMove_ER : MonoBehaviour {
     // Update is called once per frame
     private void FixedUpdate()
     {
-        GetComponent<Rigidbody>().velocity = new Vector3(horizVel, GetComponent<Rigidbody>().velocity.y, speed);
-        if (horizVel == -3f && transform.position.x <= -0.9 && laneNum == 1)
+        if (Manager_ER.InGame)
         {
-            horizVel = 0f;
+            GetComponent<Rigidbody>().velocity = new Vector3(horizVel, GetComponent<Rigidbody>().velocity.y, speed);
+            if (horizVel == -3f && transform.position.x <= -0.9 && laneNum == 1)
+            {
+                horizVel = 0f;
 
-        }
-        else if (horizVel == 3f && transform.position.x >= 0.9 && laneNum == 3)
-        {
-            horizVel = 0f;
+            }
+            else if (horizVel == 3f && transform.position.x >= 0.9 && laneNum == 3)
+            {
+                horizVel = 0f;
 
-        }
-        else if (horizVel == -3f && transform.position.x <= 0.1 && laneNum == 2)
-        {
-            horizVel = 0f;
+            }
+            else if (horizVel == -3f && transform.position.x <= 0.1 && laneNum == 2)
+            {
+                horizVel = 0f;
 
-        }
-        else if (horizVel == 3f && transform.position.x >= -0.1 && laneNum == 2)
-        {
-            horizVel = 0f;
+            }
+            else if (horizVel == 3f && transform.position.x >= -0.1 && laneNum == 2)
+            {
+                horizVel = 0f;
 
+            }
         }
     }
     void Update () {
-       
-        ScoreText.text = "Puntuació: " + score.ToString("00000");
-        if (transform.position.y < -1)
+        if (Manager_ER.InGame)
         {
-            GameOver();
+            ScoreText.text = "Puntuación: " + score.ToString("00000");
+            if (transform.position.y < -1)
+            {
+                GameOver();
+            }
+            if (Input.GetKeyDown(moveL) && transform.position.x > -1 && !controlLock && laneNum > 1)
+            {
+
+                horizVel = -3f;
+                laneNum--;
+                StartCoroutine(stopSlide());
+                controlLock = true;
+            }
+
+
+            if (Input.GetKeyDown(moveR) && transform.position.x < 1 && !controlLock && laneNum < 3)
+            {
+                horizVel = 3f;
+                laneNum++;
+                controlLock = true;
+                StartCoroutine(stopSlide());
+
+
+            }
+
+            if (Input.GetKeyDown(Jump) && OnTheGround)
+            {
+                OnTheGround = false;
+                GetComponent<Rigidbody>().AddForce(new Vector3(0, 600, 0));
+            }
+
         }
-        if (Input.GetKeyDown(moveL)  &&  transform.position.x >-1 && !controlLock && laneNum > 1)
-        {
-
-            horizVel = -3f;
-            laneNum--;
-            StartCoroutine(stopSlide());
-            controlLock = true;
-        }
-        
-
-        if (Input.GetKeyDown(moveR) && transform.position.x < 1 && !controlLock && laneNum < 3)
-        {
-            horizVel = 3f;
-            laneNum++;
-            controlLock = true;
-            StartCoroutine(stopSlide());
-
-
-        }
-        
-        if (Input.GetKeyDown(Jump) && OnTheGround)
-        {
-            OnTheGround = false;
-            GetComponent<Rigidbody>().AddForce(new Vector3(0, 600, 0));
-        }
-
-
     }
     private void OnCollisionEnter(Collision collision)
     {

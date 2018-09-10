@@ -180,7 +180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aireaci\xF3"
+  m_Text: "Aireaci\xF3n"
 --- !u!222 &11803473
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -255,7 +255,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Filtraci\xF3"
+  m_Text: "Filtraci\xF3n"
 --- !u!222 &121306216
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -330,7 +330,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Fang Aer\xF2bica"
+  m_Text: "Barro Aer\xF2bica"
 --- !u!222 &149311423
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 190498848}
   - component: {fileID: 190498847}
   m_Layer: 5
-  m_Name: AireacioButton
+  m_Name: AireacionButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -516,7 +516,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Aireacio
+          m_StringArgument: Aireacion
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1158,7 +1158,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Desinfecci\xF3"
+  m_Text: "Desinfecci\xF3n"
 --- !u!222 &452561422
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1536,7 +1536,7 @@ GameObject:
   - component: {fileID: 736491730}
   - component: {fileID: 736491729}
   m_Layer: 5
-  m_Name: DesinfeccioButton
+  m_Name: DesinfeccionButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1619,7 +1619,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Desinfeccio
+          m_StringArgument: Desinfeccion
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -2014,7 +2014,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Fang Anaer\xF2bica"
+  m_Text: "Barro Anaer\xF2bica"
 --- !u!222 &968174315
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2299,7 +2299,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Simon Diu
+  m_Text: Simon Dice
 --- !u!222 &1327508393
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2374,7 +2374,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ordre de la\nDepuraci\xF3"
+  m_Text: "Orden de la\nDepuraci\xF3n"
 --- !u!222 &1375844423
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2449,7 +2449,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Tractament\nF\xEDsic - Qu\xEDmic"
+  m_Text: "Tratamiento\nF\xEDsico - Qu\xEDmico"
 --- !u!222 &1441960031
 CanvasRenderer:
   m_ObjectHideFlags: 0

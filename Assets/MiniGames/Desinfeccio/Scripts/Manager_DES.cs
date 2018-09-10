@@ -63,8 +63,8 @@ public class Manager_DES : MonoBehaviour
     {
         if (!GameOverBool && InGame)
         {
-            VidesText.text = "Vides:\n" + Vides;
-            PuntuacioText.text = "Puntuació\n" + Score;
+            VidesText.text = "Vidas:\n" + Vides;
+            PuntuacioText.text = "Puntuación\n" + Score;
             if (Contaminacio > 100)
                 Contaminacio = 100;
             ContaminacioSlider.value = Contaminacio;

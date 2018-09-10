@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Scene01.unity
+=======
+- path: Assets/MiniGames/FangAerobica/Scenes/FangAerobica.unity
+>>>>>>> 06bd67ed7744eb2edfe0065614b54a8ebfcf5538
   isLoaded: 1
   isActive: 1

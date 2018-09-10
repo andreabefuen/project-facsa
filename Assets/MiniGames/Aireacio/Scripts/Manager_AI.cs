@@ -55,7 +55,7 @@ public class Manager_AI : MonoBehaviour {
                 else if (numTurbin == 7) BoardManager_AI.ElementsEliminate -= 1;
             }
            // TimeText.text = "Time: " + min.ToString("00") + ":" + seconds.ToString("00");
-            ScoreText.text = "Score\n" + score.ToString("0000") + "\nNum.Turbines\n" + numTurbin;
+            ScoreText.text = "Score\n" + score.ToString("0000") + "\nNum.Turbinas\n" + numTurbin;
             Turbina.transform.Rotate(0, 0, Time.deltaTime*(velocity*2));
             if (timer <= 0)
             {

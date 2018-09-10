@@ -40,7 +40,7 @@ public class Ball_FA : MonoBehaviour
         if (Input.GetButtonDown("BallFA") == true)
         {
             // check if is the first play
-            if (!ballIsActive)
+            if (!ballIsActive && Manager_FA.InGame)
             {
                 audioSource.clip = plop;
 

@@ -1363,7 +1363,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TEMPS   VELOCITAT
+  m_Text: TIEMPO VELOCIDAD
 --- !u!222 &959963457
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2132,7 +2132,7 @@ RectTransform:
   m_GameObject: {fileID: 1756447504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.02, y: 1.02, z: 1.02}
   m_Children:
   - {fileID: 558791355}
   - {fileID: 1540531059}
@@ -2427,7 +2427,7 @@ MonoBehaviour:
 
     0000
 
-    Num.Turbines
+    Num.Turbinas
 
     1
 
