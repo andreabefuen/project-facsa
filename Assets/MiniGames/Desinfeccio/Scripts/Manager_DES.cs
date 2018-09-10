@@ -13,13 +13,14 @@ public class Manager_DES : MonoBehaviour
     public static int MaxBullets;
     public static int BossLive;
     public static int Fase;
+    public GameObject Instructions;
     private bool ChangeFase;
     public static int EnemiesInScene;
     public GameObject Boss;
     public GameObject Spawner1;
     public GameObject Spawner2;
     bool GameOverBool;
-
+    bool InGame;
     AudioSource Music;
     public AudioClip GameOverMusic;
 
@@ -36,6 +37,7 @@ public class Manager_DES : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        InGame = false;
         GameOverBool = false;
         Score = 0;
         Vides = 5;
@@ -59,7 +61,7 @@ public class Manager_DES : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameOverBool)
+        if (!GameOverBool && InGame)
         {
             VidesText.text = "Vides:\n" + Vides;
             PuntuacioText.text = "Puntuació\n" + Score;
@@ -78,6 +80,11 @@ public class Manager_DES : MonoBehaviour
     }
 
     //distintas fases
+    public void StartGame()
+    {
+        Instructions.SetActive(false);
+        InGame = true;
+    } 
     void GameOver()
     {
         GameOverBool = true;
