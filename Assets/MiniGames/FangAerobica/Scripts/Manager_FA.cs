@@ -8,10 +8,13 @@ public class Manager_FA : MonoBehaviour {
     public static int Vides;
     public static int Oxigen;
     public static bool BallInGame;
+    public static bool InGame;
     float InitBallSpeed;
     float InitPlayerSpeed;
     public int Nivell;
     public GameObject NewLine;
+    public GameObject Instructions;
+
     int numNewLines;
     int timeNewLine;
     Text VidesText;
@@ -27,6 +30,7 @@ public class Manager_FA : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        InGame = false;
         Score = 0;
         Vides = 3;
         timeNewLine = 3000;
@@ -85,4 +89,10 @@ public class Manager_FA : MonoBehaviour {
             VidesText.text = "Vides:\n";
         }
     }
+    public void StartGame()
+    {
+        InGame = true;
+        Instructions.SetActive(false);
+
+}
 }
