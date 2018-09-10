@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MiniGames/FangAerobica/Scenes/FangAerobica.unity
+- path: Assets/MiniGames/Ordre de la depuracio/Scene/Ordre depuracio.unity
   isLoaded: 1
   isActive: 1

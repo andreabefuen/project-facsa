@@ -7,15 +7,18 @@ public class ManagerScript_OD : MonoBehaviour {
 
     public GameObject SortZone;
     public GameObject WinText;
+    public GameObject Instructions;
     public AudioSource Sound;
     public AudioClip WinClip;
     public AudioClip FailClip;
+    public static bool Ingame;
     Transform Sort;
 
 	// Use this for initialization
 	void Start () {
         WinText.SetActive(false);
         Sort = SortZone.transform;
+        Ingame = false;
 	}
 	
 	// Update is called once per frame
@@ -81,6 +84,11 @@ public class ManagerScript_OD : MonoBehaviour {
                 StartCoroutine(Fallo());
             }
         }
+    }
+    public void StartGame()
+    {
+        Ingame = true;
+        Instructions.SetActive(false);
     }
     void Win()
     {

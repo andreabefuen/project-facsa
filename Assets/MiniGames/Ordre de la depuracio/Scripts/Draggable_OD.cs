@@ -21,59 +21,66 @@ public class Draggable_OD : MonoBehaviour, IBeginDragHandler,IDragHandler, IEndD
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Sound.clip = DragSound;
-        Sound.Play();
-        //Debug.Log("OnBeginDrag");
-        placeholder = new GameObject();
-        placeholder.transform.SetParent(this.transform.parent);
-        LayoutElement le = placeholder.AddComponent<LayoutElement>();
-        le.preferredWidth = this.GetComponent<LayoutElement>().preferredWidth;
-        le.preferredHeight = this.GetComponent<LayoutElement>().preferredHeight;
-        le.flexibleHeight = 0;
-        le.flexibleWidth = 0;
+        if (ManagerScript_OD.Ingame)
+        {
+            Sound.clip = DragSound;
+            Sound.Play();
+            //Debug.Log("OnBeginDrag");
+            placeholder = new GameObject();
+            placeholder.transform.SetParent(this.transform.parent);
+            LayoutElement le = placeholder.AddComponent<LayoutElement>();
+            le.preferredWidth = this.GetComponent<LayoutElement>().preferredWidth;
+            le.preferredHeight = this.GetComponent<LayoutElement>().preferredHeight;
+            le.flexibleHeight = 0;
+            le.flexibleWidth = 0;
 
-        placeholder.transform.SetSiblingIndex(this.transform.GetSiblingIndex());
-        parentToReturnTo = this.transform.parent;
-        placeholderParent = parentToReturnTo;
+            placeholder.transform.SetSiblingIndex(this.transform.GetSiblingIndex());
+            parentToReturnTo = this.transform.parent;
+            placeholderParent = parentToReturnTo;
 
-        this.transform.SetParent(this.transform.parent.parent);
-        GetComponent<CanvasGroup>().blocksRaycasts = false;
-
+            this.transform.SetParent(this.transform.parent.parent);
+            GetComponent<CanvasGroup>().blocksRaycasts = false;
+        }
     }
     public void OnDrag(PointerEventData eventData)
     {
-       // Debug.Log("OnDrag");
-        this.transform.position = eventData.position;
-
-        if (placeholder.transform.parent != placeholderParent)
-            placeholder.transform.SetParent(placeholderParent);
-
-        int newSiblingIndex = placeholderParent.childCount;
-
-        for(int i =0; i < placeholderParent.childCount; i++)
+        if (ManagerScript_OD.Ingame)
         {
-            if(this.transform.position.x < placeholderParent.GetChild(i).position.x)
-            {
-                newSiblingIndex = i;
-                if (placeholder.transform.GetSiblingIndex() < newSiblingIndex)
-                    newSiblingIndex--;
-                break;
-            }
-        }
-        placeholder.transform.SetSiblingIndex(newSiblingIndex);
+            // Debug.Log("OnDrag");
+            this.transform.position = eventData.position;
 
+            if (placeholder.transform.parent != placeholderParent)
+                placeholder.transform.SetParent(placeholderParent);
+
+            int newSiblingIndex = placeholderParent.childCount;
+
+            for (int i = 0; i < placeholderParent.childCount; i++)
+            {
+                if (this.transform.position.x < placeholderParent.GetChild(i).position.x)
+                {
+                    newSiblingIndex = i;
+                    if (placeholder.transform.GetSiblingIndex() < newSiblingIndex)
+                        newSiblingIndex--;
+                    break;
+                }
+            }
+            placeholder.transform.SetSiblingIndex(newSiblingIndex);
+        }
     }
     public void OnEndDrag(PointerEventData eventData)
     {
-        Sound.clip = DropSound;
-        Sound.Play();
-        this.transform.SetParent(parentToReturnTo);
-        this.transform.SetSiblingIndex(placeholder.transform.GetSiblingIndex());
+        if (ManagerScript_OD.Ingame)
+        {
+            Sound.clip = DropSound;
+            Sound.Play();
+            this.transform.SetParent(parentToReturnTo);
+            this.transform.SetSiblingIndex(placeholder.transform.GetSiblingIndex());
 
-        GetComponent<CanvasGroup>().blocksRaycasts = true;
-       // Debug.Log("OnEndDrag");
-        Destroy(placeholder);
-        GameObject.Find("Manager").GetComponent<ManagerScript_OD>().Compare();
+            GetComponent<CanvasGroup>().blocksRaycasts = true;
+            // Debug.Log("OnEndDrag");
+            Destroy(placeholder);
+            GameObject.Find("Manager").GetComponent<ManagerScript_OD>().Compare();
+        }
     }
 
 }

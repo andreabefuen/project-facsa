@@ -12,7 +12,9 @@ public class ManagerScript_FAN : MonoBehaviour {
     public GameObject GoodBactery;
     public GameObject BadBactery;
     public GameObject GameOverObject;
+    public GameObject Instructions;
     public AudioSource GameOverSound;
+    public static bool InGame;
     int TimeToRespawn;
     Text ScoreText;
     Text LifeText;
@@ -22,6 +24,7 @@ public class ManagerScript_FAN : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        InGame = false;
         Physics.gravity = new Vector3(0, -4.4F, -11);
         GameOverObject.SetActive(false);
         TimeToRespawn = 0;
@@ -44,10 +47,10 @@ public class ManagerScript_FAN : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (BallInGame)
+        if (BallInGame && InGame)
         {
-            ScoreText.text = "Puntuació\n" + Score.ToString("00000");
-            LifeText.text = "Boles\n " + Life;
+            ScoreText.text = "Puntuación\n" + Score.ToString("00000");
+            LifeText.text = "Pelota\n " + Life;
             if (TimeToRespawn <= 0 || NumBacteries <3)
             {
                 CreateBactery();
@@ -62,6 +65,11 @@ public class ManagerScript_FAN : MonoBehaviour {
         {
             GameOver();
         }
+    }
+    public void StartGame()
+    {
+        InGame = true;
+        Instructions.SetActive(false);
     }
     void GameOver()
     {

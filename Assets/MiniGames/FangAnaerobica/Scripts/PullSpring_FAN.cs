@@ -15,7 +15,7 @@ public class PullSpring_FAN : MonoBehaviour {
     public AudioSource Sound;
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButton(inputButtonName))
+        if (Input.GetButton(inputButtonName) && ManagerScript_FAN.InGame)
         {
             //As the button is held down, slowly move the piece
             if (moveCount < distance)
