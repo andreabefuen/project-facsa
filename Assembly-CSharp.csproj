@@ -93,11 +93,12 @@
     <Compile Include="Assets\MiniGames\Desordenado\Scripts\ProvetaScript_DD.cs" />
     <Compile Include="Assets\MiniGames\Desordenado\Scripts\SelectSceneScript_DES.cs" />
     <Compile Include="Assets\MiniGames\Endless Runner\Scripts\Effects_ER.cs" />
+    <Compile Include="Assets\MiniGames\Endless Runner\Scripts\Manager_ER.cs" />
     <Compile Include="Assets\MiniGames\Endless Runner\Scripts\MoveCamera_ER.cs" />
     <Compile Include="Assets\MiniGames\Endless Runner\Scripts\ObstacleScript_ER.cs" />
     <Compile Include="Assets\MiniGames\Endless Runner\Scripts\PlatformsManager_ER.cs" />
     <Compile Include="Assets\MiniGames\Endless Runner\Scripts\PlayerMove_ER.cs" />
-    <Compile Include="Assets\MiniGames\Endless Runner\Scripts\RestartScript_ER.cs" />
+    <Compile Include="Assets\MiniGames\Endless Runner\Scripts\SelectSceneScript_ER.cs" />
     <Compile Include="Assets\MiniGames\Endless Runner\Scripts\SpawnScript_ER.cs" />
     <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Ball_FA.cs" />
     <Compile Include="Assets\MiniGames\FangAerobica\Scripts\BrickScript_FA.cs" />
@@ -105,7 +106,7 @@
     <Compile Include="Assets\MiniGames\FangAerobica\Scripts\MovingPlayer_FA.cs" />
     <Compile Include="Assets\MiniGames\FangAerobica\Scripts\NewLine_FA.cs" />
     <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Oxygen_FA.cs" />
-    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\RestartScript_FA.cs" />
+    <Compile Include="Assets\MiniGames\FangAerobica\Scripts\SelectSceneScript_FA.cs" />
     <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Spawner_FA.cs" />
     <Compile Include="Assets\MiniGames\FangAerobica\Scripts\Spawner2_FA.cs" />
     <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\BallInGameScript_FAN.cs" />
@@ -156,6 +157,7 @@
     <Compile Include="Assets\Scripts\Building.cs" />
     <Compile Include="Assets\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\CreateEnviroment.cs" />
     <Compile Include="Assets\Scripts\MenuConstruir.cs" />
     <Compile Include="Assets\Scripts\MoneyUI.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
