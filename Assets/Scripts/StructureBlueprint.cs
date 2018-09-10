@@ -19,4 +19,6 @@ public class StructureBlueprint {
     public int tiempoEstropearseDias;
 
     public int cantidadEdificios;
+
+    public bool needWater;
 }

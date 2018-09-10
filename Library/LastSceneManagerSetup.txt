@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/MiniGames/Ordre de la depuracio/Scene/Ordre depuracio.unity
+=======
+- path: Assets/Scenes/Scene01.unity
+>>>>>>> 0268c95cc2aede8f8a11cf47fa47fcf7cca86cdd
   isLoaded: 1
   isActive: 1

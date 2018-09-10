@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4595594152224980}
   - component: {fileID: 33034760443908004}
   - component: {fileID: 23616820372213290}
+  - component: {fileID: 205494649834906096}
   m_Layer: 0
   m_Name: mantenimiento
   m_TagString: Untagged
@@ -87,3 +88,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1956304850184938}
   m_Mesh: {fileID: 4300000, guid: e7acb3895a3ce4d41b210f18916cad8c, type: 3}
+--- !u!205 &205494649834906096
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956304850184938}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.17499995, y: 2.3086367, z: -0.17499995}
+  m_Size: 4.6172733
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.2209924
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23285274337327590, guid: 6ffc5991b924a484fb3deb36ca0f27b3,
+        type: 2}
+  - screenRelativeHeight: 0.059860837
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23860850817406670, guid: 6ffc5991b924a484fb3deb36ca0f27b3,
+        type: 2}
+  - screenRelativeHeight: 0.015197331
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23550775551088400, guid: 6ffc5991b924a484fb3deb36ca0f27b3,
+        type: 2}
+  m_Enabled: 1

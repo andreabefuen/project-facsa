@@ -57,6 +57,12 @@ public class BuildManager : MonoBehaviour {
             return;
         }
 
+        if(structureToBuild.needWater == true && node.water == false)
+        {
+            Debug.Log("NO WATER CANT BUILD HERE");
+            return;
+        }
+
         PlayerStats.Money -= structureToBuild.cost;
         structureToBuild.cantidadEdificios++; // Incrementamos el número de edificaciones de ese tipo
        GameObject structure = (GameObject) Instantiate(structureToBuild.prefab, node.GetBuildPosition(), structureToBuild.prefab.transform.rotation);
@@ -65,6 +71,7 @@ public class BuildManager : MonoBehaviour {
 
         Debug.Log(PlayerStats.Money);
         Debug.Log(structureToBuild.cantidadEdificios);
+        node.gameObject.GetComponent<MeshRenderer>().enabled = false;
 
 
     }
