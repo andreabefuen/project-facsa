@@ -158,6 +158,7 @@
     <Compile Include="Assets\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CreateEnviroment.cs" />
+    <Compile Include="Assets\Scripts\GraphsAlgorithms.cs" />
     <Compile Include="Assets\Scripts\MenuConstruir.cs" />
     <Compile Include="Assets\Scripts\MoneyUI.cs" />
     <Compile Include="Assets\Scripts\Nodo.cs" />

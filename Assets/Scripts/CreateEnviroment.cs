@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CreateEnviroment : MonoBehaviour {
 
-    public int filas;
-    public int columnas;
+    public  int filas;
+    public  int columnas;
 
     public GameObject node;
 
@@ -142,8 +142,23 @@ public class CreateEnviroment : MonoBehaviour {
         }
     }
 
-	// Update is called once per frame
-	void Update () {
+    public int GetFilas()
+    {
+        return filas;
+    }
+
+    public int GetColumnas()
+    {
+        return columnas;
+    }
+
+    public GameObject[,] GetMatrix()
+    {
+        return matrix;
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 }

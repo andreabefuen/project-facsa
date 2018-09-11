@@ -16,15 +16,24 @@ public class BuildManager : MonoBehaviour {
         }
         instance = this;
 
-     
+
         
+
+
     }
 
-    public GameObject standardEdificationPrefab;
-    public GameObject structureFacsa;
+    //public GameObject standardEdificationPrefab;
+    //public GameObject structureFacsa;
+
+    public GraphsAlgorithms graphs;
 
     private StructureBlueprint structureToBuild;
     private Building selectedNode;
+
+   
+
+
+
 
     public bool CanBuild { get {  return structureToBuild != null;  } }
     public bool HasMoney { get { return PlayerStats.Money >= structureToBuild.cost; } }
@@ -68,6 +77,22 @@ public class BuildManager : MonoBehaviour {
        GameObject structure = (GameObject) Instantiate(structureToBuild.prefab, node.GetBuildPosition(), structureToBuild.prefab.transform.rotation);
        node.edification = structure;
 
+        //Debug.Log("Antes de la llamada");
+        //GraphsAlgorithms graphsAlgorithms = gameObject.GetComponent<GraphsAlgorithms>();
+        //
+        //
+        ////Afecta a todos los nodos cercanos (un rango de 3)
+        //
+       // Debug.Log("Antes de la llamada");
+      // graphs.BusquedaEnAnchura(node.gameObject.GetComponent<Nodo>());
+      //graphsAlgorithms.BusquedaEnAnchura(node.gameObject.GetComponent<Nodo>());
+
+
+        
+       
+        
+
+        
 
         Debug.Log(PlayerStats.Money);
         Debug.Log(structureToBuild.cantidadEdificios);

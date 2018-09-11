@@ -188,6 +188,7 @@ GameObject:
   - component: {fileID: 29769591}
   - component: {fileID: 29769592}
   - component: {fileID: 29769593}
+  - component: {fileID: 29769594}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -219,10 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4823fe07d75c094db599ed7b394fd74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardEdificationPrefab: {fileID: 1956304850184938, guid: 90a1043ad5d486a498780c9a5762c93a,
-    type: 2}
-  structureFacsa: {fileID: 1435906603058686, guid: 463b1c03710462a429a62ac578e52578,
-    type: 2}
+  graphs: {fileID: 0}
 --- !u!114 &29769591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,9 +263,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661fceee87182ad40a4070000d9c2e50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  filas: 20
-  columnas: 20
+  filas: 10
+  columnas: 10
   node: {fileID: 1217418152948852, guid: a00a7b36b7b4275468b0474228bc08b5, type: 2}
+--- !u!114 &29769594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29769588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfedab5ed3a4c8046a415e0fe618a97e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &44324743 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4268566239838698, guid: a00a7b36b7b4275468b0474228bc08b5,
@@ -7798,6 +7807,7 @@ MonoBehaviour:
     tiempoEstropearseDias: 5
     cantidadEdificios: 0
     needWater: 0
+    levelOfSatisfaction: 100
   standardStructure:
     prefab: {fileID: 1956304850184938, guid: 90a1043ad5d486a498780c9a5762c93a, type: 2}
     cost: 300
@@ -7805,6 +7815,7 @@ MonoBehaviour:
     tiempoEstropearseDias: 6
     cantidadEdificios: 0
     needWater: 1
+    levelOfSatisfaction: 200
   factoryStructure:
     prefab: {fileID: 1377274802750890, guid: e1fce69e087c4d84780d5bb75f09e93c, type: 2}
     cost: 400
@@ -7812,6 +7823,7 @@ MonoBehaviour:
     tiempoEstropearseDias: 4
     cantidadEdificios: 0
     needWater: 0
+    levelOfSatisfaction: -100
 --- !u!1001 &1802195122
 Prefab:
   m_ObjectHideFlags: 0

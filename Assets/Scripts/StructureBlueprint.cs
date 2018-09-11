@@ -21,4 +21,6 @@ public class StructureBlueprint {
     public int cantidadEdificios;
 
     public bool needWater;
+
+    public int levelOfSatisfaction;
 }
