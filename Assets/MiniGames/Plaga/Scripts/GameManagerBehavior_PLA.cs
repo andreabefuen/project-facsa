@@ -54,6 +54,7 @@ public class GameManagerBehavior_PLA : MonoBehaviour {
             scoreLabel.text = "PUNTUACIÓN: " + score;
         }
     }
+    public Text NewRecord;
     public Text healthLabel;
     public GameObject[] healthIndicator;
     private int health;
@@ -76,6 +77,11 @@ public class GameManagerBehavior_PLA : MonoBehaviour {
             // 3
             if (health <= 0 && !gameOver)
             {
+                if (ScoreManager_MM.PLAScore < Score)
+                {
+                    ScoreManager_MM.PLAScore = Score;
+                    NewRecord.text = "Nuevo Record: " + Score;
+                }
                 gameOver = true;
                 GameOverObj.SetActive(true);
                 GameObject road = GameObject.Find("Road");

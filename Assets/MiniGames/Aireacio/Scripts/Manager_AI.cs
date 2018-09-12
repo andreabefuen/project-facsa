@@ -11,6 +11,8 @@ public class Manager_AI : MonoBehaviour {
     public AudioSource music;
     public AudioSource newLevel;
     public AudioClip GameOverMusic;
+    public Text NewScore;
+
     bool GameOverBool;
     GameObject Turbina;
     Slider VelSlider;
@@ -72,7 +74,12 @@ public class Manager_AI : MonoBehaviour {
         InGame = true;
     }
     void GameOver()
-    {
+    {   if (ScoreManager_MM.AIScore < score)
+        {
+            ScoreManager_MM.AIScore = score;
+            NewScore.text = "Nuevo Record: " + score;
+        }
+
         Physics2D.queriesStartInColliders = true;
         GameOverText.SetActive(true);
         music.Stop();

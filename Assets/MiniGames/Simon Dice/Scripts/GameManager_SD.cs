@@ -10,7 +10,7 @@ public class GameManager_SD : MonoBehaviour
     public GameObject Instructions;
 
     public List<ButtonSetting_SD> buttonSettings;
-
+    public Text NewRecord;
     public Transform gameFieldPanelTransform;
     public GameObject GameOverPanel;
     List<GameObject> gameButtons;
@@ -129,6 +129,11 @@ public class GameManager_SD : MonoBehaviour
     }
     void GameOver()
     {
+        if (ScoreManager_MM.SDScore < score)
+        {
+            ScoreManager_MM.SDScore = score;
+            NewRecord.text = "Nuevo Record: " + score;
+        }
         gameOver = true;
         inputEnabled = false;
         GameOverPanel.SetActive(true);

@@ -14,7 +14,7 @@ public class Manager_FA : MonoBehaviour {
     public int Nivell;
     public GameObject NewLine;
     public GameObject Instructions;
-
+    public Text NewRecord;
     int numNewLines;
     int timeNewLine;
     Text VidesText;
@@ -75,6 +75,11 @@ public class Manager_FA : MonoBehaviour {
             GameOverText.SetActive(true);
             if (!gameOver)
             {
+                if (ScoreManager_MM.FAScore < Score)
+                {
+                    ScoreManager_MM.FAScore = Score;
+                    NewRecord.text = "Nuevo Record: " + Score;
+                }
                 music.Stop();
                 music.loop = false;
                 music.clip = gameoversound;

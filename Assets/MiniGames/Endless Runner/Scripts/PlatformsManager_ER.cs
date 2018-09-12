@@ -6,6 +6,7 @@ public class PlatformsManager_ER : MonoBehaviour {
 
     public GameObject Spawner;
     public GameObject[] Platforms;
+    public  PlayerMove_ER player;
     int numPlatforms = 6;
     public List<GameObject> PlatformsList = new List<GameObject>();
 
@@ -34,6 +35,7 @@ public class PlatformsManager_ER : MonoBehaviour {
             numPlatforms++;
             Destroy(PlatformsList[0]);
             PlatformsList.RemoveAt(0);
+            player.score += 100;
         }
     }
 }

@@ -11,9 +11,10 @@ public class PlayerMove_ER : MonoBehaviour {
     public float speed = 4;
     float horizVel = 0f;
     int laneNum = 2;
+    public Text NewRecord;
     public bool controlLock = false;
     public bool OnTheGround = true;
-    int score = 0;
+    public int score = 0;
     public Text ScoreText;
     public GameObject GameOverObject;
     public GameObject Music;
@@ -111,6 +112,12 @@ public class PlayerMove_ER : MonoBehaviour {
         controlLock = false;
     }
     void GameOver() {
+        if (ScoreManager_MM.ERScore < score)
+        {
+            ScoreManager_MM.ERScore = score;
+            NewRecord.text = "Nuevo Record: " + score;
+        }
+
         musicAudiosource.loop = false;
         musicAudiosource.Stop();
         musicAudiosource.clip = Explosion;

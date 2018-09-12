@@ -13,6 +13,7 @@ public class Manager_DES : MonoBehaviour
     public static int MaxBullets;
     public static int BossLive;
     public static int Fase;
+    public Text NewRecord;
     public GameObject Instructions;
     private bool ChangeFase;
     public static int EnemiesInScene;
@@ -87,6 +88,11 @@ public class Manager_DES : MonoBehaviour
     } 
     void GameOver()
     {
+        if (ScoreManager_MM.DESScore < Score)
+        {
+            ScoreManager_MM.DESScore = Score;
+            NewRecord.text = "Nuevo Record: " + Score;
+        }
         GameOverBool = true;
         VidesText.text = "Vides:\n";
         Music.Stop();

@@ -11,6 +11,7 @@ public class Manager_DB : MonoBehaviour {
     public GameObject GameOverText;
     public GameObject TimeObject;
     public GameObject ScoreObject;
+    public Text NewRecord;
 
     public GameObject[] Spawns;
     AudioSource music;
@@ -70,6 +71,11 @@ public class Manager_DB : MonoBehaviour {
     }
     void GameOver()
     {
+        if (ScoreManager_MM.DBScore < score)
+        {
+            ScoreManager_MM.DBScore = score;
+            NewRecord.text = "Nuevo Record: " + score;
+        }
         GameOverText.SetActive(true);
         music.Stop();
         music.loop = false;

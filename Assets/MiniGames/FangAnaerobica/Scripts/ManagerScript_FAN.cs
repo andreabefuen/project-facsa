@@ -15,6 +15,7 @@ public class ManagerScript_FAN : MonoBehaviour {
     public GameObject Instructions;
     public AudioSource GameOverSound;
     public static bool InGame;
+    public Text NewRecord;
     int TimeToRespawn;
     Text ScoreText;
     Text LifeText;
@@ -73,6 +74,11 @@ public class ManagerScript_FAN : MonoBehaviour {
     }
     void GameOver()
     {
+        if (ScoreManager_MM.FANScore < Score)
+        {
+            ScoreManager_MM.FANScore = Score;
+            NewRecord.text = "Nuevo Record: " + Score;
+        }
         Physics.gravity = new Vector3(0, -9.81f, 0);
 
         ScoreText.text = "Puntuació\n" + Score.ToString("00000");
