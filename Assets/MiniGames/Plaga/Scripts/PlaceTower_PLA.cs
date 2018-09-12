@@ -27,21 +27,24 @@ public class PlaceTower_PLA : MonoBehaviour {
     void OnMouseUp()
     {
         //2
-        if (CanPlaceTower())
+        if (gameManager.InGame)
         {
-            //3
-            tower = (GameObject)
-              Instantiate(towerPrefab, transform.position, Quaternion.identity);
-            //4
-            SoundPlace.Play();
+            if (CanPlaceTower())
+            {
+                //3
+                tower = (GameObject)
+                  Instantiate(towerPrefab, transform.position, Quaternion.identity);
+                //4
+                SoundPlace.Play();
 
-            gameManager.Gold -= tower.GetComponent<TowerData_PLA>().CurrentLevel.cost;
-        }
-        else if (CanUpgradeTower())
-        {
-            SoundPlace.Play();
-            tower.GetComponent<TowerData_PLA>().IncreaseLevel();
-            gameManager.Gold -= tower.GetComponent<TowerData_PLA>().CurrentLevel.cost;
+                gameManager.Gold -= tower.GetComponent<TowerData_PLA>().CurrentLevel.cost;
+            }
+            else if (CanUpgradeTower())
+            {
+                SoundPlace.Play();
+                tower.GetComponent<TowerData_PLA>().IncreaseLevel();
+                gameManager.Gold -= tower.GetComponent<TowerData_PLA>().CurrentLevel.cost;
+            }
         }
     }
     private bool CanUpgradeTower()

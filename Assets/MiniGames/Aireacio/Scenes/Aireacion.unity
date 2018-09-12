@@ -1535,10 +1535,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "El juego consiste en alinear 3 elementos o m\xE1s del mismo color. Para
-    ello deberas hacer click en un elemento y en otro cercano para cambiarlos.\nA
-    medidas que hagas puntos recuperaras tiempo y subira la velocidad de la turbina.
-    Cada vez que cargues una turbina se sumara y la siguiente hara que el tiempo se
-    gaste m\xE1s rapidamente."
+    ello deberas hacer clic en un elemento y en otro cercano para cambiarlos.\nA medidas
+    que hagas puntos recuperaras tiempo y subir\xE1 la velocidad de la turbina. Cada
+    vez que cargues una turbina se sumar\xE1 y la siguiente hara que el tiempo se
+    gaste m\xE1s r\xE1pidamente."
 --- !u!222 &1412670887
 CanvasRenderer:
   m_ObjectHideFlags: 0

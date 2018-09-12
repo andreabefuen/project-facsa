@@ -1539,10 +1539,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "En este juego deberemos reciclar la basura que vaya apareciendo arrastrandola
-    con el raton al contenedor correspondiente.\nGris - organico\tamarillo - envases\nAzul
-    - carton    \tverde - cristal\nSi acertamos se nos sumara tiempo y puntos si fallamos
-    nos restara tiempo."
+  m_Text: "En este juego deberemos reciclar la basura que vaya apareciendo arrastr\xE1ndola
+    con el rat\xF3n al contenedor correspondiente.\nGris - org\xE1nico\tamarillo -
+    envases\nAzul - cart\xF3n    \tverde - cristal\nSi acertamos se nos sumara tiempo
+    y puntos si fallamos nos restara tiempo."
 --- !u!222 &1101819615
 CanvasRenderer:
   m_ObjectHideFlags: 0

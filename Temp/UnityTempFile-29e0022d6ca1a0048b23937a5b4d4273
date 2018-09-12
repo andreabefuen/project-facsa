@@ -4,10 +4,6 @@
 -langversion:4
 -out:Temp/Assembly-CSharp.dll
 -nostdlib
--r:Library/ScriptAssemblies/UnityEditor.StandardEvents.dll
--r:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
--r:Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
--r:Library/ScriptAssemblies/Unity.TextMeshPro.dll
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -70,6 +66,10 @@
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEditor.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/Unity.Locator.dll"
+-r:Library/ScriptAssemblies/UnityEditor.StandardEvents.dll
+-r:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+-r:Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+-r:Library/ScriptAssemblies/Unity.TextMeshPro.dll
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
@@ -242,7 +242,7 @@ Assets/MiniGames/FangAnaerobica/Scripts/ManagerScript_FAN.cs
 Assets/MiniGames/FangAnaerobica/Scripts/OutOfBounds_FAN.cs
 Assets/MiniGames/FangAnaerobica/Scripts/PaddleController_FAN.cs
 Assets/MiniGames/FangAnaerobica/Scripts/PullSpring_FAN.cs
-Assets/MiniGames/FangAnaerobica/Scripts/RestartScript_FAN.cs
+Assets/MiniGames/FangAnaerobica/Scripts/SelectSceneScript_FAN.cs
 Assets/MiniGames/Filtracio/Scripts/ManagerScript_FIL.cs
 Assets/MiniGames/Filtracio/Scripts/RestartScript_FIL.cs
 Assets/MiniGames/Filtracio/Scripts/SelectScript_FIL.cs
@@ -250,7 +250,7 @@ Assets/MiniGames/Filtracio/Scripts/SelectScript2_FIL.cs
 "Assets/MiniGames/Ordre de la depuracio/Scripts/Draggable_OD.cs"
 "Assets/MiniGames/Ordre de la depuracio/Scripts/DropZone_OD.cs"
 "Assets/MiniGames/Ordre de la depuracio/Scripts/ManagerScript_OD.cs"
-"Assets/MiniGames/Ordre de la depuracio/Scripts/RestartScript_OD.cs"
+"Assets/MiniGames/Ordre de la depuracio/Scripts/SelectSceneScript_OD.cs"
 "Assets/MiniGames/Ordre de la depuracio/Scripts/SpawnCards_OD.cs"
 Assets/MiniGames/Plaga/Scripts/BulletBehavior_PLA.cs
 Assets/MiniGames/Plaga/Scripts/CameraShake_PLA.cs
@@ -259,7 +259,7 @@ Assets/MiniGames/Plaga/Scripts/GameManagerBehavior_PLA.cs
 Assets/MiniGames/Plaga/Scripts/HealthBar_PLA.cs
 Assets/MiniGames/Plaga/Scripts/MoveEnemy_PLA.cs
 Assets/MiniGames/Plaga/Scripts/PlaceTower_PLA.cs
-Assets/MiniGames/Plaga/Scripts/RestartScript_PLA.cs
+Assets/MiniGames/Plaga/Scripts/SelectSceneScript_PLA.cs
 Assets/MiniGames/Plaga/Scripts/ShootEnemies_PLA.cs
 Assets/MiniGames/Plaga/Scripts/SpawnEnemy_PLA.cs
 Assets/MiniGames/Plaga/Scripts/TowerData_PLA.cs
@@ -267,6 +267,7 @@ Assets/MiniGames/PuzzleGame/Scripts/Constants_PG.cs
 Assets/MiniGames/PuzzleGame/Scripts/Game_PG.cs
 Assets/MiniGames/PuzzleGame/Scripts/Piece_PG.cs
 Assets/MiniGames/PuzzleGame/Scripts/PiecesScript_PG.cs
+Assets/MiniGames/PuzzleGame/Scripts/SelectSceneScript_PG.cs
 Assets/MiniGames/SelectScene_MM.cs
 "Assets/MiniGames/Simon Dice/Plugins/LeanTween/LeanAudio.cs"
 "Assets/MiniGames/Simon Dice/Plugins/LeanTween/LeanTest.cs"
@@ -283,6 +284,7 @@ Assets/MiniGames/SelectScene_MM.cs
 Assets/Scripts/Building.cs
 Assets/Scripts/BuildManager.cs
 Assets/Scripts/CameraController.cs
+Assets/Scripts/CreateEnviroment.cs
 Assets/Scripts/MenuConstruir.cs
 Assets/Scripts/MoneyUI.cs
 Assets/Scripts/PlayerStats.cs

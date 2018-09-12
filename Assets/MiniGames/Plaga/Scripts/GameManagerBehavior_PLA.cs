@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class GameManagerBehavior_PLA : MonoBehaviour {
 
+    public bool InGame;
+    public GameObject Instructions;
     public Text goldLabel;
     public GameObject GameOverObj;
     AudioSource music;
@@ -111,10 +113,12 @@ public class GameManagerBehavior_PLA : MonoBehaviour {
         Health = 5;
         Score = 0;
         music = GetComponent<AudioSource>();
+        InGame = false;
     }
-    private void Update()
+    public void StartGame()
     {
-        
+        InGame = true;
+        Instructions.SetActive(false);
     }
 
 }

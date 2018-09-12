@@ -9,6 +9,7 @@ public class ManagerScript_FIL : MonoBehaviour {
 
     public GameObject Panel;
     public GameObject WinPanel;
+    public GameObject Instructions;
     public GameObject GameOverPanel;
     public AudioClip WinSound;
     public AudioClip GameoverSound;
@@ -18,20 +19,27 @@ public class ManagerScript_FIL : MonoBehaviour {
     GameObject Select2;
     int aciertos;
     bool win, GameOverBool;
+    public bool InGame;
     float timer;
     public Text TimeText;
 	// Use this for initialization
 	void Start () {
         Music = GetComponent<AudioSource>();
-        Spawn();
         aciertos = 0;
         timer = 60f;
         win = false;
         GameOverBool = false;
+        InGame = false;
+    }
+    public void StartGame()
+    {
+        Spawn();
+        InGame = true;
+        Instructions.SetActive(false);
     }
     void Update()
     {
-        if (!win && !GameOverBool)
+        if (!win && !GameOverBool && InGame)
         {
             timer -= Time.deltaTime;
             int seconds = (int)timer % 60;

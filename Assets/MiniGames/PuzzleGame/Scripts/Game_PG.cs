@@ -114,19 +114,12 @@ public class Game_PG : MonoBehaviour
     {
         switch (gameState)
         {
-            case GameState.Start:
-                if (Input.GetMouseButtonUp(0))
-                {
-                    Shuffle();
-                    gameState = GameState.Playing;
-                }
-                break;
             case GameState.Playing:
                 timer += Time.deltaTime;
                 int seconds = (int)timer % 60;
                 int min = (int)timer / 60;                
 
-                TimeText.text = "Tiempo\n" + min.ToString("00") + ":" + seconds.ToString("00");
+                TimeText.text = "Tiempo: " + min.ToString("00") + ":" + seconds.ToString("00");
                 CheckPieceInput();
                
                 break;
@@ -134,19 +127,18 @@ public class Game_PG : MonoBehaviour
                 AnimateMovement(PieceToAnimate, Time.deltaTime);
                 CheckIfAnimationEnded();
                 break;
-            case GameState.End:
-                if (Input.GetMouseButtonUp(0))
-                {   //reload
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                }
-                break;
+            
             default:
                 break;
         }
 
 
     }
-
+    public void StartGame()
+    {
+        Shuffle();
+        gameState = GameState.Playing;
+    }
    
     /// <summary>
     /// boring UI, waiting for uGUI framework :)
@@ -165,7 +157,7 @@ public class Game_PG : MonoBehaviour
             case GameState.End:
                 int seconds = (int)timer % 60;
                 int min = (int)timer / 60;
-                EndText.text = min.ToString("00") + ":" + seconds.ToString("00")+"\n Haz click para empezar nuevo puzzle.";
+                EndText.text = min.ToString("00") + ":" + seconds.ToString("00");
 
                 EndPanel.SetActive(true);
                 break;

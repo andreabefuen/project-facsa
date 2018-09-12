@@ -2,17 +2,16 @@
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class RestartScript_FIL : MonoBehaviour
+public class SelectSceneScript_FIL : MonoBehaviour
 {
 
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
     }
-    public void NextLevel()
+    public void SelectMiniGame(string scene)
     {
-        SceneManager.LoadScene("Filtracio2"); // loads current scene
+        SceneManager.LoadScene(scene); // loads current scene
     }
-
 
 }

@@ -7,6 +7,7 @@ public class GameManager_SD : MonoBehaviour
 {
 
     public GameObject gameButtonPrefab;
+    public GameObject Instructions;
 
     public List<ButtonSetting_SD> buttonSettings;
 
@@ -35,7 +36,6 @@ public class GameManager_SD : MonoBehaviour
         CreateGameButton(2, new Vector3(-64, -64));
         CreateGameButton(3, new Vector3(64, -64));
         ScoreText.text = "Puntuació: " + score.ToString("00000");
-        StartCoroutine(SimonSays());
     }
 
     void CreateGameButton(int index, Vector3 position)
@@ -52,7 +52,12 @@ public class GameManager_SD : MonoBehaviour
 
         gameButtons.Add(gameButton);
     }
+    public void StartGame()
+    {
+        Instructions.SetActive(false);
+        StartCoroutine(SimonSays());
 
+    }
     void PlayAudio(int index)
     {
         //Debug.Log(index);

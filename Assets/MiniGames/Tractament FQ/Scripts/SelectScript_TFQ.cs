@@ -24,22 +24,24 @@ public class SelectScript_TFQ : MonoBehaviour {
     }
     // Update is called once per frame
     public void Select () {
-		if (!selected)
+        if (managerSc.InGame)
         {
-            Sound.clip = SelecClip;
-            Sound.Play();
-            managerSc.AddArray(pos, gameObject.tag);
-            selected = true;
-            Aura.enabled = true;
+            if (!selected)
+            {
+                Sound.clip = SelecClip;
+                Sound.Play();
+                managerSc.AddArray(pos, gameObject.tag);
+                selected = true;
+                Aura.enabled = true;
+            }
+            else
+            {
+                Sound.clip = DeselecClip;
+                Sound.Play();
+                managerSc.RemoveArray(pos);
+                selected = false;
+                Aura.enabled = false;
+            }
         }
-        else
-        {
-            Sound.clip = DeselecClip;
-            Sound.Play();
-            managerSc.RemoveArray(pos);
-            selected = false;
-            Aura.enabled = false;
-        }
-    
 	}
 }

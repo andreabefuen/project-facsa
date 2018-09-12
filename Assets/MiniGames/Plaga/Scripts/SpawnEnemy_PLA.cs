@@ -27,27 +27,30 @@ public class SpawnEnemy_PLA : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        // 1
-        int currentWave = gameManager.Wave;
-        //Debug.Log(enemiesSpawned + " spawneados de " + maxEnemies);
-
-        //Debug.Log(EnemiesKilled + " eliminados de " + maxEnemies);
-
-        // 2
-        float timeInterval = Time.time - lastSpawnTime;
-        if (((enemiesSpawned == 0 && timeInterval > timeBetweenWaves) || timeInterval > spawnInterval) && enemiesSpawned < maxEnemies)
+        if (gameManager.InGame)
         {
-            newWave();
-        }      
-        if(EnemiesKilled >= maxEnemies)
-        {
-            //lastSpawnTime = Time.time;
-            maxEnemies = maxEnemies + 5;
-            spawnInterval = spawnInterval / 1.3f;
-            enemiesSpawned = 0;
-            EnemiesKilled = 0;
-            gameManager.Wave ++;
+            // 1
+            int currentWave = gameManager.Wave;
+            //Debug.Log(enemiesSpawned + " spawneados de " + maxEnemies);
 
+            //Debug.Log(EnemiesKilled + " eliminados de " + maxEnemies);
+
+            // 2
+            float timeInterval = Time.time - lastSpawnTime;
+            if (((enemiesSpawned == 0 && timeInterval > timeBetweenWaves) || timeInterval > spawnInterval) && enemiesSpawned < maxEnemies)
+            {
+                newWave();
+            }
+            if (EnemiesKilled >= maxEnemies)
+            {
+                //lastSpawnTime = Time.time;
+                maxEnemies = maxEnemies + 5;
+                spawnInterval = spawnInterval / 1.3f;
+                enemiesSpawned = 0;
+                EnemiesKilled = 0;
+                gameManager.Wave++;
+
+            }
         }
       
     }

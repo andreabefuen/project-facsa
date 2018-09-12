@@ -25,7 +25,7 @@ public class SelectScript_FIL : MonoBehaviour {
     }
     // Update is called once per frame
     public void Select () {
-        Debug.Log(selected);
+        //Debug.Log(selected);
 		if (!selected)
         {
             Sound.clip = SelecClip;

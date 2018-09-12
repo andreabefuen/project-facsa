@@ -1083,9 +1083,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "El objetivo del juego es eliminar tantos virus como puedas para evitar
-    que contaminen el agua. Perderas si se te acaban las vidas o el agua acaba contaminada.\nUtiliza
-    las flechas de direcci\xF3n para moverte y la tecla espacio para disparar.\nLas
-    naves verdes te daran vidas y las esferas azules sanearan el agua.\n\nBuena suerte"
+    que contaminen el agua. Perder\xE1s si se te acaban las vidas o el agua acaba
+    contaminada.\nUtiliza las flechas de direcci\xF3n para moverte y la tecla espacio
+    para disparar.\nLas naves verdes te dar\xE1n vidas y las esferas azules sanearan
+    el agua.\n\nBuena suerte"
 --- !u!222 &666308519
 CanvasRenderer:
   m_ObjectHideFlags: 0

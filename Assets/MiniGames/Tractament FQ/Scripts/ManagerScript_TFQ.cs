@@ -9,6 +9,8 @@ public class ManagerScript_TFQ : MonoBehaviour {
     public GameObject Panel;
     public GameObject WinPanel;
     public AudioClip WinSound;
+    public GameObject Instructions;
+    public bool InGame;
     AudioSource Music;
     string[] elements;
     int elemInArray;
@@ -18,7 +20,12 @@ public class ManagerScript_TFQ : MonoBehaviour {
         elements = new string[20];
         elemInArray = 0;
         Spawn();
-
+        InGame = false;
+    }
+    public void StartGame()
+    {
+        InGame = true;
+        Instructions.SetActive(false);
     }
     void Spawn()
     {

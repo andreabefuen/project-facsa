@@ -2,12 +2,16 @@
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class RestartScript_TFQ : MonoBehaviour
+public class SelectSceneScript_PG : MonoBehaviour
 {
 
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
+    }
+    public void SelectMiniGame(string scene)
+    {
+        SceneManager.LoadScene(scene); // loads current scene
     }
 
 }

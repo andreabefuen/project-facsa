@@ -31,7 +31,7 @@ public class SelectScript2_FIL : MonoBehaviour {
     }
     // Update is called once per frame
     public void Select () {
-        Debug.Log(selected);
+        //Debug.Log(selected);
 		if (!selected)
         {
             Debug.Log("Select");

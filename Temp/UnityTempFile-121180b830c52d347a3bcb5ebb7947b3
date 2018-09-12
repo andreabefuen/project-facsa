@@ -259,7 +259,7 @@ Assets/MiniGames/Plaga/Scripts/GameManagerBehavior_PLA.cs
 Assets/MiniGames/Plaga/Scripts/HealthBar_PLA.cs
 Assets/MiniGames/Plaga/Scripts/MoveEnemy_PLA.cs
 Assets/MiniGames/Plaga/Scripts/PlaceTower_PLA.cs
-Assets/MiniGames/Plaga/Scripts/RestartScript_PLA.cs
+Assets/MiniGames/Plaga/Scripts/SelectSceneScript_PLA.cs
 Assets/MiniGames/Plaga/Scripts/ShootEnemies_PLA.cs
 Assets/MiniGames/Plaga/Scripts/SpawnEnemy_PLA.cs
 Assets/MiniGames/Plaga/Scripts/TowerData_PLA.cs
@@ -267,6 +267,7 @@ Assets/MiniGames/PuzzleGame/Scripts/Constants_PG.cs
 Assets/MiniGames/PuzzleGame/Scripts/Game_PG.cs
 Assets/MiniGames/PuzzleGame/Scripts/Piece_PG.cs
 Assets/MiniGames/PuzzleGame/Scripts/PiecesScript_PG.cs
+Assets/MiniGames/PuzzleGame/Scripts/SelectSceneScript_PG.cs
 Assets/MiniGames/SelectScene_MM.cs
 "Assets/MiniGames/Simon Dice/Plugins/LeanTween/LeanAudio.cs"
 "Assets/MiniGames/Simon Dice/Plugins/LeanTween/LeanTest.cs"
@@ -276,13 +277,14 @@ Assets/MiniGames/SelectScene_MM.cs
 "Assets/MiniGames/Simon Dice/Plugins/LeanTween/LTSeq.cs"
 "Assets/MiniGames/Simon Dice/Scripts/ButtonSetting_SD.cs"
 "Assets/MiniGames/Simon Dice/Scripts/GameManager_SD.cs"
-"Assets/MiniGames/Simon Dice/Scripts/RestartScript_SD.cs"
+"Assets/MiniGames/Simon Dice/Scripts/SelectSceneScript_SD.cs"
 "Assets/MiniGames/Tractament FQ/Scripts/ManagerScript_TFQ.cs"
-"Assets/MiniGames/Tractament FQ/Scripts/RestartScript_TFQ.cs"
+"Assets/MiniGames/Tractament FQ/Scripts/SelectSceneScript_TFQ.cs"
 "Assets/MiniGames/Tractament FQ/Scripts/SelectScript_TFQ.cs"
 Assets/Scripts/Building.cs
 Assets/Scripts/BuildManager.cs
 Assets/Scripts/CameraController.cs
+Assets/Scripts/CreateEnviroment.cs
 Assets/Scripts/MenuConstruir.cs
 Assets/Scripts/MoneyUI.cs
 Assets/Scripts/PlayerStats.cs

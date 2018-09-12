@@ -104,7 +104,6 @@
 -define:UNITY_2018
 -define:PLATFORM_ARCH_64
 -define:UNITY_64
--define:UNITY_ANALYTICS
 -define:ENABLE_AUDIO
 -define:ENABLE_CACHING
 -define:ENABLE_CLOTH
@@ -250,7 +249,7 @@ Assets/MiniGames/Filtracio/Scripts/SelectScript2_FIL.cs
 "Assets/MiniGames/Ordre de la depuracio/Scripts/Draggable_OD.cs"
 "Assets/MiniGames/Ordre de la depuracio/Scripts/DropZone_OD.cs"
 "Assets/MiniGames/Ordre de la depuracio/Scripts/ManagerScript_OD.cs"
-"Assets/MiniGames/Ordre de la depuracio/Scripts/RestartScript_OD.cs"
+"Assets/MiniGames/Ordre de la depuracio/Scripts/SelectSceneScript_OD.cs"
 "Assets/MiniGames/Ordre de la depuracio/Scripts/SpawnCards_OD.cs"
 Assets/MiniGames/Plaga/Scripts/BulletBehavior_PLA.cs
 Assets/MiniGames/Plaga/Scripts/CameraShake_PLA.cs
@@ -283,6 +282,7 @@ Assets/MiniGames/SelectScene_MM.cs
 Assets/Scripts/Building.cs
 Assets/Scripts/BuildManager.cs
 Assets/Scripts/CameraController.cs
+Assets/Scripts/CreateEnviroment.cs
 Assets/Scripts/MenuConstruir.cs
 Assets/Scripts/MoneyUI.cs
 Assets/Scripts/PlayerStats.cs
