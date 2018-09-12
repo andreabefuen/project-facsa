@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 public class Building : MonoBehaviour
 {
 
+    public GraphsAlgorithms graphsAlgorithms;
+
     //Colores para cada nodo del suelo, indicando si se puede construir o noç
     public Color hoverColor;
     public Color notEnoughMoneyColor;
@@ -28,6 +30,7 @@ public class Building : MonoBehaviour
     //STATS DE CADA NODO 
     [Header("STATS")]
     public bool water;
+    public int totalSatisfaction;
 
 
 
@@ -43,6 +46,8 @@ public class Building : MonoBehaviour
         buildManager = BuildManager.instance;
 
         menu = GameObject.Find("Construir").GetComponent<MenuConstruir>();
+
+        graphsAlgorithms = GameObject.Find("GameMaster").GetComponent<GraphsAlgorithms>();
 
     }
 
@@ -84,6 +89,11 @@ public class Building : MonoBehaviour
         }
         //this.gameObject.GetComponent<MeshRenderer>().enabled = false;
         buildManager.BuildStructureOn(this);
+
+        Debug.Log("ANTES DE LA LLAMADA");
+
+        graphsAlgorithms.BusquedaEnAnchura(this.gameObject.GetComponent<Nodo>());
+
 
 
        

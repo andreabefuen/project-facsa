@@ -116,7 +116,7 @@
     <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\OutOfBounds_FAN.cs" />
     <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\PaddleController_FAN.cs" />
     <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\PullSpring_FAN.cs" />
-    <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\RestartScript_FAN.cs" />
+    <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\SelectSceneScript_FAN.cs" />
     <Compile Include="Assets\MiniGames\Filtracio\Scripts\ManagerScript_FIL.cs" />
     <Compile Include="Assets\MiniGames\Filtracio\Scripts\RestartScript_FIL.cs" />
     <Compile Include="Assets\MiniGames\Filtracio\Scripts\SelectScript_FIL.cs" />
@@ -124,7 +124,7 @@
     <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\Draggable_OD.cs" />
     <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\DropZone_OD.cs" />
     <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\ManagerScript_OD.cs" />
-    <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\RestartScript_OD.cs" />
+    <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\SelectSceneScript_OD.cs" />
     <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\SpawnCards_OD.cs" />
     <Compile Include="Assets\MiniGames\Plaga\Scripts\BulletBehavior_PLA.cs" />
     <Compile Include="Assets\MiniGames\Plaga\Scripts\CameraShake_PLA.cs" />
@@ -158,8 +158,10 @@
     <Compile Include="Assets\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CreateEnviroment.cs" />
+    <Compile Include="Assets\Scripts\GraphsAlgorithms.cs" />
     <Compile Include="Assets\Scripts\MenuConstruir.cs" />
     <Compile Include="Assets\Scripts\MoneyUI.cs" />
+    <Compile Include="Assets\Scripts\Nodo.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Shop.cs" />
     <Compile Include="Assets\Scripts\StructureBlueprint.cs" />
