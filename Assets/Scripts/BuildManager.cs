@@ -38,6 +38,18 @@ public class BuildManager : MonoBehaviour {
     public bool CanBuild { get {  return structureToBuild != null;  } }
     public bool HasMoney { get { return PlayerStats.Money >= structureToBuild.cost; } }
 
+    public void BrokenStructure()
+    {
+        if(Timing.diasFicticios > structureToBuild.tiempoEstropearseDias)
+        {
+            Debug.Log("Se ha estropeado");
+            //structureToBuild.prefab.gameObject.GetComponent<Renderer>().material.color = Color.red;
+
+
+
+        }
+    }
+
 	// Use this for initialization
 	/*void Start () {
         
@@ -76,6 +88,9 @@ public class BuildManager : MonoBehaviour {
         structureToBuild.cantidadEdificios++; // Incrementamos el número de edificaciones de ese tipo
        GameObject structure = (GameObject) Instantiate(structureToBuild.prefab, node.GetBuildPosition(), structureToBuild.prefab.transform.rotation);
        node.edification = structure;
+        structureToBuild.nodeAsociate = node;
+
+        EdificationUpdate.listOfStructures.Add(structureToBuild);
 
         //Debug.Log("Antes de la llamada");
         //GraphsAlgorithms graphsAlgorithms = gameObject.GetComponent<GraphsAlgorithms>();
@@ -114,6 +129,6 @@ public class BuildManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		
+        
 	}
 }

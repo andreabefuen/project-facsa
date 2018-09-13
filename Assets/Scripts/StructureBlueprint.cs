@@ -23,4 +23,7 @@ public class StructureBlueprint {
     public bool needWater;
 
     public int levelOfSatisfaction;
+
+
+    public Building nodeAsociate;
 }
