@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/MiniGames/IO/Scenes/IO.unity
+=======
+- path: Assets/Scenes/Scene01.unity
+>>>>>>> 8904f9542b8688d140113f6947eb32ab57908968
   isLoaded: 1
   isActive: 1

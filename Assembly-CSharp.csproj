@@ -118,7 +118,7 @@
     <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\PullSpring_FAN.cs" />
     <Compile Include="Assets\MiniGames\FangAnaerobica\Scripts\SelectSceneScript_FAN.cs" />
     <Compile Include="Assets\MiniGames\Filtracio\Scripts\ManagerScript_FIL.cs" />
-    <Compile Include="Assets\MiniGames\Filtracio\Scripts\RestartScript_FIL.cs" />
+    <Compile Include="Assets\MiniGames\Filtracio\Scripts\SelectSceneScript_FIL.cs" />
     <Compile Include="Assets\MiniGames\Filtracio\Scripts\SelectScript_FIL.cs" />
     <Compile Include="Assets\MiniGames\Filtracio\Scripts\SelectScript2_FIL.cs" />
     <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\Draggable_OD.cs" />
@@ -133,7 +133,7 @@
     <Compile Include="Assets\MiniGames\Plaga\Scripts\HealthBar_PLA.cs" />
     <Compile Include="Assets\MiniGames\Plaga\Scripts\MoveEnemy_PLA.cs" />
     <Compile Include="Assets\MiniGames\Plaga\Scripts\PlaceTower_PLA.cs" />
-    <Compile Include="Assets\MiniGames\Plaga\Scripts\RestartScript_PLA.cs" />
+    <Compile Include="Assets\MiniGames\Plaga\Scripts\SelectSceneScript_PLA.cs" />
     <Compile Include="Assets\MiniGames\Plaga\Scripts\ShootEnemies_PLA.cs" />
     <Compile Include="Assets\MiniGames\Plaga\Scripts\SpawnEnemy_PLA.cs" />
     <Compile Include="Assets\MiniGames\Plaga\Scripts\TowerData_PLA.cs" />
@@ -141,6 +141,8 @@
     <Compile Include="Assets\MiniGames\PuzzleGame\Scripts\Game_PG.cs" />
     <Compile Include="Assets\MiniGames\PuzzleGame\Scripts\Piece_PG.cs" />
     <Compile Include="Assets\MiniGames\PuzzleGame\Scripts\PiecesScript_PG.cs" />
+    <Compile Include="Assets\MiniGames\PuzzleGame\Scripts\SelectSceneScript_PG.cs" />
+    <Compile Include="Assets\MiniGames\ScoreManager_MM.cs" />
     <Compile Include="Assets\MiniGames\SelectScene_MM.cs" />
     <Compile Include="Assets\MiniGames\Simon Dice\Plugins\LeanTween\LeanAudio.cs" />
     <Compile Include="Assets\MiniGames\Simon Dice\Plugins\LeanTween\LeanTest.cs" />
@@ -150,14 +152,16 @@
     <Compile Include="Assets\MiniGames\Simon Dice\Plugins\LeanTween\LTSeq.cs" />
     <Compile Include="Assets\MiniGames\Simon Dice\Scripts\ButtonSetting_SD.cs" />
     <Compile Include="Assets\MiniGames\Simon Dice\Scripts\GameManager_SD.cs" />
-    <Compile Include="Assets\MiniGames\Simon Dice\Scripts\RestartScript_SD.cs" />
+    <Compile Include="Assets\MiniGames\Simon Dice\Scripts\SelectSceneScript_SD.cs" />
     <Compile Include="Assets\MiniGames\Tractament FQ\Scripts\ManagerScript_TFQ.cs" />
-    <Compile Include="Assets\MiniGames\Tractament FQ\Scripts\RestartScript_TFQ.cs" />
+    <Compile Include="Assets\MiniGames\Tractament FQ\Scripts\SelectSceneScript_TFQ.cs" />
     <Compile Include="Assets\MiniGames\Tractament FQ\Scripts\SelectScript_TFQ.cs" />
     <Compile Include="Assets\Scripts\Building.cs" />
     <Compile Include="Assets\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\CanvasOn.cs" />
     <Compile Include="Assets\Scripts\CreateEnviroment.cs" />
+    <Compile Include="Assets\Scripts\EdificationUpdate.cs" />
     <Compile Include="Assets\Scripts\GraphsAlgorithms.cs" />
     <Compile Include="Assets\Scripts\MenuConstruir.cs" />
     <Compile Include="Assets\Scripts\MoneyUI.cs" />

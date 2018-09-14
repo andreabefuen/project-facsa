@@ -92,7 +92,9 @@ public class Building : MonoBehaviour
 
         Debug.Log("ANTES DE LA LLAMADA");
 
-        graphsAlgorithms.BusquedaEnAnchura(this.gameObject.GetComponent<Nodo>());
+        //Llamada a la busqueda en anchura
+
+        //graphsAlgorithms.BusquedaEnAnchura(this.gameObject.GetComponent<Nodo>());
 
 
 

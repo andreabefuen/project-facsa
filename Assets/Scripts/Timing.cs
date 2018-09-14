@@ -6,6 +6,9 @@ using UnityEngine;
 public class Timing : MonoBehaviour {
 
 
+    public int timerFactor;
+
+
     public TextMeshProUGUI timingText;
 
 
@@ -17,10 +20,18 @@ public class Timing : MonoBehaviour {
    public static int dias, diasFicticios;
 
 
+   
+
+
+
+
 
     public GameObject shopGameObject;
     private Shop shop;
     private List<StructureBlueprint> lista;
+
+
+    int contador = 0;
 
 
     // Use this for initialization
@@ -57,7 +68,7 @@ public class Timing : MonoBehaviour {
 
         segundos += Time.deltaTime;
 
-        segundosFicticios = segundos * 20;
+        segundosFicticios = segundos * timerFactor;
 
 
         if(segundosFicticios > 59f)
@@ -83,6 +94,11 @@ public class Timing : MonoBehaviour {
             {
                 PlayerStats.Money +=  lista[i].cantidadEdificios * lista[i].cantidadDineroPorDia;
             }
+
+
+            SearchBuildings();
+            contador = 0;
+            
            
 
         }
@@ -107,4 +123,33 @@ public class Timing : MonoBehaviour {
 
         UpdateText();
 	}
+
+
+    public void SearchBuildings()
+    {
+           
+        foreach (StructureBlueprint structure in EdificationUpdate.listOfStructures)
+        {
+            if (Timing.diasFicticios > structure.tiempoEstropearseDias)
+            {
+                contador++;
+                
+                //Indicar que esta roto
+                //structure.prefab.gameObject.GetComponentInChildren<Canvas>().gameObject.SetActive(true);
+
+                structure.prefab.GetComponent<CanvasOn>().canvasActivate();
+                Debug.Log(structure.prefab == null);
+
+
+            }
+            else
+            {
+                continue;
+            }
+        }
+
+
+       
+       
+    }
 }
