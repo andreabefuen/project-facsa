@@ -369,6 +369,8 @@
     <Compile Include="Assets\MiniGames\Filtracio\Scripts\SelectSceneScript_FIL.cs" />
     <Compile Include="Assets\MiniGames\Filtracio\Scripts\SelectScript_FIL.cs" />
     <Compile Include="Assets\MiniGames\Filtracio\Scripts\SelectScript2_FIL.cs" />
+    <Compile Include="Assets\MiniGames\IO\Scripts\FoodScript.cs" />
+    <Compile Include="Assets\MiniGames\IO\Scripts\MovingPlayer.cs" />
     <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\Draggable_OD.cs" />
     <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\DropZone_OD.cs" />
     <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\ManagerScript_OD.cs" />
