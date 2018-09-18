@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MiniGames/Aireacio/Scenes/Aireacion.unity
     guid: b12ced2af7b607a44964cf967aab5b37
+  - enabled: 1
+    path: Assets/MiniGames/IO/Scenes/IO.unity
+    guid: c7e8c3999acaf6d4ebedce515b77f320
   m_configObjects: {}

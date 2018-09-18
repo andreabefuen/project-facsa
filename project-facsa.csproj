@@ -372,8 +372,11 @@
     <Compile Include="Assets\MiniGames\IO\Scripts\EnemyController_IO.cs" />
     <Compile Include="Assets\MiniGames\IO\Scripts\FoodScript_IO.cs" />
     <Compile Include="Assets\MiniGames\IO\Scripts\FoodSpawner_IO.cs" />
+    <Compile Include="Assets\MiniGames\IO\Scripts\ManagerScript_IO.cs" />
     <Compile Include="Assets\MiniGames\IO\Scripts\MovingPlayer_IO.cs" />
     <Compile Include="Assets\MiniGames\IO\Scripts\SearchFood_IO.cs" />
+    <Compile Include="Assets\MiniGames\IO\Scripts\SelectSceneScript_IO.cs" />
+    <Compile Include="Assets\MiniGames\IO\Scripts\SpawnerEnemies_IO.cs" />
     <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\Draggable_OD.cs" />
     <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\DropZone_OD.cs" />
     <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\ManagerScript_OD.cs" />

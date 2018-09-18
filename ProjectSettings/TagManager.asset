@@ -6,6 +6,14 @@ TagManager:
   tags:
   - Food
   - Shoot
+  - Enemy
+  - HUD
+  - Water
+  - Spawner
+  - Boss
+  - Enemy2
+  - Objects
+  - Manager
   layers:
   - Default
   - TransparentFX

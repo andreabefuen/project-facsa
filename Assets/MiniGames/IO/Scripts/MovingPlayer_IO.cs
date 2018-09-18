@@ -14,20 +14,23 @@ public class MovingPlayer_IO : MonoBehaviour
     int floorMask;
     float camRayLength = 100f;
     public int Points;
-
+    public bool StartGame;
     // Use this for initialization
-    private void Awake()
+    private void Start()
     {
         playerRigidbody = GetComponent<Rigidbody>();
         floorMask = LayerMask.GetMask("Floor");
-
+        StartGame = false;
     }
 
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        Move();
+        if (StartGame)
+        {
+            Move();
+        }
     }
     void Move()
     {
@@ -79,11 +82,16 @@ public class MovingPlayer_IO : MonoBehaviour
         {
             Points += other.GetComponent<FoodScript_IO>().Points;
             Destroy(other.gameObject);
-            if (Points % 10 == 0)
-            {
-                this.transform.localScale += new Vector3(0.2f, 0.2f, 0);
-                Camara.GetComponent<Camera>().orthographicSize += 0.3f;
-            }
+                this.transform.localScale = new Vector3(4 + 0.2f * (Points / 20), 4 + 0.2f *( Points / 20), 1);
+                Camara.GetComponent<Camera>().orthographicSize = 5 + 0.3f * (Points/20);
+            
+        }
+        if (other.tag == "Enemy" && other.transform.localScale.x < this.transform.localScale.x)
+        {
+            Points += other.GetComponent<EnemyController_IO>().Points;
+            Destroy(other.gameObject);
+            this.transform.localScale = new Vector3(4 + 0.2f * (Points / 20), 4 + 0.2f * (Points / 20), 1);
+            Camara.GetComponent<Camera>().orthographicSize = 5 + 0.3f * (Points / 20);
         }
 
     }

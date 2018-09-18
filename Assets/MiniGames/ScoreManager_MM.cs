@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ScoreManager_MM : MonoBehaviour {
-    public static int AIScore /*{ get; set; }*/, DBScore, DESScore, DDScore, ERScore, FAScore, FANScore, FILScore, ODScore, PLAScore, PGScore, SDScore, TFQScore;
+    public static int AIScore /*{ get; set; }*/, DBScore, DESScore, DDScore, ERScore, FAScore, FANScore, FILScore, ODScore, PLAScore, PGScore, SDScore, TFQScore,IOScore;
     
-    public GameObject AI_SGO, DB_SGO, DES_SGO, DD_SGO, ER_SGO, FA_SGO, FAN_SGO, FIL_SGO, OD_SGO, PLA_SGO, PG_SGO, SD_SGO, TFQ_SGO;
-    private Text AI_SText, DB_SText, DES_SText, DD_SText, ER_SText, FA_SText, FAN_SText, FIL_SText, OD_SText, PLA_SText, PG_SText, SD_SText, TFQ_SText;
+    public GameObject AI_SGO, DB_SGO, DES_SGO, DD_SGO, ER_SGO, FA_SGO, FAN_SGO, FIL_SGO, OD_SGO, PLA_SGO, PG_SGO, SD_SGO, TFQ_SGO, IO_SGO;
+    private Text AI_SText, DB_SText, DES_SText, DD_SText, ER_SText, FA_SText, FAN_SText, FIL_SText, OD_SText, PLA_SText, PG_SText, SD_SText, TFQ_SText, IO_SText;
     // Use this for initialization
     void Start () {
         DontDestroyOnLoad(this.gameObject);
@@ -24,6 +24,8 @@ public class ScoreManager_MM : MonoBehaviour {
         PG_SText = PG_SGO.GetComponent<Text>();
         SD_SText = SD_SGO.GetComponent<Text>();
         TFQ_SText = TFQ_SGO.GetComponent<Text>();
+        TFQ_SText = TFQ_SGO.GetComponent<Text>();
+        IO_SText = IO_SGO.GetComponent<Text>();
 
     }
 
@@ -42,5 +44,6 @@ public class ScoreManager_MM : MonoBehaviour {
         PG_SText.text = "Record: " + PGScore;
         SD_SText.text = "Record: " + SDScore;
         TFQ_SText.text = "Record: " + TFQScore;
+        IO_SText.text = "Record: " + IOScore;
     }
 }
