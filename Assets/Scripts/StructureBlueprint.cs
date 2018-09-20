@@ -11,6 +11,8 @@ public class StructureBlueprint {
 
     public int cost;
 
+    public int moneyOfDemolition;
+
 
     //Variables de cada edificio
 

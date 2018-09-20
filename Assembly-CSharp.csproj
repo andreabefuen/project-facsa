@@ -121,6 +121,14 @@
     <Compile Include="Assets\MiniGames\Filtracio\Scripts\SelectSceneScript_FIL.cs" />
     <Compile Include="Assets\MiniGames\Filtracio\Scripts\SelectScript_FIL.cs" />
     <Compile Include="Assets\MiniGames\Filtracio\Scripts\SelectScript2_FIL.cs" />
+    <Compile Include="Assets\MiniGames\IO\Scripts\EnemyController_IO.cs" />
+    <Compile Include="Assets\MiniGames\IO\Scripts\FoodScript_IO.cs" />
+    <Compile Include="Assets\MiniGames\IO\Scripts\FoodSpawner_IO.cs" />
+    <Compile Include="Assets\MiniGames\IO\Scripts\ManagerScript_IO.cs" />
+    <Compile Include="Assets\MiniGames\IO\Scripts\MovingPlayer_IO.cs" />
+    <Compile Include="Assets\MiniGames\IO\Scripts\SearchFood_IO.cs" />
+    <Compile Include="Assets\MiniGames\IO\Scripts\SelectSceneScript_IO.cs" />
+    <Compile Include="Assets\MiniGames\IO\Scripts\SpawnerEnemies_IO.cs" />
     <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\Draggable_OD.cs" />
     <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\DropZone_OD.cs" />
     <Compile Include="Assets\MiniGames\Ordre de la depuracio\Scripts\ManagerScript_OD.cs" />
@@ -168,6 +176,8 @@
     <Compile Include="Assets\Scripts\Nodo.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Shop.cs" />
+    <Compile Include="Assets\Scripts\StreetConstruction.cs" />
+    <Compile Include="Assets\Scripts\StreetsBlueprint.cs" />
     <Compile Include="Assets\Scripts\StructureBlueprint.cs" />
     <Compile Include="Assets\Scripts\Timing.cs" />
     <None Include="Assets\Rune Assets\Simple\Urban Buildings Pack 1\runesimple.shader" />

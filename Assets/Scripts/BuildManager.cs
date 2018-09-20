@@ -28,6 +28,7 @@ public class BuildManager : MonoBehaviour {
     public GraphsAlgorithms graphs;
 
     private StructureBlueprint structureToBuild;
+    private StreetsBlueprint streetToBuild;
     private Building selectedNode;
 
    
@@ -64,8 +65,19 @@ public class BuildManager : MonoBehaviour {
    //         Debug.Log("Se estropea");
    //     }
    // }
+   public void DestroyBuildStructure(Building node)
+    {
+        PlayerStats.Money += structureToBuild.moneyOfDemolition;
+        structureToBuild.cantidadEdificios--;
+        EdificationUpdate.listOfStructures.Remove(structureToBuild);
 
+        Debug.Log(structureToBuild.cantidadEdificios);
+    }
     
+    public void BuildStreetOn(Building node)
+    {
+
+    }
  
 
     public void BuildStructureOn(Building node) //Construir en un nodo particular
@@ -98,12 +110,15 @@ public class BuildManager : MonoBehaviour {
         //
         ////Afecta a todos los nodos cercanos (un rango de 3)
         //
-       // Debug.Log("Antes de la llamada");
-      // graphs.BusquedaEnAnchura(node.gameObject.GetComponent<Nodo>());
-      //graphsAlgorithms.BusquedaEnAnchura(node.gameObject.GetComponent<Nodo>());
+        // Debug.Log("Antes de la llamada");
+        // graphs.BusquedaEnAnchura(node.gameObject.GetComponent<Nodo>());
+        //graphsAlgorithms.BusquedaEnAnchura(node.gameObject.GetComponent<Nodo>());
 
 
-        
+        //LLAMAMOS AL GRAFO
+       //graphs = gameObject.GetComponent<GraphsAlgorithms>();
+       //graphs.BusquedaEnAnchura(node.gameObject.GetComponent<Nodo>());
+       //
        
         
 
@@ -126,6 +141,15 @@ public class BuildManager : MonoBehaviour {
         //Deselecionamos la zona
     }
 
+    public void SelectStreetToBuild (StreetsBlueprint street)
+    {
+        streetToBuild = street;
+    }
+
+    public StreetsBlueprint GetStreetToBuild()
+    {
+        return streetToBuild;
+    }
 
     // Update is called once per frame
     void Update () {

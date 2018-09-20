@@ -8,12 +8,16 @@ public class Shop : MonoBehaviour {
 
     PlayerStats player;
 
+    public GameObject streetMenu;
+
     public StructureBlueprint edificationStructure;
     
     public StructureBlueprint standardStructure;
 
     public StructureBlueprint factoryStructure;
 
+
+    private bool streetMenuActivate = false;
 
     private List<StructureBlueprint> lista = new List<StructureBlueprint>();
 
@@ -60,6 +64,15 @@ public class Shop : MonoBehaviour {
     {
         
         return lista;
+    }
+
+    public void SelectStreetMenu()
+    {
+        this.gameObject.SetActive(false);
+        streetMenu.SetActive(!streetMenuActivate);
+        streetMenuActivate = !streetMenuActivate;
+
+    
     }
 
 	// Update is called once per frame

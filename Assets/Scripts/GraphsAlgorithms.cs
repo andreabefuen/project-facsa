@@ -43,6 +43,7 @@ public class GraphsAlgorithms : MonoBehaviour {
        
     }
 
+    //Añadir distancia maxima a buscar y hacer un break
 
     public void BusquedaEnAnchura(Nodo nodo)
     {
@@ -53,6 +54,7 @@ public class GraphsAlgorithms : MonoBehaviour {
         Debug.Log("distancia primer nodo");
 
 
+        nodo.SetVisitado(true);
         
         cola.Enqueue(nodo);
         contador++;
@@ -66,7 +68,6 @@ public class GraphsAlgorithms : MonoBehaviour {
             Debug.Log(cola.Count);
             v = cola.Dequeue();
 
-            v.SetVisitado(true);
 
             //vecinos = v.adyacentes;
 
@@ -79,7 +80,8 @@ public class GraphsAlgorithms : MonoBehaviour {
                     {
                         w.SetDistancia(aux);
                     }
-                  
+
+                    w.SetVisitado(true);
                     cola.Enqueue(w);
                     contador++;
                     
