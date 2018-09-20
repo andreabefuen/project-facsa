@@ -76,7 +76,19 @@ public class BuildManager : MonoBehaviour {
     
     public void BuildStreetOn(Building node)
     {
+        if(PlayerStats.Money < streetToBuild.cost)
+        {
+            Debug.Log("Not enough money to build the street");
+            return;
+        }
 
+        PlayerStats.Money -= streetToBuild.cost;
+        streetToBuild.streetCount++;
+        GameObject street = (GameObject)Instantiate(streetToBuild.prefab, node.GetBuildPosition(), streetToBuild.prefab.transform.rotation);
+        node.edification = street;
+        streetToBuild.nodeAsociate = node;
+
+        node.gameObject.GetComponent<MeshRenderer>().enabled = false;
     }
  
 
@@ -138,12 +150,14 @@ public class BuildManager : MonoBehaviour {
     public void SelectStructureToBuild( StructureBlueprint structure)
     {
         structureToBuild = structure;
+        streetToBuild = null;
         //Deselecionamos la zona
     }
 
     public void SelectStreetToBuild (StreetsBlueprint street)
     {
         streetToBuild = street;
+        structureToBuild = null;
     }
 
     public StreetsBlueprint GetStreetToBuild()
