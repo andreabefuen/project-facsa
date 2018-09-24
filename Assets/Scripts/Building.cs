@@ -78,16 +78,32 @@ public class Building : MonoBehaviour
             if (menu != null && menu.GetDemolitionActivate())
             {
                 Debug.Log("DEMOLER"); //Devoler cierta cantidad de dinero
+                buildManager.DestroyBuildStructure(this);
                 Destroy(edification);
                 this.gameObject.GetComponent<MeshRenderer>().enabled = true;
                 menu.SetDemolitionActivate(false);
                 Debug.Log("Desactivado la demolición");
+                
                 return;
 
             }
             return;
         }
         //this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+
+        //Mirar si es una carretera o un edificio
+
+       
+         //buildManager.BuildStreetOn(this);
+        
+        if(buildManager.GetStreetToBuild()!= null)
+        {
+            buildManager.BuildStreetOn(this);
+            return;
+        }
+        
+
+
         buildManager.BuildStructureOn(this);
 
         Debug.Log("ANTES DE LA LLAMADA");

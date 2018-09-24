@@ -8,6 +8,7 @@ public class MenuConstruir : MonoBehaviour {
     BuildManager buildManager;
 
     public GameObject shop;
+    public GameObject streetMenu;
 
 
     private bool cameraActivate = true;
@@ -51,6 +52,7 @@ public class MenuConstruir : MonoBehaviour {
     {
         shop.SetActive(!shopActivate);
         shopActivate = !shopActivate;
+        streetMenu.SetActive(false);
         
     }
 }
