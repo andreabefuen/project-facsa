@@ -7,7 +7,9 @@ public class StreetConstruction : MonoBehaviour {
 
     BuildManager buildManager;
 
-    public StreetsBlueprint streetHorizontal;
+    public StructureBlueprint streetHorizontal;
+    public StructureBlueprint streetVertical;
+    public StructureBlueprint streetCross;
 
 
 	// Use this for initialization
@@ -20,10 +22,23 @@ public class StreetConstruction : MonoBehaviour {
 	void Update () {
 		
 	}
-
+    //Boton construccción
     public void SelectHorizontalStreet()
     {
         Debug.Log("Horizontal Street Purchased");
-        buildManager.SelectStreetToBuild(streetHorizontal);
+        buildManager.SelectStructureToBuild(streetHorizontal);
+        //buildManager.SelectStreetToBuild(streetHorizontal);
+    }
+
+    public void SelectVerticalStreet()
+    {
+        Debug.Log("Vertical Street Purchased");
+        buildManager.SelectStructureToBuild(streetVertical);
+    }
+
+    public void SelectCrossStreet()
+    {
+        Debug.Log("Cross");
+        buildManager.SelectStructureToBuild(streetCross);
     }
 }
