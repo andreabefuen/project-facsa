@@ -10,11 +10,16 @@ public class StreetConstruction : MonoBehaviour {
     public StructureBlueprint streetHorizontal;
     public StructureBlueprint streetVertical;
     public StructureBlueprint streetCross;
+    public StructureBlueprint streetT;
 
 
 	// Use this for initialization
 	void Start () {
         buildManager = BuildManager.instance;
+        streetHorizontal.isAStreet = true;
+        streetVertical.isAStreet = true;
+        streetCross.isAStreet = true;
+        streetT.isAStreet = true;
 
     }
 	
@@ -40,5 +45,11 @@ public class StreetConstruction : MonoBehaviour {
     {
         Debug.Log("Cross");
         buildManager.SelectStructureToBuild(streetCross);
+    }
+
+    public void SelectTStreet()
+    {
+        Debug.Log("T");
+        buildManager.SelectStructureToBuild(streetT);
     }
 }
