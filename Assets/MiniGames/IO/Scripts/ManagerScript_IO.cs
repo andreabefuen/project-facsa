@@ -11,6 +11,8 @@ public class ManagerScript_IO : MonoBehaviour {
     public GameObject Instructions;
     public GameObject FoodSpawn;
     public GameObject GameOverPanel;
+    public AudioClip GameOverSound;
+    public AudioSource Music;
 
     // Use this for initialization
     public void StartGame () {
@@ -28,6 +30,10 @@ public class ManagerScript_IO : MonoBehaviour {
             ScoreManager_MM.IOScore = Player.GetComponent<MovingPlayer_IO>().Points;
             NewRecord.text = "Nuevo Record: " + Player.GetComponent<MovingPlayer_IO>().Points;
         }
+        Music.Stop();
+        Music.loop = false;
+        Music.clip = GameOverSound;
+        Music.Play();
         GameOverPanel.SetActive(true);
         Destroy(Player.GetComponent<MovingPlayer_IO>());
         Destroy(FoodSpawn);

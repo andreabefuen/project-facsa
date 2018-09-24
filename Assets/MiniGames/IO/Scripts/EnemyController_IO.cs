@@ -17,7 +17,7 @@ public class EnemyController_IO : MonoBehaviour {
         Manager = GameObject.FindGameObjectWithTag("Manager");
         ToPlayer = false;
         player = GameObject.FindGameObjectWithTag("Player");
-        Points = player.GetComponent<MovingPlayer_IO>().Points;
+        Points = player.GetComponent<MovingPlayer_IO>().Points/2 + 20;
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class EnemyController_IO : MonoBehaviour {
         {
             if(this.transform.localScale.x > player.transform.localScale.x + 0.4)
             {
-                speed = 3f;
+                speed = 3.3f;
                 transform.LookAt(player.transform.position);
                 transform.Rotate(new Vector3(90, 0, 0), Space.Self);//correcting the original rotation
                 transform.Translate(new Vector3(0, speed * Time.deltaTime, 0));
@@ -46,7 +46,7 @@ public class EnemyController_IO : MonoBehaviour {
         }
         else
         {
-            speed = 3f;
+            speed = 2.5f;
             transform.LookAt(food.transform.position);
             transform.Rotate(new Vector3(90, 0, 0), Space.Self);//correcting the original rotation
             transform.Translate(new Vector3(0, speed * Time.deltaTime, 0));

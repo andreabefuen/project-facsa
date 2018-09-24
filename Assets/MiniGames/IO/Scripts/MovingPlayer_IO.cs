@@ -15,12 +15,16 @@ public class MovingPlayer_IO : MonoBehaviour
     float camRayLength = 100f;
     public int Points;
     public bool StartGame;
+    public AudioClip EatEnemy;
+    public AudioClip EatFood;
+    AudioSource Sound;
     // Use this for initialization
     private void Start()
     {
         playerRigidbody = GetComponent<Rigidbody>();
         floorMask = LayerMask.GetMask("Floor");
         StartGame = false;
+        Sound = gameObject.GetComponent<AudioSource>();
     }
 
 
@@ -81,14 +85,18 @@ public class MovingPlayer_IO : MonoBehaviour
         if (other.tag == "Food" && other.transform.localScale.x < this.transform.localScale.x)
         {
             Points += other.GetComponent<FoodScript_IO>().Points;
+            Sound.clip = EatFood;
+            Sound.Play();
             Destroy(other.gameObject);
-                this.transform.localScale = new Vector3(4 + 0.2f * (Points / 20), 4 + 0.2f *( Points / 20), 1);
-                Camara.GetComponent<Camera>().orthographicSize = 5 + 0.3f * (Points/20);
+            this.transform.localScale = new Vector3(4 + 0.2f * (Points / 20), 4 + 0.2f *( Points / 20), 1);
+            Camara.GetComponent<Camera>().orthographicSize = 5 + 0.3f * (Points/20);
             
         }
         if (other.tag == "Enemy" && other.transform.localScale.x < this.transform.localScale.x)
         {
             Points += other.GetComponent<EnemyController_IO>().Points;
+            Sound.clip = EatEnemy;
+            Sound.Play();
             Destroy(other.gameObject);
             this.transform.localScale = new Vector3(4 + 0.2f * (Points / 20), 4 + 0.2f * (Points / 20), 1);
             Camara.GetComponent<Camera>().orthographicSize = 5 + 0.3f * (Points / 20);
