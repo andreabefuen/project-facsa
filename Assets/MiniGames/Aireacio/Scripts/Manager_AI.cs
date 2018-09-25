@@ -47,7 +47,7 @@ public class Manager_AI : MonoBehaviour {
     void Update()
     {
         if (!GameOverBool && InGame)
-        {
+        {//si no esta en gameover y se dio a start
             timer -= Time.deltaTime * (float)(numTurbin*0.75);
             if (timer > 100) timer = 100;
             TimeSlider.value = timer;
@@ -63,7 +63,7 @@ public class Manager_AI : MonoBehaviour {
             ScoreText.text = "Score\n" + score.ToString("0000") + "\nNum.Turbinas\n" + numTurbin;
             Turbina.transform.Rotate(0, 0, Time.deltaTime*(velocity*2));
             if (timer <= 0)
-            {
+            {//si se acaba el tiempo llama la funcion gameover y pone la variable true para que deje de ejecutarse el update
                 GameOverBool = true;
                 GameOver();
 
@@ -71,7 +71,7 @@ public class Manager_AI : MonoBehaviour {
         }
     }
     public void StartGame()
-    {
+    {//boton de start
         Instructions.SetActive(false);
         Board.SetActive(true);
         InGame = true;

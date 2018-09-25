@@ -65,7 +65,7 @@ public class Manager_DES : MonoBehaviour
     void Update()
     {
         if (!GameOverBool && InGame)
-        {
+        {//si no esta en gameover y se dio a start
             VidesText.text = "Vidas:\n" + Vides;
             PuntuacioText.text = "Puntuación\n" + Score;
             if (Contaminacio > 100)
@@ -73,7 +73,7 @@ public class Manager_DES : MonoBehaviour
             ContaminacioSlider.value = Contaminacio;
             BossLifeSlider2.value = BossLive;
             if (Vides < 0 && !GameOverBool || Contaminacio <= 0 && !GameOverBool)
-            {
+            {//si se acaban las vidas y no ha sido nunca game over llama la funcion game over
                 GameOver();
             }
             FaseManager();
@@ -104,6 +104,7 @@ public class Manager_DES : MonoBehaviour
         Music.clip = GameOverMusic;
         Music.Play();
         GameOverText.SetActive(true);
+        //destruye objetos innecesarios
         enemies = GameObject.FindGameObjectsWithTag("Boss");
         foreach (GameObject enemy in enemies)
         {
@@ -132,7 +133,7 @@ public class Manager_DES : MonoBehaviour
         }
     }
     void FaseManager()
-    {
+    {//crea  las distintas fases
         if (Fase == 1 && ChangeFase)
         {
             BossLifeSlider.SetActive(false);
@@ -193,7 +194,7 @@ public class Manager_DES : MonoBehaviour
     }
 
     IEnumerator FaseState()
-    {
+    {//comprueba cada cierto tiempo si finaliza una fase
         yield return new WaitForSeconds(5);
         if (!GameOverBool)
         {

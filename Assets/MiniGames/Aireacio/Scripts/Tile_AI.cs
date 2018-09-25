@@ -88,7 +88,7 @@ public class Tile_AI : MonoBehaviour {
         }
     }
     public void SwapSprite(SpriteRenderer render2)
-    { // 1
+    { // Cambia dos sprites de posicion
         if (render.sprite == render2.sprite)
         { // 2
             return;
@@ -100,7 +100,7 @@ public class Tile_AI : MonoBehaviour {
     }
 
     private GameObject GetAdjacent(Vector2 castDir)
-    {
+    {//comprueba si en esa direccion se encuentra un objeto y lo devuelve
         RaycastHit2D hit = Physics2D.Raycast(transform.position, castDir);
 
 
@@ -111,7 +111,7 @@ public class Tile_AI : MonoBehaviour {
         return null;
     }
     private List<GameObject> GetAllAdjacentTiles()
-    {
+    {//guarda en una lista los objetos adyacentes
         List<GameObject> adjacentTiles = new List<GameObject>();
         for (int i = 0; i < adjacentDirections.Length; i++)
         {
@@ -120,7 +120,7 @@ public class Tile_AI : MonoBehaviour {
         return adjacentTiles;
     }
     private List<GameObject> FindMatch(Vector2 castDir)
-    { // 1
+    { // Comprueba la los sprites que coincden en linea
         List<GameObject> matchingTiles = new List<GameObject>(); // 2
         RaycastHit2D hit = Physics2D.Raycast(transform.position, castDir); // 3
         while (hit.collider != null && hit.collider.GetComponent<SpriteRenderer>().sprite == render.sprite)
@@ -131,7 +131,7 @@ public class Tile_AI : MonoBehaviour {
         return matchingTiles; // 5
     }
     private void ClearMatch(Vector2[] paths) // 1
-    {
+    {//elimina los sprites cuando son ams de tres en linea
         List<GameObject> matchingTiles = new List<GameObject>(); // 2
         for (int i = 0; i < paths.Length; i++) // 3
         {

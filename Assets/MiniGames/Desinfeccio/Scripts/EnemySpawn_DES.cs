@@ -9,7 +9,7 @@ public class EnemySpawn_DES : MonoBehaviour
 
     // Use this for initialization
     void Start()
-    {
+    {//crea una oleada del primer enemigo
         Manager_DES.EnemiesInScene += 27;
          for(int i = 0; i < 3; i++)
         {

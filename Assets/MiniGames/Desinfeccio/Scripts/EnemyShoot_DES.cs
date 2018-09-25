@@ -18,12 +18,12 @@ public class EnemyShoot_DES : MonoBehaviour {
 
     private void Update()
     {
-        //Use the two store floats to create a new Vector2 variable movement.
+        //mueve la bala recta
 		transform.Translate(new Vector3(0, speed * Time.deltaTime, 0));
 
     }
     void OnTriggerEnter2D(Collider2D collision)
-    {
+    {// si colisiona con el jugador resta vida si apsa de alrgo contamina el agua
         if (collision.gameObject.tag == "Player")
         {
             if (Manager_DES.Vides > 0){

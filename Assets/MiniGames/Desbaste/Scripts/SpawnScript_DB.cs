@@ -17,6 +17,7 @@ public class SpawnScript_DB : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        //si el tiempo llega a 0 instancia un objeto con la velocidad marcada random en la posicion del spawner y reinicia el tiempo segun la velocidad sino resta tiempo
         if (timeRespawn <= 0)
         {
             int Rdn = UnityEngine.Random.Range(0, Objects.Length);

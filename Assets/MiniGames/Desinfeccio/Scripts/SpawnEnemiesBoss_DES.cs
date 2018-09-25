@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnEnemiesBoss_DES : MonoBehaviour
-{
+{//variación de Enemy2Spawn para la fase de jefe
     int moveCount;
     public bool orientacion;
     public GameObject enemy2;

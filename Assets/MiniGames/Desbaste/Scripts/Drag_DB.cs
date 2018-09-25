@@ -16,17 +16,18 @@ public class Drag_DB : MonoBehaviour {
         audioSource = gameObject.GetComponent<AudioSource>();
     }
     private void OnMouseDown() {
+        //guarda posicion inicial
         InitPosition = transform.position;
     }
 
     private void OnMouseDrag()
-    {
+    {//mueve con el raton el objeto
         Vector2 mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         Vector2 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
         transform.position = new Vector3 (objPosition.x, objPosition.y, -2);
     }
     private void OnMouseUp()
-    {
+    {//comprueba donde se suelta
         if (transform.position.y < -2)
         {
             //Zona contenedores
@@ -105,7 +106,7 @@ public class Drag_DB : MonoBehaviour {
 
         }
         else {
-
+            //si nos e suelta en ningun contenedor vuelve a la posicion inicial
             transform.position = InitPosition;
         }
 

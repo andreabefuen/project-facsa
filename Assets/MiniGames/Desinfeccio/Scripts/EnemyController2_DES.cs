@@ -21,13 +21,13 @@ public class EnemyController2_DES : MonoBehaviour
 
     }
     void FixedUpdate()
-    {
+    {//se mueve
         if(!destroyed)
         transform.Translate(new Vector3(0, speed * Time.deltaTime, 0));
 
     }
     void OnTriggerEnter2D(Collider2D collision)
-    {
+    {//si colisiona con el jugador resta vida si apsa de alrgo contamina el agua
         if (collision.gameObject.tag == "Player")
         {
             if (Manager_DES.Vides > 0)
@@ -54,8 +54,9 @@ public class EnemyController2_DES : MonoBehaviour
         }
     }
     public void Destruido()
-    {
-        destroyed = true;
+    {//cuando es destruido reproduce sonido y oculta colider y sprite pero espera a destruirse cuando acaba el sonido calcula unr andom apra lanzar objeto
+
+            destroyed = true;
         tCollider.enabled = false;
         SpriteRenderer sprite;
         sprite = GetComponent<SpriteRenderer>();

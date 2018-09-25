@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LifesScript_DES : MonoBehaviour
-{
+{//el objeto vida si toca el jugador suma vida
     private Rigidbody2D rBody;
     public float speed = 2f;
     AudioSource audioSource;
@@ -20,9 +20,7 @@ public class LifesScript_DES : MonoBehaviour
     void Update()
     {
         rBody.velocity = Vector2.up * -speed;
-        //Store the current horizontal input in the float moveHorizontal.
-        //Use the two store floats to create a new Vector2 variable movement.
-
+      
 
     }
     void OnTriggerEnter2D(Collider2D collision)
