@@ -13,7 +13,7 @@ public class Shoot_DES : MonoBehaviour {
 
     private void Start()
     {
-        // If it isn't destroyed by then, destroy the shell after it's lifetime.
+        // si no colisiona con nada se destruira cuando pase MaxLifeTime de tiempo
         Destroy(gameObject, MaxLifeTime);
         rBody = GetComponent<Rigidbody2D>();
         velocity = new Vector2(0f, speed);
@@ -21,13 +21,12 @@ public class Shoot_DES : MonoBehaviour {
 
     private void Update()
     {
-
-        //Use the two store floats to create a new Vector2 variable movement.
+        //mueve en vertical
         rBody.velocity = velocity;
 
     }
     void OnTriggerEnter2D(Collider2D collision)
-	{
+	{//segun que tipo de enemigo colisiona tiene un comportamiento
         if (collision.gameObject.tag == "Enemy") {
             collision.GetComponent<EnemyController_DES>().Destruido();
             Destroy(gameObject);

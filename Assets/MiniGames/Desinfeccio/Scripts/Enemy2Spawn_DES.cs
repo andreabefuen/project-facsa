@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy2Spawn_DES : MonoBehaviour {
+    //spawnea cada cierto tiempo lso segundos enemigos con direccion el jugador
     int moveCount;
     public bool orientacion;
     public GameObject enemy2;

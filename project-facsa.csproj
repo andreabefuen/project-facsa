@@ -425,7 +425,6 @@
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Shop.cs" />
     <Compile Include="Assets\Scripts\StreetConstruction.cs" />
-    <Compile Include="Assets\Scripts\StreetsBlueprint.cs" />
     <Compile Include="Assets\Scripts\StructureBlueprint.cs" />
     <Compile Include="Assets\Scripts\Timing.cs" />
   </ItemGroup>

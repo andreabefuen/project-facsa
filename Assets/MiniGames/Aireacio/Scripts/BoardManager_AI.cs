@@ -43,6 +43,7 @@ public class BoardManager_AI : MonoBehaviour {
     }
 
 	private void CreateBoard (float xOffset, float yOffset) {
+        //crea un matriz de x*y objetos y instancia objetos con sprites random
 		tiles = new GameObject[xSize, ySize];
         Sprite[] previousLeft = new Sprite[ySize];
         Sprite previousBelow = null;
@@ -72,7 +73,7 @@ public class BoardManager_AI : MonoBehaviour {
         }
     }
     public IEnumerator FindNullTiles()
-    {
+    {//busca espacios vacios para llamar a la funcion que los baja
         for (int x = 0; x < xSize; x++)
         {
             for (int y = 0; y < ySize; y++)
@@ -94,7 +95,7 @@ public class BoardManager_AI : MonoBehaviour {
 
     }
     private IEnumerator ShiftTilesDown(int x, int yStart, float shiftDelay = .03f)
-    {
+    {//baja los sprites, suma la puntuación(cada posicion q baja un sprite es que se elimino uno) y llama a crear nuevos sprites
         IsShifting = true;
         List<SpriteRenderer> renders = new List<SpriteRenderer>();
         int nullCount = 0;
@@ -124,7 +125,7 @@ public class BoardManager_AI : MonoBehaviour {
         IsShifting = false;
     }
     private Sprite GetNewSprite(int x, int y)
-    {
+    {//crea nuevo sprite en la posicion vacia
         List<Sprite> possibleCharacters = new List<Sprite>();
         possibleCharacters.AddRange(characters);
 

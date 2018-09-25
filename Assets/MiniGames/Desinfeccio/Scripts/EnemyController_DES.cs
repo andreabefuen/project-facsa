@@ -34,7 +34,7 @@ public class EnemyController_DES : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate() {
         if (!destroyed)
-        {
+        {//si no es destruido se mueve y dispara cada cierto tiempo
             if (moveCount > 0)
             {
                 if (orientacion)
@@ -86,13 +86,13 @@ public class EnemyController_DES : MonoBehaviour {
     }
 
     void Shoot()
-    {
+    {//dispara
         audioSource.Play();
         Vector3 pos = new Vector3(transform.position.x, transform.position.y - 0.5f, 0);
         Instantiate(bullet, pos, bullet.transform.rotation);
     }
     public void Destruido()
-    {
+    {//cuando es destruido reproduce sonido y oculta colider y sprite pero espera a destruirse cuando acaba el sonido calcula unr andom apra lanzar objeto
         destroyed = true;
         tCollider.enabled = false;
         SpriteRenderer sprite;

@@ -16,7 +16,7 @@ public class TrashMovement_DB : MonoBehaviour {
 
     // Update is called once per frame
     void Update()
-    {
+    {//mueve posicion segun velocidad si se sale de pantalla resta tiempo
         transform.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
 
         //Si sale de la pantalla

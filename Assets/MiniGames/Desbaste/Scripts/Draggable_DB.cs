@@ -10,7 +10,7 @@ public class Draggable_DB : MonoBehaviour, IBeginDragHandler,IDragHandler, IEndD
         Debug.Log("OnBeginDrag");
     }
     public void OnDrag(PointerEventData eventData)
-    {
+    {//mueve el objeto con el raton mientras se arrastra
         Debug.Log("OnDrag");
         this.transform.position = eventData.position;
     }

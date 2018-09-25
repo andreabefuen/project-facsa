@@ -1,8 +1,1 @@
-sceneSetups:
-<<<<<<< HEAD
-- path: Assets/MiniGames/Menu MiniGames.unity
-=======
-- path: Assets/Scenes/Scene01.unity
->>>>>>> 84ca078c3a4a0800f923e7453dfad8b5a9d9f745
-  isLoaded: 1
-  isActive: 1
+sceneSetups: []

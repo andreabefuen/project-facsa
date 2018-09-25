@@ -59,11 +59,11 @@ public class BossController_DES : MonoBehaviour {
 	void FixedUpdate()
 	{
         if (!destroyed)
-        {
+        {//si sigue vivo
             if (!intermedio)
-            {
+            {//si noe sta en la fase intermedia
                 Move();
-
+                //segun si cada disparo termina
                 if (timeShoot <= 0)
                 {
                     Shoot(0);
@@ -81,7 +81,7 @@ public class BossController_DES : MonoBehaviour {
                 timeShoot2 -= 1;
             }
             else
-            {
+            {//si esta la fase intermedia no la vida se mantiene en 50
 
                 Intermedio();
                 Manager_DES.BossLive = 50;
@@ -89,7 +89,7 @@ public class BossController_DES : MonoBehaviour {
         }
     }
     void Move()
-    {
+    {//mueve de lado a lado
         if (transform.position.y > 3.4f)
             transform.Translate(new Vector3(0.0f, -speed * Time.deltaTime, 0.0f));
         else if (orientation)
@@ -109,7 +109,7 @@ public class BossController_DES : MonoBehaviour {
 
     }
     void Shoot(int cannon)
-	{
+	{//dispara indicando el cañon
 		if (cannon == 0) {
 			Vector3 pos = new Vector3 (transform.position.x, transform.position.y - 0.5f, 0);
 			GameObject newBullet = Instantiate (bullet, pos, bullet.transform.rotation);
@@ -133,6 +133,7 @@ public class BossController_DES : MonoBehaviour {
     }
 
     void Intermedio() {
+        //se esconde mientras dispara cierto numero de enemigos
         if (transform.position.y <= 7f)
             transform.Translate(new Vector3(0.0f, speed * Time.deltaTime, 0.0f));
         else if (transform.position.x != 0f)
@@ -148,7 +149,7 @@ public class BossController_DES : MonoBehaviour {
         }
     }
     public void Destruido()
-    {
+    {//si es destruido spawnea una vida y una burbuja
         audioSource.clip = explosionClip;
         audioSource.Play();
 

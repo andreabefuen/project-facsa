@@ -18,7 +18,7 @@ public class Escenario_DB : MonoBehaviour
 
     }
     void Update()
-    {
+    {//mueve las cintas transportadoras
         float x = Mathf.Repeat(Time.time * scrollSpeed, 17f) - 40f;
         Vector2 offset = new Vector2(x, 2f);
         spriteRendererComponent.size = offset; // any vector2

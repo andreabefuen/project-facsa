@@ -50,7 +50,7 @@ public class Manager_DB : MonoBehaviour {
     void Update()
     {
         if (!GameOverBool && InGame)
-        {
+        {//si no esta en gameover y se dio a start
             timer -= Time.deltaTime;
             int seconds = (int)timer % 60;
             int min = (int)timer / 60;
@@ -65,7 +65,7 @@ public class Manager_DB : MonoBehaviour {
             TimeText.text = "Time: " + min.ToString("00") + ":" + seconds.ToString("00");
             ScoreText.text = "Score: " + score.ToString("0000");
             if (timer <= 0)
-            {
+            {//si se acaba el tiempo llama la funcion gameover y pone la variable true para que deje de ejecutarse el update
                 GameOverBool = true;
                 TimeText.text = "Time: 00:00";
                 GameOver();
@@ -88,6 +88,7 @@ public class Manager_DB : MonoBehaviour {
         music.volume = 1f;
         music.clip = GameOverClip;
         music.Play();
+        //destruye los objetos inecesarios
         Destroy(spawn1);
         Destroy(spawn2);
         Destroy(spawn3);
@@ -119,7 +120,7 @@ public class Manager_DB : MonoBehaviour {
 
     }
     public void StartGame()
-    {
+    {//boton start activa los spawners
         Instructions.SetActive(false);
         for (int i = 0; i < Spawns.Length; i++)
         {
