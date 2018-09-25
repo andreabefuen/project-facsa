@@ -64,10 +64,7 @@ public class Building : MonoBehaviour
         }
 
         
-        if (!buildManager.CanBuild)
-        {
-            return;
-        }
+    
 
         if (edification != null)
         {
@@ -87,21 +84,30 @@ public class Building : MonoBehaviour
                 return;
 
             }
+
+            buildManager.SelectNode(this);
+
             return;
         }
+
+        if (!buildManager.CanBuild)
+        {
+            return;
+        }
+
         //this.gameObject.GetComponent<MeshRenderer>().enabled = false;
 
         //Mirar si es una carretera o un edificio
 
-       
+
         //buildManager.BuildStreetOn(this);
-        
-       //if(buildManager.GetStreetToBuild()!= null)
-       //{
-       //    buildManager.BuildStreetOn(this);
-       //    return;
-       //}
-        
+
+        //if(buildManager.GetStreetToBuild()!= null)
+        //{
+        //    buildManager.BuildStreetOn(this);
+        //    return;
+        //}
+
 
 
         buildManager.BuildStructureOn(this);

@@ -31,6 +31,7 @@ public class BuildManager : MonoBehaviour {
    
     private Building selectedNode;
 
+    public NodeUI nodeUI;
    
 
 
@@ -127,6 +128,25 @@ public class BuildManager : MonoBehaviour {
 
 
     }
+    public void SelectNode (Building node)
+    {
+        if(selectedNode == node)
+        {
+            DeselectNode();
+            return;
+        }
+        selectedNode = node;
+        structureToBuild = null;
+
+        nodeUI.SetTarget(node);
+    }
+
+    public void DeselectNode()
+    {
+        selectedNode = null;
+        nodeUI.Hide();
+    }
+
     public StructureBlueprint GetStructureToBuild()
     {
         return structureToBuild;
@@ -135,6 +155,8 @@ public class BuildManager : MonoBehaviour {
     public void SelectStructureToBuild( StructureBlueprint structure)
     {
         structureToBuild = structure;
+
+        DeselectNode();
        
         //Deselecionamos la zona
     }
