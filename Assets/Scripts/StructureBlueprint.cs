@@ -26,6 +26,8 @@ public class StructureBlueprint {
 
     public int levelOfSatisfaction;
 
+    public bool isAStreet;
+
 
     public Building nodeAsociate;
 }

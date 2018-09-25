@@ -94,13 +94,13 @@ public class Building : MonoBehaviour
         //Mirar si es una carretera o un edificio
 
        
-         //buildManager.BuildStreetOn(this);
+        //buildManager.BuildStreetOn(this);
         
-        if(buildManager.GetStreetToBuild()!= null)
-        {
-            buildManager.BuildStreetOn(this);
-            return;
-        }
+       //if(buildManager.GetStreetToBuild()!= null)
+       //{
+       //    buildManager.BuildStreetOn(this);
+       //    return;
+       //}
         
 
 
