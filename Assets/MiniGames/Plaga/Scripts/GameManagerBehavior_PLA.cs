@@ -41,6 +41,8 @@ public class GameManagerBehavior_PLA : MonoBehaviour {
         }
     }
     public Text scoreLabel;
+
+    //score-----------------------------------------
     private int score;
     public int Score
     {
@@ -77,6 +79,9 @@ public class GameManagerBehavior_PLA : MonoBehaviour {
             // 3
             if (health <= 0 && !gameOver)
             {
+
+                //Gameover pasa el score a la otra escena-------------------------------------------
+
                 if (ScoreManager_MM.PLAScore < Score)
                 {
                     ScoreManager_MM.PLAScore = Score;

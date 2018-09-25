@@ -18,6 +18,8 @@ public class Manager_FA : MonoBehaviour {
     int numNewLines;
     int timeNewLine;
     Text VidesText;
+
+    //score y oxigeno(usalo tmb o conviertelo en puntuación
     Text OxigenText;
     Text PuntuacioText;
     GameObject GameOverText;
@@ -75,6 +77,8 @@ public class Manager_FA : MonoBehaviour {
             GameOverText.SetActive(true);
             if (!gameOver)
             {
+
+                //Gameover pasa el score a la otra escena
                 if (ScoreManager_MM.FAScore < Score)
                 {
                     ScoreManager_MM.FAScore = Score;

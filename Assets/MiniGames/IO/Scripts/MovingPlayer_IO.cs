@@ -13,7 +13,10 @@ public class MovingPlayer_IO : MonoBehaviour
     Rigidbody playerRigidbody;
     int floorMask;
     float camRayLength = 100f;
+
+    //score--------------------------
     public int Points;
+
     public bool StartGame;
     public AudioClip EatEnemy;
     public AudioClip EatFood;

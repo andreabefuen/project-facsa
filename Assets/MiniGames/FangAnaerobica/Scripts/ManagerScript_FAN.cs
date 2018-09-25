@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class ManagerScript_FAN : MonoBehaviour {
 
+    //score----------
     public static int Score;
+
     public static int Life;
     public static int NumBacteries;
     public static bool BallInGame;
@@ -73,7 +75,8 @@ public class ManagerScript_FAN : MonoBehaviour {
         Instructions.SetActive(false);
     }
     void GameOver()
-    {
+    { 
+        //Gameover pasa el score a la otra escena
         if (ScoreManager_MM.FANScore < Score)
         {
             ScoreManager_MM.FANScore = Score;
