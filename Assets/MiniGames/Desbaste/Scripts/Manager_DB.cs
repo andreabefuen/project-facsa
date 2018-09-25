@@ -5,7 +5,10 @@ using UnityEngine.UI;
 
 public class Manager_DB : MonoBehaviour {
     public static float timer;
+
+    //score------------------------------------------
     public static int score;
+
     public AudioClip GameOverClip;
     public GameObject Instructions;
     public GameObject GameOverText;
@@ -71,11 +74,14 @@ public class Manager_DB : MonoBehaviour {
     }
     void GameOver()
     {
+        //Gameover pasa el score a la otra escena
+
         if (ScoreManager_MM.DBScore < score)
         {
             ScoreManager_MM.DBScore = score;
             NewRecord.text = "Nuevo Record: " + score;
         }
+
         GameOverText.SetActive(true);
         music.Stop();
         music.loop = false;

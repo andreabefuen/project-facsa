@@ -5,9 +5,12 @@ using UnityEngine.UI;
 
 public class Manager_AI : MonoBehaviour {
     public static float timer;
+
+    //score---------------------------------------
     public static int score;
-    public static int velocity;
     public int numTurbin;
+
+    public static int velocity;
     public AudioSource music;
     public AudioSource newLevel;
     public AudioClip GameOverMusic;
@@ -74,6 +77,7 @@ public class Manager_AI : MonoBehaviour {
         InGame = true;
     }
     void GameOver()
+        //Gameover pasa el score a la otra escena
     {   if (ScoreManager_MM.AIScore < score)
         {
             ScoreManager_MM.AIScore = score;

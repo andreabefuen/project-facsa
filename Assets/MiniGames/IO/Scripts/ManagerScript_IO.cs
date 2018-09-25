@@ -25,6 +25,8 @@ public class ManagerScript_IO : MonoBehaviour {
 	}
     public void GameOver()
     {
+        //Gameover pasa el score a la otra escena
+        //El escore esta en MovingPlayer_IO puedes cogerlo con "Player.GetComponent<MovingPlayer_IO>().Points"
         if (ScoreManager_MM.IOScore < Player.GetComponent<MovingPlayer_IO>().Points)
         {
             ScoreManager_MM.IOScore = Player.GetComponent<MovingPlayer_IO>().Points;

@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class Manager_DES : MonoBehaviour
 {
+    //score--------------
     public static int Score;
+
     public static int Vides;
     public static int Contaminacio;
     public static int EnemyBullets;
@@ -88,6 +90,8 @@ public class Manager_DES : MonoBehaviour
     } 
     void GameOver()
     {
+        //Gameover pasa el score a la otra escena
+
         if (ScoreManager_MM.DESScore < Score)
         {
             ScoreManager_MM.DESScore = Score;

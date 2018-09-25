@@ -17,7 +17,10 @@ public class GameManager_SD : MonoBehaviour
     public Text ScoreText;
     int level = 1;
     int bleepCount = 3;
+
+    //score-----------------
     int score;
+
     List<int> bleeps;
     List<int> playerBleeps;
     int randomNum;
@@ -129,6 +132,8 @@ public class GameManager_SD : MonoBehaviour
     }
     void GameOver()
     {
+
+        //GameOver envia score a la otra escena
         if (ScoreManager_MM.SDScore < score)
         {
             ScoreManager_MM.SDScore = score;

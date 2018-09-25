@@ -14,7 +14,10 @@ public class PlayerMove_ER : MonoBehaviour {
     public Text NewRecord;
     public bool controlLock = false;
     public bool OnTheGround = true;
+
+    //score
     public int score = 0;
+
     public Text ScoreText;
     public GameObject GameOverObject;
     public GameObject Music;
@@ -112,6 +115,8 @@ public class PlayerMove_ER : MonoBehaviour {
         controlLock = false;
     }
     void GameOver() {
+
+        //Gameover pasa el score a la otra escena
         if (ScoreManager_MM.ERScore < score)
         {
             ScoreManager_MM.ERScore = score;
