@@ -22,6 +22,12 @@ public class NodeUI : MonoBehaviour {
         ui.SetActive(false);
     }
 
+    public void UpgradeButton()
+    {
+        Debug.Log("Upgradear el edificio o lanzar minijuego");
+    }
+
+
 	// Use this for initialization
 	void Start () {
 		

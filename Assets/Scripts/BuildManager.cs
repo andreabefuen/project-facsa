@@ -113,10 +113,11 @@ public class BuildManager : MonoBehaviour {
         //graphsAlgorithms.BusquedaEnAnchura(node.gameObject.GetComponent<Nodo>());
 
 
-        //LLAMAMOS AL GRAFO
-       //graphs = gameObject.GetComponent<GraphsAlgorithms>();
-       //graphs.BusquedaEnAnchura(node.gameObject.GetComponent<Nodo>());
-       //
+       //LAMAMOS AL GRAFO
+       graphs = gameObject.GetComponent<GraphsAlgorithms>();
+        graphs.ResetGraph();
+       graphs.BusquedaEnAnchura(node.gameObject.GetComponent<Nodo>());
+       
        
         
 
