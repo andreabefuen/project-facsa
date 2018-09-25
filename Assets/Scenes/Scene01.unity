@@ -281,6 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistancia: 10
+  actionRatio: {r: 0.1802243, g: 0.8490566, b: 0.8350973, a: 0}
 --- !u!114 &29769595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3028,6 +3029,21 @@ Prefab:
     - target: {fileID: 1217418152948852, guid: a00a7b36b7b4275468b0474228bc08b5, type: 2}
       propertyPath: m_Name
       value: Node (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114893061970329084, guid: a00a7b36b7b4275468b0474228bc08b5,
+        type: 2}
+      propertyPath: actionRatio.r
+      value: 0.5330188
+      objectReference: {fileID: 0}
+    - target: {fileID: 114893061970329084, guid: a00a7b36b7b4275468b0474228bc08b5,
+        type: 2}
+      propertyPath: actionRatio.g
+      value: 0.9822611
+      objectReference: {fileID: 0}
+    - target: {fileID: 114893061970329084, guid: a00a7b36b7b4275468b0474228bc08b5,
+        type: 2}
+      propertyPath: actionRatio.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a00a7b36b7b4275468b0474228bc08b5, type: 2}
@@ -7325,7 +7341,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1433.9708, y: -96.05002}
+  m_AnchoredPosition: {x: 1433.9727, y: -96.05002}
   m_SizeDelta: {x: 279.3, y: 195.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1189079042

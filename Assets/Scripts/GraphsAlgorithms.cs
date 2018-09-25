@@ -16,7 +16,7 @@ public class GraphsAlgorithms : MonoBehaviour {
 
     int contador = 0;
 
-
+    public Color actionRatio;
 
     // Use this for initialization
     void Start()
@@ -53,7 +53,7 @@ public class GraphsAlgorithms : MonoBehaviour {
 
     //Añadir distancia maxima a buscar y hacer un break
 
-    public void BusquedaEnAnchura(Nodo nodo)
+    public void BusquedaEnAnchura(Nodo nodo, int increasedLevel)
     {
         Debug.Log("Entra en la funcion");
         // nodo.visitado = true;
@@ -90,6 +90,8 @@ public class GraphsAlgorithms : MonoBehaviour {
                     }
 
                     w.SetVisitado(true);
+                    w.GetComponent<Building>().totalSatisfaction += increasedLevel;
+                    w.GetComponent<Building>().GetComponent<Renderer>().material.color = actionRatio;
                     cola.Enqueue(w);
                   
                     

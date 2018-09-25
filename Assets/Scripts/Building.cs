@@ -11,6 +11,7 @@ public class Building : MonoBehaviour
     //Colores para cada nodo del suelo, indicando si se puede construir o noç
     public Color hoverColor;
     public Color notEnoughMoneyColor;
+  
 
     public Vector3 positionOffset;
 
