@@ -7,6 +7,7 @@ public class GraphsAlgorithms : MonoBehaviour {
     CreateEnviroment createEnviroment;
     GameObject[,] matrix;
 
+    public int maxDistancia = 10;
 
     Queue<Nodo> cola = new Queue<Nodo>();
     // Nodo w = new Nodo();
@@ -23,6 +24,13 @@ public class GraphsAlgorithms : MonoBehaviour {
         createEnviroment = gameObject.GetComponent<CreateEnviroment>();
         matrix =  createEnviroment.GetMatrix();
 
+    }
+
+    public void ResetGraph()
+    {
+        ResetNodes();
+        cola.Clear();
+        contador = 0;
     }
 
     public void ResetNodes()
@@ -57,12 +65,12 @@ public class GraphsAlgorithms : MonoBehaviour {
         nodo.SetVisitado(true);
         
         cola.Enqueue(nodo);
-        contador++;
+        //contador++;
         Debug.Log("encolamos el primer nodo");
 
 
 
-        while(cola.Count > 0) //Mientras que no este vacía
+        while(cola.Count > 0 && contador <= maxDistancia) //Mientras que no este vacía
         {
 
             Debug.Log(cola.Count);
@@ -83,18 +91,15 @@ public class GraphsAlgorithms : MonoBehaviour {
 
                     w.SetVisitado(true);
                     cola.Enqueue(w);
-                    contador++;
+                  
                     
 
                    // Debug.Log("uno");
                 }
             }
+            contador++;
+            Debug.Log("Contador niveles: " + contador);
 
-
-        }
-        if(contador == 25)
-        {
-            Debug.Log("Todos visitados");
         }
        
 

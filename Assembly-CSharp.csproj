@@ -173,6 +173,7 @@
     <Compile Include="Assets\Scripts\GraphsAlgorithms.cs" />
     <Compile Include="Assets\Scripts\MenuConstruir.cs" />
     <Compile Include="Assets\Scripts\MoneyUI.cs" />
+    <Compile Include="Assets\Scripts\NodeUI.cs" />
     <Compile Include="Assets\Scripts\Nodo.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Shop.cs" />
