@@ -32,7 +32,7 @@ public class PlayerMove_ER : MonoBehaviour {
     private void FixedUpdate()
     {
         if (Manager_ER.InGame)
-        {
+        {//si llega al carril indicado se para
             GetComponent<Rigidbody>().velocity = new Vector3(horizVel, GetComponent<Rigidbody>().velocity.y, speed);
             if (horizVel == -3f && transform.position.x <= -0.9 && laneNum == 1)
             {
@@ -61,9 +61,9 @@ public class PlayerMove_ER : MonoBehaviour {
         {
             ScoreText.text = "Puntuación: " + score.ToString("00000");
             if (transform.position.y < -1)
-            {
+            {//si cae gameOver
                 GameOver();
-            }
+            }//comprueba movimiento
             if (Input.GetKeyDown(moveL) && transform.position.x > -1 && !controlLock && laneNum > 1)
             {
 
@@ -83,7 +83,7 @@ public class PlayerMove_ER : MonoBehaviour {
 
 
             }
-
+            //comprueba si puede saltar
             if (Input.GetKeyDown(Jump) && OnTheGround)
             {
                 OnTheGround = false;
@@ -93,7 +93,7 @@ public class PlayerMove_ER : MonoBehaviour {
         }
     }
     private void OnCollisionEnter(Collision collision)
-    {
+    {//si toca un obstaculo gameover, capsula suma puntos y si toca el suelo puede volver a saltar
         if(collision.gameObject.tag == "Lethal")
         {
             GameOver();
@@ -110,7 +110,7 @@ public class PlayerMove_ER : MonoBehaviour {
         }
     }
     IEnumerator stopSlide()
-    {
+    {//bloquea el movimiento hasta que llega al carril
         yield return new WaitForSeconds(0.32f);
         controlLock = false;
     }

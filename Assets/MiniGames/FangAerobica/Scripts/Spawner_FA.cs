@@ -9,7 +9,7 @@ public class Spawner_FA : MonoBehaviour {
     public GameObject[] bricksInstantiate;
     // Use this for initialization
     void Start()
-    {
+    {//crea los primeros bloques y añade 13 oxigenos en algunos de ellos luego se destruye a si mismo
         for (int i = 0; i < 5; i++)
         {
             for (int j = 0; j < 10; j++)

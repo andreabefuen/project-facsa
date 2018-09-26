@@ -18,7 +18,7 @@ public class Oxygen_FA : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {//movimiento caida de esfera
         rBody.velocity = Vector2.up * -speed;
         //Store the current horizontal input in the float moveHorizontal.
         //Use the two store floats to create a new Vector2 variable movement.
@@ -26,7 +26,7 @@ public class Oxygen_FA : MonoBehaviour
 
     }
     void OnTriggerEnter2D(Collider2D collision)
-    {
+    {//si toca al jugador se le suma
         if (collision.gameObject.name == "Player")
         {
             audioSource.Play();

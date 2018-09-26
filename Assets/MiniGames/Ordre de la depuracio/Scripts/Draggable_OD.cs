@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+//te sigue la carta mientras al arrastra y mueve las otras para dejar hueco
 public class Draggable_OD : MonoBehaviour, IBeginDragHandler,IDragHandler, IEndDragHandler {
 
     public Transform parentToReturnTo = null;

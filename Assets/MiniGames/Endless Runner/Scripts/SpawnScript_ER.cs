@@ -20,7 +20,7 @@ public class SpawnScript_ER : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update () {//cuando pasa el tiempo crea una capsula o un obstaculo
         TimeCapsule = TimeToSpawn * 1.4f;
         transform.position = new Vector3(transform.position.x, transform.position.y, Player.transform.position.z + 50);
         if (TimeLastSpawn >= TimeToSpawn)

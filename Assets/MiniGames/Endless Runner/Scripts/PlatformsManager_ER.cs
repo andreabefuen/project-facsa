@@ -11,7 +11,7 @@ public class PlatformsManager_ER : MonoBehaviour {
     public List<GameObject> PlatformsList = new List<GameObject>();
 
     // Use this for initialization
-    void Start () {
+    void Start () {//crea las primeras plataformas
         PlatformsList.Add(Instantiate(Platforms[0], new Vector3(Platforms[0].transform.position.x, Platforms[0].transform.position.y, Platforms[0].transform.position.z), Platforms[0].transform.rotation));
 
         for (int i = 0; i < 5; i++)
@@ -24,7 +24,7 @@ public class PlatformsManager_ER : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		if(transform.position.z > PlatformsList[1].transform.position.z)
-        {
+        {//crea un nuevo bloque de plataformas cuando avanzamos la distancia de 1 plataforma
             if((numPlatforms+1) % 6 == 0)
             {
                 GetComponent<PlayerMove_ER>().speed += 0.25f;

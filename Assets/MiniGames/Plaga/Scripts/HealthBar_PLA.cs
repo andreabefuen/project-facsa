@@ -8,10 +8,11 @@ public class HealthBar_PLA : MonoBehaviour {
     public float currentHealth = 100;
     private float originalScale;
 
+    //controla el la barra de la vida de los enemigos
+
     // Use this for initialization
     void Start () {
         originalScale = gameObject.transform.localScale.x;
-
     }
 
     // Update is called once per frame

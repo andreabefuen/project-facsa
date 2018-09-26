@@ -55,7 +55,7 @@ public class ManagerScript_FIL : MonoBehaviour {
         }
     }
     void Spawn()
-    {
+    {//coloca las cartas
         int cardsInTable = 0;
         while(cardsInTable < 20 ){
 
@@ -72,7 +72,7 @@ public class ManagerScript_FIL : MonoBehaviour {
     }
 
     public void Select(GameObject Card) {
-
+        //comprueba si has seleccionado 2 las comprueba
        if(Select1 == null)
         {
             Select1 = Card;
@@ -94,7 +94,7 @@ public class ManagerScript_FIL : MonoBehaviour {
     }
   
     void Comprobar()
-    {
+    {//comprueba si ambas cartas seleccionadas son iguales(teniendo en cuenta el nivel tienen comportamiento distinto al fallar
         if (level == 1)
         {
             SelectScript_FIL Script1 = Select1.GetComponent<SelectScript_FIL>();
@@ -165,7 +165,7 @@ public class ManagerScript_FIL : MonoBehaviour {
     }
 
     IEnumerator Fail(SelectScript2_FIL Script1, SelectScript2_FIL Script2 )
-    {
+    {//si fallas tarda un tiempo en volver a ocultarse
         yield return new WaitForSeconds(1f);
         timer -= 5;
         Script1.DesSelect();

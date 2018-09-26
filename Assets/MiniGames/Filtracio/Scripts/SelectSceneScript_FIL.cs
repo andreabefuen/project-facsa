@@ -11,7 +11,7 @@ public class SelectSceneScript_FIL : MonoBehaviour
     }
     public void SelectMiniGame(string scene)
     {
-        SceneManager.LoadScene(scene); // loads current scene
+        SceneManager.LoadScene(scene); // loads selected scene
     }
 
 }

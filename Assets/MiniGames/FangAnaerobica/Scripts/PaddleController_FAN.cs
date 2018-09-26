@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//script de las palas
 public class PaddleController_FAN : MonoBehaviour {
 
     public float restPosition = 0f;

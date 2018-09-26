@@ -22,8 +22,9 @@ public class EnemyController_IO : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        //define comportamiento del enemigo segun su tamaño
         if (ToPlayer)
-        {
+        {//si va a por ti y si es poco mas grande volvera a por comida
             if(this.transform.localScale.x > player.transform.localScale.x + 0.4)
             {
                 speed = 3.3f;
@@ -37,15 +38,15 @@ public class EnemyController_IO : MonoBehaviour {
             }
         }
 		else if(this.transform.localScale.x > player.transform.localScale.x + 1)
-        {
+        {//si es mas grande empieza a por ti
             ToPlayer = true;
         }
         else if (food == null)
-        {
+        {//busca comida cercana
             food = Searcher.SearchClosest();
         }
         else
-        {
+        {//va a por la comida
             speed = 2.5f;
             transform.LookAt(food.transform.position);
             transform.Rotate(new Vector3(90, 0, 0), Space.Self);//correcting the original rotation
@@ -54,7 +55,7 @@ public class EnemyController_IO : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other)
-    {
+    {//si come comida crece si te come gameover
         if(other.gameObject.tag == "Food")
         {
             Points += other.gameObject.GetComponent<FoodScript_IO>().Points;

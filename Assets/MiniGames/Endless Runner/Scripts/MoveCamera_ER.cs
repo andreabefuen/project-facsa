@@ -10,7 +10,7 @@ public class MoveCamera_ER : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () {//la camara sigue al jugador
         transform.position = new Vector3(transform.position.x, transform.position.y, player.transform.position.z - 2.9f);
 	}
 }

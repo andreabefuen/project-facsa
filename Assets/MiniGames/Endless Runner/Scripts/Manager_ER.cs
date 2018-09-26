@@ -11,7 +11,7 @@ public class Manager_ER : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	public void StartGame () {
+	public void StartGame () {//se encarga de iniciar cuando le da al start
         InGame = true;
         instructions.SetActive(false);	
 	}

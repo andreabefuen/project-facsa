@@ -17,7 +17,7 @@ public class SpawnerEnemies_IO : MonoBehaviour {
 
     // Update is called once per frame
     void Update()
-    {
+    {//mantiene en escena tantos enemigos como maxEnemies
         if (EnemiesInScene < maxEnemies)
         {
             Spawn();

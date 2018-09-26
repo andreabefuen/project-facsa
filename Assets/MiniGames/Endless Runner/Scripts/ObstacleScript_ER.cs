@@ -10,7 +10,7 @@ public class ObstacleScript_ER : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () {//si lo pasas de largo se destruye
 		if(transform.position.y < -2)
         {
             Destroy(gameObject);

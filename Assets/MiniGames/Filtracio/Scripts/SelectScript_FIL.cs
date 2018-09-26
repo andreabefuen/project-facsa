@@ -23,9 +23,9 @@ public class SelectScript_FIL : MonoBehaviour {
         manager = GameObject.Find("Manager");
         managerSc = manager.GetComponent<ManagerScript_FIL>();
     }
-    // Update is called once per frame
+
+    // Comprueba el estado d ela carta y le cambia el aspecto
     public void Select () {
-        //Debug.Log(selected);
 		if (!selected)
         {
             Sound.clip = SelecClip;
@@ -35,10 +35,6 @@ public class SelectScript_FIL : MonoBehaviour {
             managerSc.Select(this.gameObject);
 
         }
-        /*else
-        {
-            DesSelect();
-        }*/
 
     }
     public void DesSelect()

@@ -55,7 +55,7 @@ public class ManagerScript_FAN : MonoBehaviour {
             ScoreText.text = "Puntuación\n" + Score.ToString("00000");
             LifeText.text = "Pelota\n " + Life;
             if (TimeToRespawn <= 0 || NumBacteries <3)
-            {
+            {//crea bacterias nuevas
                 CreateBactery();
                 TimeToRespawn = 300;
             }
@@ -107,7 +107,7 @@ public class ManagerScript_FAN : MonoBehaviour {
 
     }
     void CreateBactery()
-    {
+    {//crea bacterias nuevas en unod e los spawners si esta vacio
         int rdm = UnityEngine.Random.Range(0, Spawners.Length);
         if (Spawners[rdm].transform.childCount <= 0)
         {

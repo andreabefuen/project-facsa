@@ -16,6 +16,7 @@ public class ManagerScript_IO : MonoBehaviour {
 
     // Use this for initialization
     public void StartGame () {
+        //no deja empezar hasta que no hay 200 de comida en la escena
         if (FoodSpawn.GetComponent<FoodSpawner_IO>().FoodInScene > 200)
         {
             Player.GetComponent<MovingPlayer_IO>().StartGame = true;
@@ -50,7 +51,8 @@ public class ManagerScript_IO : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         ScoreText.text = "Score: " + Player.GetComponent<MovingPlayer_IO>().Points;
-        if(Player.GetComponent<MovingPlayer_IO>().Points > (EnemySpawn.GetComponent<SpawnerEnemies_IO>().maxEnemies - 4) * 100)
+        //cada 100 enemigos suma un enemigo mas en escena
+        if (Player.GetComponent<MovingPlayer_IO>().Points > (EnemySpawn.GetComponent<SpawnerEnemies_IO>().maxEnemies - 4) * 100)
         {
             EnemySpawn.GetComponent<SpawnerEnemies_IO>().maxEnemies++;
         }

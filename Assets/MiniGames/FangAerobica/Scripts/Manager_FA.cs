@@ -60,6 +60,7 @@ public class Manager_FA : MonoBehaviour {
             PuntuacioText.text = "Puntuació\n" + Score;
             OxigenText.text = "Oxigen:\n" + Oxigen;
             blocks = GameObject.FindGameObjectsWithTag("Brick");
+            //crea nueva fila
             if (blocks.Length < 15 || timeNewLine <= 0) {
                  Instantiate(NewLine, transform.position, transform.rotation);
                 numNewLines += 1;
@@ -68,13 +69,14 @@ public class Manager_FA : MonoBehaviour {
                 scriptPlayer.speed = InitPlayerSpeed + numNewLines * 0.2f;
             }
             else if(BallInGame)
-            {
+            {//si la pelota esta en juego
                 timeNewLine -= 1;
             }
             GameObject.Find("Ball").GetComponent<Ball_FA>().speed = InitBallSpeed + numNewLines * 0.25f;
         }
         if (Vides < 0) {
             GameOverText.SetActive(true);
+            //si no tiene vidas y es la primera vez que entra
             if (!gameOver)
             {
 
@@ -99,7 +101,7 @@ public class Manager_FA : MonoBehaviour {
         }
     }
     public void StartGame()
-    {
+    {//activa el juego
         InGame = true;
         Instructions.SetActive(false);
 

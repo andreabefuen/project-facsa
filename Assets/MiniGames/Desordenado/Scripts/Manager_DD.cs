@@ -10,7 +10,7 @@ public class Manager_DD : MonoBehaviour {
         InGame = false;
 	}
 	public void StartGame()
-    {
+    {//cuando le da start empieza el juego
         Instructions.SetActive(false);
         InGame = true;
     }

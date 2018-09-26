@@ -27,7 +27,7 @@ public class BallScript_FAN : MonoBehaviour {
     }
 
     private void OnCollisionEnter(Collision collision)
-    {
+    {//comprueba si la bacteria es del tipo de la pelota
         if (collision.gameObject.tag == "Bactery")
         {
             if (collision.gameObject.name == "GoodBactery(Clone)")
@@ -68,7 +68,7 @@ public class BallScript_FAN : MonoBehaviour {
         }
     }
     void ChangeBall()
-    {
+    {//cambia de color la pelota
         if (BallType)
         {
             BallType = false;
