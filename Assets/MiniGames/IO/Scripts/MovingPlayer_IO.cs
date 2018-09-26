@@ -42,7 +42,7 @@ public class MovingPlayer_IO : MonoBehaviour
     void Move()
     {
 
-        if (Input.mousePosition.x > 0 && Input.mousePosition.x < Screen.width && Input.mousePosition.y > 0 && Input.mousePosition.y < Screen.height - 1)
+        if (Input.mousePosition.x > 0 && Input.mousePosition.x < Screen.width && Input.mousePosition.y > 0 && Input.mousePosition.y < Screen.height)
         {
             // Create a ray from the mouse cursor on screen in the direction of the camera.
             Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);

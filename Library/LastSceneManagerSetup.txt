@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-sceneSetups: []
-=======
 sceneSetups:
-- path: Assets/Scenes/Scene01.unity
+- path: Assets/MiniGames/Desinfeccio/Scenes/Desinfeccion.unity
   isLoaded: 1
   isActive: 1
->>>>>>> ff4eaa826ba7750be2c2eaaf8b5ebe00299638f5
