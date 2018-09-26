@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//mueve a los enemigos entre los waypoints
+
 public class MoveEnemy_PLA : MonoBehaviour {
     [HideInInspector]
     public GameObject[] waypoints;

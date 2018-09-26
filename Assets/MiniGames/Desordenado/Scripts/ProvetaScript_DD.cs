@@ -48,7 +48,7 @@ public class ProvetaScript_DD : MonoBehaviour {
     {
         //Debug.Log(element);
         switch (numElements)
-        {
+        {//Comprueba y su esta correcto pinta el elemento
             case 1:
                 firstRend.color = WhatColor(element);
                 ElementsInTube[0] = element;
@@ -107,7 +107,7 @@ public class ProvetaScript_DD : MonoBehaviour {
         
     }
     Color WhatColor(string element)
-    {
+    {//devuelve el color del objeto element
         if(element == "Oil") return OilColor;
         else if (element == "Water") return WaterColor;
         else if (element == "Soap") return SoapColor;
@@ -120,7 +120,7 @@ public class ProvetaScript_DD : MonoBehaviour {
     bool Comprobar(string element)
     {
         if (ElementsInTube.Length > 0)
-        {
+        {//comprueba si estan en orden si no false
             if (element == "Oil")
             {
                 if (System.Array.IndexOf(ElementsInTube, "Alcohol") != -1)
@@ -158,10 +158,11 @@ public class ProvetaScript_DD : MonoBehaviour {
         
     }
     IEnumerator GameOver()
-    {
+    {//fin de la partida
         Music.loop = false;
         Music.clip = GameOverClip;
         Music.Play();
+        //destruye los objetos innecesarios
         GameObject[] Elements;
         Elements = GameObject.FindGameObjectsWithTag("Objects");
         foreach (GameObject objeto in Elements)
@@ -180,7 +181,7 @@ public class ProvetaScript_DD : MonoBehaviour {
 
     }
     void Win()
-    {
+    {//ganado
         Music.loop = false;
         Music.clip = WinClip;
         Music.Play();

@@ -20,7 +20,7 @@ public class MovingPlayer_FA : MonoBehaviour {
     }
     //FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
     void FixedUpdate()
-    {
+    {//movimiento de la pala
         //Store the current horizontal input in the float moveHorizontal.
         velocity.x = Input.GetAxis("Horizontal");
         //Use the two store floats to create a new Vector2 variable movement.

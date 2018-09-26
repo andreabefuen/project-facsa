@@ -48,7 +48,7 @@ public class Draggable_DD : MonoBehaviour, IBeginDragHandler,IDragHandler, IEndD
 
             GetComponent<CanvasGroup>().blocksRaycasts = true;
             if (parentToReturnTo.gameObject.name == "PanelProveta")
-            {
+            {//Si el objeto donde lo sueltas es la proveta destruye y lo añade en la proveta
                 //comprobar los elementos
                 Proveta.GetComponent<ProvetaScript_DD>().newElement(this.gameObject.name);
                 Destroy(gameObject);

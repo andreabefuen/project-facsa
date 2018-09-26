@@ -27,7 +27,7 @@ public class ManagerScript_OD : MonoBehaviour {
         StartCoroutine(CompareCard());
     }
     IEnumerator CompareCard()
-    {
+    {//compara si las cartas estan en orden correcto
         yield return new WaitForSeconds(0.1f);
         Debug.Log("comparar :" + Sort.childCount);
         if (Sort.childCount == 7)
@@ -104,7 +104,7 @@ public class ManagerScript_OD : MonoBehaviour {
         }
     }
     IEnumerator Fallo()
-    {
+    {//parpadea si fallas
         Sound.clip = FailClip;
         Sound.Play();
         Image SortImage = Sort.GetComponent<Image>();

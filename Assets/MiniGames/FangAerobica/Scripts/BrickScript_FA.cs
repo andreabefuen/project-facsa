@@ -16,7 +16,7 @@ public class BrickScript_FA : MonoBehaviour {
 
     }
     void OnCollisionEnter2D(Collision2D collisionInfo)
-    {
+    {//cuando colisiona dependiendo de los toques que le queden...
         audioSource.Play();
         life -= 1;
         if (life == 1)

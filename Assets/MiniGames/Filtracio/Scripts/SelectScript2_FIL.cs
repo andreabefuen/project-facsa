@@ -29,7 +29,7 @@ public class SelectScript2_FIL : MonoBehaviour {
         managerSc = manager.GetComponent<ManagerScript_FIL>();
         transform.localScale = new Vector3(1f, 1f, 1f);
     }
-    // Update is called once per frame
+    // Variacion de SelectScript_FIL para que gire la carta
     public void Select () {
         //Debug.Log(selected);
 		if (!selected)
@@ -44,10 +44,7 @@ public class SelectScript2_FIL : MonoBehaviour {
             transform.localScale = new Vector3(0.65f, 0.9f, 1f);
             managerSc.Select(this.gameObject);
         }
-        /*else
-        {
-            DesSelect();
-        }*/
+
 
     }
     public void DesSelect()

@@ -24,7 +24,7 @@ public class FoodSpawner_IO : MonoBehaviour {
     }
 
     void Spawn()
-    {
+    {//si hay menos de 200(al inicio) instancia mas cerca del punto de inicio
         if (FoodInScene > 200)
         {
             int rdmX = UnityEngine.Random.Range(-150, 150);

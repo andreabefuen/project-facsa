@@ -31,6 +31,7 @@
 using UnityEngine;
 using System.Collections;
 
+//agita la camara al recibir daño
 public class CameraShake_PLA : MonoBehaviour
 {
 

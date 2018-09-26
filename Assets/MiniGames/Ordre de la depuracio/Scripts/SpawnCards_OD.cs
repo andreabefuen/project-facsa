@@ -6,7 +6,7 @@ public class SpawnCards_OD : MonoBehaviour {
 
     public GameObject[] Cartes;
 
-	// Use this for initialization
+	// crea las cartas desordenadas al inicio
 	void Start () {
         int HandCard = 0;
         int rand;
@@ -23,8 +23,5 @@ public class SpawnCards_OD : MonoBehaviour {
         }
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

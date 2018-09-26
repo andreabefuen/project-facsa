@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Script si la pelota cae
 public class OutOfBounds_FAN : MonoBehaviour {
 
     public Transform ball;

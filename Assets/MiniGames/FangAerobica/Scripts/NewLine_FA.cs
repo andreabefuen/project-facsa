@@ -11,7 +11,7 @@ public class NewLine_FA : MonoBehaviour
     GameObject[] bricksInScene;
 
     // Use this for initialization
-    void Start()
+    void Start()//añade una fila aleatoria y añade 3 de oxigeno
     {
         int Rdn = UnityEngine.Random.Range(0, bricks.Length - 1);
         bricksInScene = GameObject.FindGameObjectsWithTag("Brick");

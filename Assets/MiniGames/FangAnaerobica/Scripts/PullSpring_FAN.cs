@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//script del tirador
 public class PullSpring_FAN : MonoBehaviour {
 
     public string inputButtonName = "PullFangAnaerobica";

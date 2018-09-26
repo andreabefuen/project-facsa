@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//objeto que hace rebotar la pelota
 public class BounceObject_FAN : MonoBehaviour {
 
     public float explosionStrength = 100;

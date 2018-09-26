@@ -4,7 +4,7 @@ using UnityEngine;
 
 [System.Serializable]
 
-
+//Gestiona las oleadas
 public class SpawnEnemy_PLA : MonoBehaviour {
 
     public GameObject[] Enemies;

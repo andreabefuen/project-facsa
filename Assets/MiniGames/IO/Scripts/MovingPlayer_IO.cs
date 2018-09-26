@@ -41,7 +41,7 @@ public class MovingPlayer_IO : MonoBehaviour
     }
     void Move()
     {
-
+        //Captura el raton si esta dentro de pantalla y calcula la velocidad dependiendo de la distancia con el jugador
         if (Input.mousePosition.x > 0 && Input.mousePosition.x < Screen.width && Input.mousePosition.y > 0 && Input.mousePosition.y < Screen.height)
         {
             // Create a ray from the mouse cursor on screen in the direction of the camera.
@@ -73,7 +73,7 @@ public class MovingPlayer_IO : MonoBehaviour
             }
         }
         else
-        {
+        {//si el raton sale de la pantalla de juego se para el personaje
             movement.Set(0f, 0f, 0f);
 
             // Normalise the movement vector and make it proportional to the speed per second.
@@ -84,7 +84,7 @@ public class MovingPlayer_IO : MonoBehaviour
         }
     }
     private void OnTriggerEnter(Collider other)
-    {
+    {//si se come comida o enemigos mas pequeños se los como, que el crece y se aleja la camara cada 20 puntos
         if (other.tag == "Food" && other.transform.localScale.x < this.transform.localScale.x)
         {
             Points += other.GetComponent<FoodScript_IO>().Points;
