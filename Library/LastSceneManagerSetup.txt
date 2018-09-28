@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Scene01.unity
-=======
-- path: Assets/MiniGames/IO/Scenes/IO.unity
->>>>>>> 8496e2cdbdd6cc7fd8d6f5582104ae3197f5cbbc
+- path: Assets/Water Drop/Water Drop 2D/Scenes/MainWaterDrop.unity
   isLoaded: 1
   isActive: 1
