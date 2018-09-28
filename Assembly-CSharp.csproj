@@ -204,7 +204,9 @@
     <Compile Include="Assets\Scripts\StreetConstruction.cs" />
     <Compile Include="Assets\Scripts\StructureBlueprint.cs" />
     <Compile Include="Assets\Scripts\Timing.cs" />
+    <Compile Include="Assets\Water Drop\Water Drop 2D\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Water Drop\Water Drop 2D\Scripts\CharacterMovement.cs" />
+    <Compile Include="Assets\Water Drop\Water Drop 2D\Scripts\CreateEnvironment.cs" />
     <None Include="Assets\Rune Assets\Simple\Urban Buildings Pack 1\runesimple.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

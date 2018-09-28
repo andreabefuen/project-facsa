@@ -14,6 +14,7 @@ TagManager:
   - Enemy2
   - Objects
   - Manager
+  - ground
   layers:
   - Default
   - TransparentFX
