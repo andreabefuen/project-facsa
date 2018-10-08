@@ -16,11 +16,17 @@ public class CharacterMovement : MonoBehaviour {
     private Rigidbody2D rigid;
     private bool onGround = true;
 
+    private bool notSwimming = false;
+
+    private Animator anim;
+
 	// Use this for initialization
 	void Start () {
 
         rigid = GetComponent<Rigidbody2D>();
         waterSlider.value = 100;
+
+        anim = GetComponent<Animator>();
 		
 	}
 	
@@ -32,11 +38,32 @@ public class CharacterMovement : MonoBehaviour {
 
         float moveVertical = Input.GetAxis("Vertical");
 
-        if ((moveHorizontal <0 && facingRight) || (moveHorizontal >0 && !facingRight))
-        {
 
-            Flip();
+        if(anim.GetBool("isSwimming") == true)
+        {
+            if ((moveHorizontal < 0 && facingRight) || (moveHorizontal > 0 && !facingRight))
+            {
+
+                FlipSwimming();
+            }
         }
+        
+        else 
+        {
+            
+
+            if ((moveHorizontal < 0 && facingRight) || (moveHorizontal > 0 && !facingRight))
+            {
+
+                Flip();
+            }
+        }
+
+       //if ((moveHorizontal <0 && facingRight) || (moveHorizontal >0 && !facingRight))
+       //{
+       //
+       //    FlipSwimming();
+       //}
 
         if (Input.GetKeyDown("space") && onGround)
         {
@@ -61,6 +88,14 @@ public class CharacterMovement : MonoBehaviour {
 	}  
 
 
+    void FlipSwimming()
+    {
+        facingRight = !facingRight;
+        Vector3 scale = transform.localScale;
+        scale.y *= -1;
+        transform.localScale = scale;
+    }
+
     void Flip()
     {
         facingRight = !facingRight;
@@ -83,11 +118,16 @@ public class CharacterMovement : MonoBehaviour {
         if (collision.gameObject.tag == "ground")
         {
             waterSlider.value -= damageForGround * Time.deltaTime;
+            anim.SetBool("isSwimming", false);
+            this.transform.rotation = Quaternion.identity;
         }
 
         if(collision.gameObject.tag == "Water")
         {
+            
+            anim.SetBool("isSwimming", true);
             waterSlider.value += lifeForWater * Time.deltaTime;
+            
         }
     }
 
