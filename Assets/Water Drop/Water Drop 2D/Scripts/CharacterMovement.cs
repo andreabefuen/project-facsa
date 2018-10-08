@@ -69,6 +69,7 @@ public class CharacterMovement : MonoBehaviour {
         {
             rigid.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             onGround = false;
+            anim.SetBool("isJumping", true);
         }
 
       
@@ -109,6 +110,7 @@ public class CharacterMovement : MonoBehaviour {
         if(collision.gameObject.tag == "ground" || collision.gameObject.tag == "Water")
         {
             onGround = true;
+            anim.SetBool("isJumping", false);
             
         }
     }
