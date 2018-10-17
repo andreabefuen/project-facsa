@@ -56,4 +56,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MiniGames/IO/Scenes/IO.unity
     guid: c7e8c3999acaf6d4ebedce515b77f320
+  - enabled: 1
+    path: Assets/Water Drop/Water Drop 2D/Scenes/MainWaterDrop.unity
+    guid: 4e402a33f645dd149bfe65e95ecb80ea
+  - enabled: 1
+    path: Assets/Water Drop/Water Drop 2D/Scenes/Level2.unity
+    guid: 9328a1561c17eb545acefb337bbb6c10
   m_configObjects: {}

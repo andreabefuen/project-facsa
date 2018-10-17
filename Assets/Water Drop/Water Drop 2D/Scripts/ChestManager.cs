@@ -7,7 +7,7 @@ public class ChestManager : MonoBehaviour {
 
     public Animator anim;
     public string nameNextLevel;
-    public GameObject screenPassLevel;
+    //public GameObject screenPassLevel;
     public float delay;
    
 
@@ -22,7 +22,7 @@ public class ChestManager : MonoBehaviour {
         anim.enabled = false;
 	}
 	
-	// Update is called once per frame
+	// Update is called once per frames
 	void Update () {
 		
 	}
@@ -33,9 +33,10 @@ public class ChestManager : MonoBehaviour {
         if(collision.gameObject.tag == "Player")
         {
             anim.enabled = true;
-            Time.timeScale = 0;
-            screenPassLevel.active = true;
+            
+            //screenPassLevel.active = true;
             StartCoroutine(NextLevel(delay));
+            //Time.timeScale = 0;
         }
     }
 
@@ -43,6 +44,7 @@ public class ChestManager : MonoBehaviour {
     IEnumerator NextLevel(float time)
     {
         yield return new WaitForSeconds(delay);
+        
         SceneManager.LoadScene(nameNextLevel);
     }
 
