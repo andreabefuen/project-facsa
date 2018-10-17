@@ -714,7 +714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.43595105
+  m_Length: 0.4359506
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4251536678484768}
   m_AttachedIK: {fileID: 114581213591762524}
@@ -746,7 +746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.45405903
+  m_Length: 0.45405892
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4029763529989896}
   m_AttachedIK: {fileID: 114679960756207076}
