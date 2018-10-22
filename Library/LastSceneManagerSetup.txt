@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Water Drop/Water Drop 2D/Scenes/INICIO.unity
+- path: Assets/Water Drop/Water Drop 3D/Scenes/MainScene3D.unity
   isLoaded: 1
   isActive: 1

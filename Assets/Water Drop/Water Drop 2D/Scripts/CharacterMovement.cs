@@ -43,6 +43,12 @@ public class CharacterMovement : MonoBehaviour {
 
         if((anim.GetBool("isSwimming") == true)  )
         {
+
+            if (Input.GetKeyDown("d"))
+            {
+                facingRight = true;
+                
+            }
             if ((moveHorizontal < 0 && facingRight) || (moveHorizontal > 0 && !facingRight))
             {
 
@@ -65,7 +71,11 @@ public class CharacterMovement : MonoBehaviour {
 
         else 
         {
-            
+            if (Input.GetKeyDown("d"))
+            {
+                facingRight = true;
+
+            }
 
             if ((moveHorizontal < 0 && facingRight) || (moveHorizontal > 0 && !facingRight))
             {
