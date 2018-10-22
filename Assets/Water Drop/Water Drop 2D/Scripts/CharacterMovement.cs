@@ -34,20 +34,35 @@ public class CharacterMovement : MonoBehaviour {
 	void FixedUpdate () {
 
         float moveHorizontal = Input.GetAxis("Horizontal");
+        
         //Debug.Log(moveHorizontal);
+        
 
         float moveVertical = Input.GetAxis("Vertical");
 
 
-        if(anim.GetBool("isSwimming") == true)
+        if((anim.GetBool("isSwimming") == true)  )
         {
             if ((moveHorizontal < 0 && facingRight) || (moveHorizontal > 0 && !facingRight))
             {
 
                 FlipSwimming();
             }
+
+         
+
         }
+
+        else if(anim.GetBool("isJumping") == true)
+        {
+
+            ResetFlip();
+     
+        }
+
         
+      
+
         else 
         {
             
@@ -57,7 +72,11 @@ public class CharacterMovement : MonoBehaviour {
 
                 Flip();
             }
+          
         }
+
+
+
 
        //if ((moveHorizontal <0 && facingRight) || (moveHorizontal >0 && !facingRight))
        //{
@@ -93,6 +112,7 @@ public class CharacterMovement : MonoBehaviour {
     {
         facingRight = !facingRight;
         Vector3 scale = transform.localScale;
+        scale.x = 1;
         scale.y *= -1;
         transform.localScale = scale;
     }
@@ -102,6 +122,16 @@ public class CharacterMovement : MonoBehaviour {
         facingRight = !facingRight;
         Vector3 scale = transform.localScale;
         scale.x *= -1;
+        scale.y = 1;
+        transform.localScale = scale;
+    }
+
+    void ResetFlip()
+    {
+        facingRight = true;
+        Vector3 scale = transform.localScale;
+        scale.x = 1;
+        scale.y = 1;
         transform.localScale = scale;
     }
 
