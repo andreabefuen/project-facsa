@@ -51,12 +51,4 @@ public class CameraMovement3D : MonoBehaviour {
         }
 
     }
-
-    private void OnCollisionStay(Collision collision)
-    {
-        if(collision.gameObject.tag == "ground")
-        {
-            isJumpingPossible = true;
-        }
-    }
 }
