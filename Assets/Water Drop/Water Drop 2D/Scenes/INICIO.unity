@@ -541,7 +541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facsa: {fileID: 1641264234}
   uji: {fileID: 364427193}
-  encolaboracion: {fileID: 1005472533}
+  encolaboracion: {fileID: 1944571442}
 --- !u!1 &1005472533
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,7 +733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1641264235
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -827,7 +827,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1944571443
 MonoBehaviour:
   m_ObjectHideFlags: 0

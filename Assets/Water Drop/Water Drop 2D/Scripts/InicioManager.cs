@@ -6,35 +6,52 @@ public class InicioManager : MonoBehaviour {
 
     public GameObject facsa, uji, encolaboracion;
 
-    private Animation facsaAnim, ujiAnim, encolAnim;
+    private Animator facsaAnim, ujiAnim, encolAnim;
 
     private void Awake()
     {
-        facsaAnim=facsa.gameObject.GetComponent<Animation>();
-        ujiAnim = uji.gameObject.GetComponent<Animation>();
-        encolAnim = encolaboracion.gameObject.GetComponent<Animation>();
+        facsaAnim = facsa.gameObject.GetComponent<Animator>();
+        ujiAnim = uji.gameObject.GetComponent<Animator>();
+        encolAnim = encolaboracion.gameObject.GetComponent<Animator>();
+        facsa.SetActive(false);
+        uji.SetActive(false);
+        encolaboracion.SetActive(false);
 
-        facsaAnim.Stop();
-        ujiAnim.Stop();
 
 
     }
-    // Use this for initialization
-    IEnumerator Start () {
 
+    private void Start()
+    {
 
-        facsaAnim.Play(facsaAnim.clip.name);
-        yield return new WaitForSeconds(facsaAnim.clip.length);
-
-        StartCoroutine(ujiStart());
+        Invoke("StartFacsa", 0.5f);
+        Invoke("EnColaboracionStart", 5f);
+        Invoke("UjiStart", 8f);
         
-		
+    }
+
+    // Use this for initialization
+    void StartFacsa () {
+
+        facsa.SetActive(true);
+
+
 	}
 
-    IEnumerator ujiStart()
+    void UjiStart()
     {
-        ujiAnim.Play(ujiAnim.clip.name);
-        yield return new WaitForSeconds(facsaAnim.clip.length);
+
+        facsa.SetActive(false);
+        encolaboracion.SetActive(false);
+        uji.SetActive(true);
+
+        
+    }
+    void EnColaboracionStart()
+    {
+        facsa.SetActive(false);
+        uji.SetActive(false);
+        encolaboracion.SetActive(true);
     }
 	
 	// Update is called once per frame
