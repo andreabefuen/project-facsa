@@ -214,6 +214,8 @@
     <Compile Include="Assets\Water Drop\Water Drop 2D\Scripts\InstrucctionsManager.cs" />
     <Compile Include="Assets\Water Drop\Water Drop 2D\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Water Drop\Water Drop 3D\Scripts\CameraFollow3D.cs" />
+    <Compile Include="Assets\Water Drop\Water Drop 3D\Scripts\DiscBehaviour.cs" />
+    <Compile Include="Assets\Water Drop\Water Drop 3D\Scripts\EnemyBehaviour3D.cs" />
     <Compile Include="Assets\Water Drop\Water Drop 3D\Scripts\Movement3D.cs" />
     <None Include="Assets\Rune Assets\Simple\Urban Buildings Pack 1\runesimple.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
