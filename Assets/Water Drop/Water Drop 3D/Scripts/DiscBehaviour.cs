@@ -7,6 +7,8 @@ public class DiscBehaviour : MonoBehaviour {
     public float speed;
 
     Transform[] parts;
+
+    Transform start;
     
     float multiplier;
 
@@ -16,6 +18,9 @@ public class DiscBehaviour : MonoBehaviour {
         parts = this.GetComponentsInChildren<Transform>();
 
         multiplier = Random.Range(-1f, 1f);
+
+        this.transform.rotation = Quaternion.Euler(0, 90, 0);
+        start = this.transform;
 	}
 	
 	// Update is called once per frame
