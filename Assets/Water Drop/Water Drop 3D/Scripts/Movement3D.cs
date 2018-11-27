@@ -12,6 +12,8 @@ public class Movement3D : MonoBehaviour {
     public GameObject dieCanvas;
     public Text lifesText;
 
+    public GameObject escenario;
+
     private Rigidbody rigid;
     private Vector3 movement;
     private Vector3 rightMove;
@@ -74,6 +76,7 @@ public class Movement3D : MonoBehaviour {
     void YouDie()
     {
         dieCanvas.SetActive(true);
+        escenario.SetActive(false);
         Time.timeScale = 0;
     }
     void UpdateLifeText()
@@ -85,6 +88,7 @@ public class Movement3D : MonoBehaviour {
     {
         Time.timeScale = 1;
         dieCanvas.SetActive(false);
+        escenario.SetActive(true);
         transform.position = initalPos;
     }
 
@@ -109,6 +113,10 @@ public class Movement3D : MonoBehaviour {
             YouDie();
             
 
+        }
+        if(collision.gameObject.tag == "Finish")
+        {
+            Debug.Log("Pasamos al siguiente nivel");
         }
     }
 
