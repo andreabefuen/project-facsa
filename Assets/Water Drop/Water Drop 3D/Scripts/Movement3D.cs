@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Movement3D : MonoBehaviour {
@@ -24,6 +25,9 @@ public class Movement3D : MonoBehaviour {
 
     private bool isKeyPressed = false;
     private bool isJumpingPossible = true;
+
+    [Header("Next Scene")]
+    public string SceneToLoad;
 
 	// Use this for initialization
 	void Start () {
@@ -117,6 +121,7 @@ public class Movement3D : MonoBehaviour {
         if(collision.gameObject.tag == "Finish")
         {
             Debug.Log("Pasamos al siguiente nivel");
+            SceneManager.LoadScene(SceneToLoad);
         }
     }
 

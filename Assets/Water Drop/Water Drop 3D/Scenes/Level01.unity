@@ -393,6 +393,7 @@ MonoBehaviour:
   dieCanvas: {fileID: 437798596}
   lifesText: {fileID: 1872181184}
   escenario: {fileID: 2110655879}
+  SceneToLoad: Level02
 --- !u!54 &478590156
 Rigidbody:
   m_ObjectHideFlags: 0
