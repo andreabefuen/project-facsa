@@ -257,6 +257,9 @@
     <Compile Include="Assets\Scripts\StreetConstruction.cs" />
     <Compile Include="Assets\Scripts\StructureBlueprint.cs" />
     <Compile Include="Assets\Scripts\Timing.cs" />
+    <Compile Include="Assets\Water Drop\Gravity Water Drop\Scripts\CoinScore.cs" />
+    <Compile Include="Assets\Water Drop\Gravity Water Drop\Scripts\GameManagerGravity.cs" />
+    <Compile Include="Assets\Water Drop\Gravity Water Drop\Scripts\GravityEnemyBehaviour.cs" />
     <Compile Include="Assets\Water Drop\Gravity Water Drop\Scripts\GravityPlayerMovement.cs" />
     <Compile Include="Assets\Water Drop\Water Drop 2D\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Water Drop\Water Drop 2D\Scripts\CharacterMovement.cs" />
