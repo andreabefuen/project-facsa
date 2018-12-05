@@ -15,13 +15,17 @@ public class GravityPlayerMovement : MonoBehaviour {
     private bool facingRight = true;
     private Animator anim;
 
+    private GameObject diePanel;
+
 	// Use this for initialization
 	void Start () {
 
         rigid = GetComponent<Rigidbody2D>();
 
         anim = GetComponent<Animator>();
-		
+
+        diePanel = GameObject.Find("DiePanel");
+        diePanel.SetActive(false);
 	}
 
     private void FixedUpdate()
@@ -37,7 +41,7 @@ public class GravityPlayerMovement : MonoBehaviour {
             rigid.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             //Animacion de saltar
             onGround = false;
-            onAir = false;
+            onAir = true;
             jumping = true;
             anim.SetTrigger("isJumping");
             
@@ -82,6 +86,11 @@ public class GravityPlayerMovement : MonoBehaviour {
             jumping = false;
             
             
+        }
+
+        if(collision.gameObject.tag == "Fall")
+        {
+            diePanel.SetActive(true);
         }
           
     }

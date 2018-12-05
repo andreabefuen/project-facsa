@@ -68,4 +68,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Water Drop/Water Drop 3D/Scenes/Level02.unity
     guid: 210670b6ef2a3ad41819e311547f9fac
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/1095d4468e449a046b7510a56c9c3ecd
+    guid: 1095d4468e449a046b7510a56c9c3ecd
+  - enabled: 1
+    path: Assets/Water Drop/Gravity Water Drop/Scenes/Gravity2.unity
+    guid: 0e55214c8a430e54da443518142911d9
   m_configObjects: {}
