@@ -188,6 +188,7 @@
     <Compile Include="Assets\MiniGames\Tractament FQ\Scripts\ManagerScript_TFQ.cs" />
     <Compile Include="Assets\MiniGames\Tractament FQ\Scripts\SelectSceneScript_TFQ.cs" />
     <Compile Include="Assets\MiniGames\Tractament FQ\Scripts\SelectScript_TFQ.cs" />
+    <Compile Include="Assets\PanelOn.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
