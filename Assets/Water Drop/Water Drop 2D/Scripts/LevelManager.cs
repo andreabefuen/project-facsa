@@ -22,6 +22,8 @@ public class LevelManager : MonoBehaviour {
         SceneManager.LoadScene(nameNextLevel);
     }
 
+
+
 	// Use this for initialization
 	void Start () {
 		

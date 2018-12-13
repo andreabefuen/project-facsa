@@ -9,6 +9,8 @@ public class EnemyBehaviour : MonoBehaviour {
    
     public CharacterStats characterStats;
 
+    public GameObject DiePanel;
+
 
 	// Use this for initialization
 	void Start () {
@@ -32,7 +34,8 @@ public class EnemyBehaviour : MonoBehaviour {
            // Debug.Log(characterStats.GetLifes());
             characterStats.SetLifes(characterStats.GetLifes()- damage);
             Debug.Log("Lifes: " + characterStats.lifes);
-            //textLives.SetText("LIVES: " + CharacterStats.lifes);
+            //textLives.SetText("LIVES: " + CharacterStats.lifes);ç
+
         }
     }
 }

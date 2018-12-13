@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InicioManager : MonoBehaviour {
 
     public GameObject facsa, uji, encolaboracion;
+
+    public string NextScene;
 
     private Animator facsaAnim, ujiAnim, encolAnim;
 
@@ -27,6 +30,7 @@ public class InicioManager : MonoBehaviour {
         Invoke("StartFacsa", 0.5f);
         Invoke("EnColaboracionStart", 5f);
         Invoke("UjiStart", 8f);
+        Invoke("GoToMenu", 13f);
         
     }
 
@@ -52,6 +56,11 @@ public class InicioManager : MonoBehaviour {
         facsa.SetActive(false);
         uji.SetActive(false);
         encolaboracion.SetActive(true);
+    }
+
+    void GoToMenu()
+    {
+        SceneManager.LoadScene(NextScene);
     }
 	
 	// Update is called once per frame

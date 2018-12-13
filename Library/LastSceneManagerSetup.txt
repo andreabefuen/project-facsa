@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MiniGames/Menu MiniGames.unity
+- path: Assets/Water Drop/Gravity Water Drop/Scenes/Gravity3.unity
   isLoaded: 1
   isActive: 1

@@ -13,4 +13,10 @@ public class PanelOn : MonoBehaviour {
         generalPanel.SetActive(false);
         
     }
+
+    public void OnBackButton()
+    {
+        panelWater.SetActive(false);
+        generalPanel.SetActive(true);
+    }
 }

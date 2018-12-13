@@ -9,4 +9,9 @@ public class SelectScene_MM : MonoBehaviour {
     {
         SceneManager.LoadScene(scene); // loads current scene
     }
+
+    public void OnExitButton()
+    {
+        Application.Quit();
+    }
 }

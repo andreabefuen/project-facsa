@@ -112,6 +112,7 @@ public class CharacterMovement : MonoBehaviour {
         if(waterSlider.value == 0)
         {
             GameOver();
+            this.gameObject.GetComponent<CharacterStats>().SetLifes(0);
         }
         
 		

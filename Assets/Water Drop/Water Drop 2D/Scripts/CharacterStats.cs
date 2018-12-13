@@ -2,12 +2,17 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterStats : MonoBehaviour {
 
     public int lifes;
 
     public TextMeshProUGUI text;
+
+    public GameObject DiePanel;
+
+
 
     private void Awake()
     {
@@ -24,6 +29,18 @@ public class CharacterStats : MonoBehaviour {
     {
         lifes = l;
         text.text = "LIVES: " + lifes.ToString();
+        if(lifes <= 0)
+        {
+            DiePanel.SetActive(true);
+           
+            Invoke("RestartScene", 3f);
+            lifes = 0;
+        }
     }
 
+    void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+    }
 }
